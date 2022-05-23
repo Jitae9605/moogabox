@@ -127,7 +127,7 @@ namespace WinFormsApp1
 			this.panel4.Location = new System.Drawing.Point(22, 393);
 			this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(590, 134);
+			this.panel4.Size = new System.Drawing.Size(590, 141);
 			this.panel4.TabIndex = 0;
 			// 
 			// btnSet4
@@ -179,10 +179,10 @@ namespace WinFormsApp1
 			this.panel3.Controls.Add(this.btnDrink3);
 			this.panel3.Controls.Add(this.btnDrink2);
 			this.panel3.Controls.Add(this.btnDrink1);
-			this.panel3.Location = new System.Drawing.Point(22, 209);
+			this.panel3.Location = new System.Drawing.Point(22, 207);
 			this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(590, 134);
+			this.panel3.Size = new System.Drawing.Size(590, 136);
 			this.panel3.TabIndex = 0;
 			// 
 			// btnDrink4
