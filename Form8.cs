@@ -48,14 +48,32 @@ namespace WinFormsApp1
 		{
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
+
 			string InsertSql = string.Format("insert into Reservation select * from TmpReservation");
 			var Com = new SqlCommand(InsertSql, Conn);
 			Com.ExecuteNonQuery();
-			//InsertSql = "update Reservation set RsvCode = " + DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + "0001 " + "where ID = "
 
-			var Comm = new SqlCommand("Select MvName, StartTime, Hall, SeatNum, RsvCode from Reservation", Conn);
-			
+			var Comm = new SqlCommand("Select ID from TmpReservation", Conn);
 			var myRead = Comm.ExecuteReader();
+			string CurCustomerID = "";
+
+			if (myRead.Read())
+			{
+				CurCustomerID = myRead[0].ToString();
+			}
+			myRead.Close();
+
+			int a = 0;
+			string TmpRsvCode = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + a.ToString("0000");
+
+			InsertSql = "update Reservation set RsvCode = " + TmpRsvCode + "where ID = " + CurCustomerID;
+
+			Com = new SqlCommand(InsertSql, Conn);
+			Com.ExecuteNonQuery();
+
+			Comm = new SqlCommand("Select MvName, StartTime, Hall, SeatNum, RsvCode from Reservation", Conn);
+			
+			myRead = Comm.ExecuteReader();
 			if (myRead.Read())
 			{
 				this.txtMovie.Text = myRead[0].ToString();
