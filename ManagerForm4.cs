@@ -607,7 +607,7 @@ namespace moogabox
                     myCom_CO_M.ExecuteNonQuery();
                     myCom_BT_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-                    Form6 frm6 = new Form6();
+                    //Form6 frm6 = new Form6();
 
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
