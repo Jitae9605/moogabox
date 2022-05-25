@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using WinFormsApp1;
+using moogabox;
 using System.Configuration;
 
 namespace moogabox
@@ -64,11 +64,13 @@ namespace moogabox
 				this.txtSeatNum.Text = myRead[3].ToString();
 			}
 
-			return this.txtMovie.Text;
-
 			myRead.Close();
 
 			Conn.Close();
+
+			return this.txtMovie.Text;
+
+			
 		}
 
 		private void btnCancel_Click(object sender, EventArgs e)

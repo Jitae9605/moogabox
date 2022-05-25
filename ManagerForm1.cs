@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using moogabox;
 
 
-namespace WindowsFormsApp1
+namespace moogabox
 {
     public partial class ManagerForm1 : Form
     {
@@ -19,10 +19,5 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-		private void Form2_Load(object sender, EventArgs e)
-		{
-
-		}
 	}
 }

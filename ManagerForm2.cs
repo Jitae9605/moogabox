@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using moogabox;
 
 
-namespace WindowsFormsApp1
+namespace moogabox
 {
     public partial class ManagerForm2 : Form
     {

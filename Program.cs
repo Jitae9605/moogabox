@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormsApp1;
+using moogabox;
 
 namespace moogabox
 {
@@ -17,7 +17,7 @@ namespace moogabox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form6());
+            Application.Run(new Form0());
         }
     }
 }

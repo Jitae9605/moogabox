@@ -36,33 +36,36 @@ namespace moogabox
 			// 
 			// btnInquiry
 			// 
-			this.btnInquiry.Font = new System.Drawing.Font("굴림", 25F);
+			this.btnInquiry.Font = new System.Drawing.Font("맑은 고딕", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
 			this.btnInquiry.Location = new System.Drawing.Point(57, 60);
 			this.btnInquiry.Name = "btnInquiry";
 			this.btnInquiry.Size = new System.Drawing.Size(191, 280);
 			this.btnInquiry.TabIndex = 0;
 			this.btnInquiry.Text = "예매 조회";
 			this.btnInquiry.UseVisualStyleBackColor = true;
+			this.btnInquiry.Click += new System.EventHandler(this.btnInquiry_Click);
 			// 
 			// btnticket
 			// 
-			this.btnticket.Font = new System.Drawing.Font("굴림", 25F);
-			this.btnticket.Location = new System.Drawing.Point(282, 60);
+			this.btnticket.Font = new System.Drawing.Font("맑은 고딕", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.btnticket.Location = new System.Drawing.Point(278, 60);
 			this.btnticket.Name = "btnticket";
 			this.btnticket.Size = new System.Drawing.Size(191, 280);
 			this.btnticket.TabIndex = 1;
 			this.btnticket.Text = "예매";
 			this.btnticket.UseVisualStyleBackColor = true;
+			this.btnticket.Click += new System.EventHandler(this.btnticket_Click);
 			// 
 			// btnStore
 			// 
-			this.btnStore.Font = new System.Drawing.Font("굴림", 25F);
+			this.btnStore.Font = new System.Drawing.Font("맑은 고딕", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
 			this.btnStore.Location = new System.Drawing.Point(498, 60);
 			this.btnStore.Name = "btnStore";
 			this.btnStore.Size = new System.Drawing.Size(191, 280);
 			this.btnStore.TabIndex = 2;
 			this.btnStore.Text = "매점";
 			this.btnStore.UseVisualStyleBackColor = true;
+			this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
 			// 
 			// Form1
 			// 
@@ -73,7 +76,7 @@ namespace moogabox
 			this.Controls.Add(this.btnticket);
 			this.Controls.Add(this.btnInquiry);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "메인메뉴";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 

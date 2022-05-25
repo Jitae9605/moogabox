@@ -1,5 +1,5 @@
 ﻿
-namespace WinFormsApp1
+namespace moogabox
 {
 	partial class Form7
 	{

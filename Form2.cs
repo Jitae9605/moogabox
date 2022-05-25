@@ -1,47 +1,89 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using moogabox;
 
-namespace WindowsFormsApp1
+
+namespace moogabox
 {
     public partial class Form2 : Form
     {
+        public string Reservation_Num { get; set; }
+        public string Phone_num { get; set; }
+
+        private string Constr = "Server=(local);database=MoogaBox;" + "Integrated Security=true";
+
         public Form2()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form2_FormClosing(object sender, FormClosedEventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void Btn_Next_Click(object sender, System.EventArgs e)
+        {
+            SqlConnection Conn = new SqlConnection(Constr);
+            Conn.Open();
+
+            SqlCommand Comm = new SqlCommand("Select * from Reservation where RsvCode = '" + txtNum.Text + "'", Conn);
+
+            SqlDataReader reader = Comm.ExecuteReader();
+            if (reader.Read())
+            {
+                Reservation_Num = txtNum.Text;
+
+                Form3 frm3 = new Form3();
+                frm3.Reservation_Num = Reservation_Num;
+                DialogResult result = frm3.ShowDialog();
+                if(result == DialogResult.OK)
+                {
+                    frm3.Close();
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("예매번호가 존재하지 않습니다.", "알람", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            reader.Close();
+            Conn.Close();
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnNext0_Click(object sender, EventArgs e)
         {
+            SqlConnection Conn = new SqlConnection(Constr);
+            Conn.Open();
 
+            SqlCommand Comm = new SqlCommand("Select * from Member where Phone = '" + txtPhone.Text + "'", Conn);
+            SqlDataReader reader = Comm.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Phone_num = txtPhone.Text;
+
+                Form11 frm11 = new Form11();
+                frm11.Phone_Num = Phone_num;
+                DialogResult result = frm11.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    frm11.Close();
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("전화번호가 존재하지 않습니다.", "알람", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            reader.Close();
+            Conn.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+		private void Form2_Load(object sender, EventArgs e)
+		{
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
+		}
+	}
 }

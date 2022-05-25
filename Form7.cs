@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using moogabox;
 using System.Configuration;
 
-namespace WinFormsApp1
+namespace moogabox
 {
 	// 예매임시테이블 과 매점구매 테이블을 불러와 각각의 그룹에 뿌린다.
 	public partial class Form7 : Form
@@ -91,9 +91,11 @@ namespace WinFormsApp1
 				lvMajum.Items.Add(getItem);
 			}
 			this.txtSumMajum.Text = sum.ToString();
-			return sum;
+
 			R.Close();
 			Conn.Close();
+			return sum;
+			
 		}
 
 		private void btnCheck_Click(object sender, EventArgs e)
