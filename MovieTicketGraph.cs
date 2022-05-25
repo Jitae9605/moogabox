@@ -35,18 +35,7 @@ namespace Cinema_Kiosk_SalesManager
             chart1.Series["Count"].XValueMember = "MvName";
             chart1.Series["Count"].YValueMembers = "Ccount";
             chart1.Series["Money"].YValueMembers = "Mmoney";
-            chart1.Titles.Add("영화티켓의 총 판매수량과 판매금액");
             con.Close();
-        }
-
-        private void btnLine_Click(object sender, EventArgs e)       //  Line 버튼을 클릭시 LineGraph를 보여준다
-        {
-            chart1.Series["Count"].ChartType = SeriesChartType.Line;
-        }
-
-        private void btnColumn_Click(object sender, EventArgs e)     //  Column 버튼을 클릭시 ColumnGraph를 보여준다
-        {
-            chart1.Series["Count"].ChartType = SeriesChartType.Column;
         }
 
         private void btxExit_Click(object sender, EventArgs e)       //  취소버튼
