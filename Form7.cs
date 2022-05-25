@@ -120,8 +120,37 @@ namespace moogabox
 			string InsertSql = string.Format("insert into BuySnack (ID, SnackName, SnackNum, BuyPrice, BuyCount) select ID, SnackName, SnackNum, BuyPrice, BuyCount from TmpBuySnack;");
 			var Com = new SqlCommand(InsertSql, Conn);
 			Com.ExecuteNonQuery();
+
+			SqlDataReader R;
+
+			string SelectSql = "Select SnackNum, BuyCount from TmpBuySnack";
+			var Comm = new SqlCommand(SelectSql, Conn);
+			R = Comm.ExecuteReader();
+
+			List<string> SnackNumList = new List<string>();
+			List<int> BuyCountList = new List<int>();
+			int ItemCount = 0;
+
+			while (R.Read())
+			{
+				
+				SnackNumList.Add(R["SnackNum"].ToString());
+				BuyCountList.Add(Convert.ToInt32(R["BuyCount"]));
+				ItemCount++;
+			}
+			R.Close();
+			
+			for(int i = 0; i < ItemCount; i++)
+			{
+				string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + BuyCountList[i] + " where SnackNum = '" + SnackNumList[i] + "'";
+				Comm = new SqlCommand(UpdateSql, Conn);
+				Comm.ExecuteNonQuery();
+			}
+
+
 			Com = new SqlCommand("delete from TmpBuySnack", Conn);
 			Com.ExecuteNonQuery();
+
 
 			Form8 form8 = new Form8();
 			form8.Show();
