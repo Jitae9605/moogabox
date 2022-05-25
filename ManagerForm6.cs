@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using WMPLib;
 
 
 namespace moogabox
@@ -17,6 +16,7 @@ namespace moogabox
     public partial class ManagerForm6 : Form
     {
         Timer timer1 = new Timer();
+        Bitmap bit;
         public ManagerForm6()
         {
             InitializeComponent();
@@ -29,17 +29,11 @@ namespace moogabox
             timer1.Start();
 
             ////////////////////
-            try
-            {
-				var CurrentDirectory = Directory.GetCurrentDirectory();
-				string newPath = Path.GetFullPath(Path.Combine(CurrentDirectory, @"..\..\Media\Popcorn.mp4"));
-				axWindowsMediaPlayer1.URL = newPath;
-                axWindowsMediaPlayer1.uiMode = "none";
-            }
-            catch (Exception exc)
-            {
-                MessageBox.Show(exc.Message);
-            }
+			var CurrentDirectory = Directory.GetCurrentDirectory();
+			string newPath = Path.GetFullPath(Path.Combine(CurrentDirectory, @"..\..\Media\PopCorn.gif"));
+            pictureBox1.Load(newPath);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+
         }
 
         private void timer2_Tick(object sender, EventArgs e)
