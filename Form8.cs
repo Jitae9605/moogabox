@@ -63,15 +63,16 @@ namespace WinFormsApp1
 			}
 			myRead.Close();
 
-			int a = 0;
-			string TmpRsvCode = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + a.ToString("0000");
+			int a = 1;
+			string TmpRsvCode = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + a++.ToString("D2");
 
-			InsertSql = "update Reservation set RsvCode = " + TmpRsvCode + "where ID = " + CurCustomerID;
+			InsertSql = "update Reservation set RsvCode = '" + TmpRsvCode + "' where ID = '" + CurCustomerID + "'";
 
 			Com = new SqlCommand(InsertSql, Conn);
 			Com.ExecuteNonQuery();
 
-			Comm = new SqlCommand("Select MvName, StartTime, Hall, SeatNum, RsvCode from Reservation", Conn);
+			InsertSql = "Select MvName, StartTime, Hall, SeatNum, RsvCode from Reservation where ID = '" + CurCustomerID + "'";
+			Comm = new SqlCommand(InsertSql, Conn);
 			
 			myRead = Comm.ExecuteReader();
 			if (myRead.Read())

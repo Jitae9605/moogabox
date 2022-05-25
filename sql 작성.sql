@@ -272,9 +272,12 @@ delete from BuySnack
 delete from Reservation
 delete from TmpBuySnack
 
-insert into TmpReservation values('ID','RsvCode','MvName',1,'SeatNum','09:40','02:27:00',1,1000)
-insert into TmpBuySnack values('ID','SnackName','SnackNum',5,1000)
-insert into TmpBuySnack values('ID','SnackName1','SnackNum1',500,5000)
+insert into TmpReservation values('ID1','RsvCode','MvName',1,'SeatNum','09:40','02:27:00',1,1000)
+insert into Reservation values('ID','RsvCode','MvName',1,'SeatNum','09:40','02:27:00',1,1000)
+insert into TmpBuySnack values('ID1','SnackName','SnackNum',5,1000)
+insert into TmpBuySnack values('ID1','SnackName1','SnackNum1',500,5000)
+insert into BuySnack values('ID2','SnackName2','SnackNum2',1,500,5000)
+insert into BuySnack values('ID2','SnackName3','SnackNum3',1,500,5000)
 
 select * from TmpBuySnack;
 select * from BuySnack;
