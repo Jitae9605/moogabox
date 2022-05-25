@@ -36,6 +36,16 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -147,6 +157,18 @@
     <Compile Include="ManagerForm4.Designer.cs">
       <DependentUpon>ManagerForm4.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm5.Designer.cs">
+      <DependentUpon>ManagerForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm6.Designer.cs">
+      <DependentUpon>ManagerForm6.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovieTicketGraph.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +237,12 @@
     <EmbeddedResource Include="ManagerForm4.resx">
       <DependentUpon>ManagerForm4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm5.resx">
+      <DependentUpon>ManagerForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm6.resx">
+      <DependentUpon>ManagerForm6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MovieTicketGraph.resx">
       <DependentUpon>MovieTicketGraph.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +254,8 @@
     <EmbeddedResource Include="SnackGraph.resx">
       <DependentUpon>SnackGraph.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\moogabox.exe.config" />
+    <None Include="bin\Debug\moogabox.exe.locked" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -240,9 +270,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\moogabox.exe" />
+    <Content Include="bin\Debug\moogabox.pdb" />
     <Content Include="Image\무가박스 고소 - 수정본.png" />
     <Content Include="Image\무가박스 기본스몰콤보 -수정.png" />
     <Content Include="Image\무가박스 달콤스몰  -수정본.png" />
@@ -260,6 +293,35 @@
     <Content Include="Resource\MvName.jpg" />
     <Content Include="sql 작성.sql" />
     <Content Include="sql 작성2.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

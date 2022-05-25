@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace moogabox
@@ -18,15 +17,20 @@ namespace moogabox
             InitializeComponent();
         }
 
-        private void Btn_Sale_Click(object sender, EventArgs e)  //  매출관리 버튼 클릭시 매출관리창으로 이동
+        private void Btn_Stock_Click(object sender, EventArgs e)
         {
-            ManagerForm2 newManagerForm2 = new ManagerForm2();
-            newManagerForm2.ShowDialog();
+            this.Visible = false;
+            ManagerForm3 M_frm3 = new ManagerForm3();
+            M_frm3.ShowDialog();
+            Application.Exit();
         }
 
-        private void ManagerForm1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Form0 frm0 = new Form0();
+            frm0.ShowDialog();
+            Application.Exit();
         }
     }
 }

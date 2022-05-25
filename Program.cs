@@ -16,7 +16,7 @@ namespace moogabox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManagerForm1());
+            Application.Run(new ManagerForm6());
         }
     }
 }

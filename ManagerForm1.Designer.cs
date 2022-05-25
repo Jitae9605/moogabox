@@ -4,14 +4,14 @@ namespace moogabox
     partial class ManagerForm1
     {
         /// <summary>
-        /// 필수 디자이너 변수입니다.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,57 +21,66 @@ namespace moogabox
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.Btn_Stock = new System.Windows.Forms.Button();
             this.Btn_Sale = new System.Windows.Forms.Button();
+            this.Btn_Stock = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Btn_Stock
-            // 
-            this.Btn_Stock.Location = new System.Drawing.Point(338, 120);
-            this.Btn_Stock.Name = "Btn_Stock";
-            this.Btn_Stock.Size = new System.Drawing.Size(165, 149);
-            this.Btn_Stock.TabIndex = 3;
-            this.Btn_Stock.Text = "재고관리";
-            this.Btn_Stock.UseVisualStyleBackColor = true;
             // 
             // Btn_Sale
             // 
-            this.Btn_Sale.Location = new System.Drawing.Point(82, 120);
+            this.Btn_Sale.Location = new System.Drawing.Point(72, 131);
             this.Btn_Sale.Name = "Btn_Sale";
             this.Btn_Sale.Size = new System.Drawing.Size(165, 149);
-            this.Btn_Sale.TabIndex = 2;
+            this.Btn_Sale.TabIndex = 0;
             this.Btn_Sale.Text = "매출관리";
             this.Btn_Sale.UseVisualStyleBackColor = true;
-            this.Btn_Sale.Click += new System.EventHandler(this.Btn_Sale_Click);
+            // 
+            // Btn_Stock
+            // 
+            this.Btn_Stock.Location = new System.Drawing.Point(328, 131);
+            this.Btn_Stock.Name = "Btn_Stock";
+            this.Btn_Stock.Size = new System.Drawing.Size(165, 149);
+            this.Btn_Stock.TabIndex = 1;
+            this.Btn_Stock.Text = "재고관리";
+            this.Btn_Stock.UseVisualStyleBackColor = true;
+            this.Btn_Stock.Click += new System.EventHandler(this.Btn_Stock_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(245, 324);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "뒤로가기";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManagerForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Btn_Stock);
             this.Controls.Add(this.Btn_Sale);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ManagerForm1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.ManagerForm1_Load);
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Btn_Stock;
         private System.Windows.Forms.Button Btn_Sale;
+        private System.Windows.Forms.Button Btn_Stock;
+        private System.Windows.Forms.Button button1;
     }
 }
-
