@@ -62,13 +62,13 @@ namespace moogabox
 				this.txtTime.Text = myRead[1].ToString();
 				this.txtHallNum.Text = myRead[2].ToString();
 				string[] SeatNum = new string[4];
-				int length = myRead[3].ToString().Length / 2;
+				int length = myRead[3].ToString().Length / 4;
 
 				int j = 0;
 				for (int i = 0; i < length; i++)
 				{
-					SeatNum[i] = myRead[3].ToString().Substring(j, 2);
-					j += 2;
+					SeatNum[i] = myRead[3].ToString().Substring(j, 3);
+					j += 4;
 					this.txtSeatNum.Text += SeatNum[i];
 					if (i >= length - 1) break;
 					this.txtSeatNum.Text += ", ";

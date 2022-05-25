@@ -74,6 +74,7 @@ SnackNum varchar(10) Not null Primary Key,  --팝콘 카라멜 큰거 = P01L / 팝콘 고�
 SnackPrice int
 )
 
+drop table BuySnack;
 create table BuySnack						--매점에서 구매한 스낵 테이블
 (
 ID varchar(10)  ,
@@ -82,6 +83,7 @@ SnackNum varchar(10) Not null,
 SnackSize int,
 BuyPrice int,
 BuyCount int
+Constraint tb_BuySnack_group_PK primary Key(ID, SnackNum)
 )
 
 create table Jaego						--재고테이블
@@ -112,13 +114,15 @@ SnackNum varchar(10) Not null Primary Key,
 SnackCount int
 )
 
+drop table TmpBuySnack
 create table TmpBuySnack                  --매점에서 구매  임시 테이블
 (
 ID varchar(10)  ,
 SnackName nvarchar(10),
-SnackNum varchar(10) Not null Primary Key,
+SnackNum varchar(10) Not null,
 BuyPrice int,
 BuyCount int
+Constraint tb_TmpBuySnack_group_PK primary Key(ID, SnackNum)
 )
 
 INSERT INTO Movie
@@ -276,17 +280,20 @@ values
 -- UPDATE Movie Set MvNum = 'JW05' WHERE StartTime = '20:00:00';
 -- UPDATE Movie Set MvNum = 'JW06' WHERE StartTime = '22:20:00';
 
-delete from BuySnack
+
 delete from Reservation
 delete from TmpReservation
-delete from TmpBuySnack
+delete from BuySnack
+delete from TmpBuySnack;
+go
+
+alter table TmpReservation drop column RsvCode;
 
 insert into TmpReservation values('ID1','RsvCode','MvName',1,'A1A2A3A4','09:40','02:27:00',4,4000)
 insert into Reservation values('ID','RsvCode','MvName',1,'SeatNum','09:40','02:27:00',1,1000)
 insert into TmpBuySnack values('ID1','코카콜라(M)','D01M',5,10)
 insert into TmpBuySnack values('ID1','코카콜라(L)','D01L',500,50)
-insert into BuySnack values('ID2','SnackName2','SnackNum2',1,500,5000)
-insert into BuySnack values('ID2','SnackName3','SnackNum3',1,500,5000)
+
 
 INSERT INTO Maejum
 values
@@ -314,9 +321,12 @@ select * from TmpBuySnack;
 select * from BuySnack;
 select * from TmpReservation;
 select * from Reservation;
+
+
 select * from Maejum;
 
-
+alter table BuySnack add SnackPrice int;
+alter table TmpBuySnack add SnackPrice int;
 
 select * from Maejum
 

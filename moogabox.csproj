@@ -314,7 +314,6 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="Media\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\moogabox.exe" />
@@ -344,6 +343,8 @@
     <Content Include="packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll" />
     <Content Include="packages\Guna.UI2.WinForms.2.0.3.2\LICENSE.txt" />
     <Content Include="Resources.resx.txt" />
+    <None Include="Resources\범죄도시2.png" />
+    <None Include="Resources\MvName.png" />
     <Content Include="sql 작성.sql" />
     <Content Include="sql 작성2.sql" />
   </ItemGroup>
