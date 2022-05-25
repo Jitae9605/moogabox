@@ -10,7 +10,7 @@ namespace moogabox
     public partial class ManagerForm2 : Form
     {
         //  SQL 연결문자열  //  Server=(local)은 연결되는 서버주소마다 봐낌
-        private string Constr = "Server=(local);database=ADOTest DB;" + "Integrated Security=true";
+        private string Constr = "Server=(local);database=MoogaBox;" + "Integrated Security=true";
 
         public ManagerForm2()
         {
