@@ -16,8 +16,9 @@ namespace WinFormsApp1
 
 	public partial class Form8 : Form
 	{
-		string Constr = ConfigurationManager.ConnectionStrings["Test"].ConnectionString;
-		
+		private string Constr = "Server=(local);database=moogabox;" +
+			   "Integrated Security=true";
+
 		public Form8()
 		{
 			InitializeComponent();

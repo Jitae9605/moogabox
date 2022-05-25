@@ -220,6 +220,8 @@
     <Content Include="Image\스몰 어니언팝콘 - 수정.png" />
     <Content Include="Image\스몰치즈팝콘 - 수정.png" />
     <Content Include="Image\팝콘 더블어니언 -수정.png" />
+    <Content Include="sql 작성.sql" />
+    <Content Include="sql 작성2.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

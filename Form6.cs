@@ -15,7 +15,8 @@ namespace moogabox
 {
     public partial class Form6 : Form
     {
-		string Constr = ConfigurationManager.ConnectionStrings["Test"].ConnectionString;
+		private string Constr = "Server=(local);database=moogabox;" +
+			   "Integrated Security=true";
 
 		public Form6()
         {

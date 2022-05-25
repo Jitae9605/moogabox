@@ -16,7 +16,8 @@ namespace WinFormsApp1
 	// 예매임시테이블 과 매점구매 테이블을 불러와 각각의 그룹에 뿌린다.
 	public partial class Form7 : Form
 	{
-		string Constr = ConfigurationManager.ConnectionStrings["Test"].ConnectionString;
+		private string Constr = "Server=(local);database=moogabox;" +
+			   "Integrated Security=true";
 
 		public Form7()
 		{
