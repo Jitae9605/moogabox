@@ -43,9 +43,24 @@ namespace moogabox
 				sum += (int)R["Mmoney"];
 				string MvName = R["MvName"].ToString();       
 				string StartTime = R["StartTime"].ToString(); 
-				string Hall = R["Hall"].ToString();           
-				string SeatNum = R["SeatNum"].ToString();     
-				string Ccount = R["Ccount"].ToString();       
+				string Hall = R["Hall"].ToString();  
+				
+				string SeatNum = "";
+
+				string[] SeatNumArray = new string[4];
+				int length = R["SeatNum"].ToString().Length / 2;
+
+				int j = 0;
+				for (int i = 0; i < length; i++)
+				{
+					SeatNumArray[i] = R["SeatNum"].ToString().Substring(j, 2);
+					j += 2;
+					SeatNum += SeatNumArray[i];
+					if (i >= length - 1) break;
+					SeatNum += ", ";
+				}
+
+				string Ccount = R["Ccount"].ToString();     
 				string Mmoney = R["Mmoney"].ToString();       
 
 				// 이렇게 저장된 string 문자열들을 문자열배열을 선언해 삽입

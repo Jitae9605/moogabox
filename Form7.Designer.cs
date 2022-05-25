@@ -61,7 +61,7 @@ namespace moogabox
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("맑은 고딕", 15F);
-			this.label1.Location = new System.Drawing.Point(173, 2);
+			this.label1.Location = new System.Drawing.Point(227, 2);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(52, 28);
 			this.label1.TabIndex = 0;
@@ -69,7 +69,7 @@ namespace moogabox
 			// 
 			// btnCheck
 			// 
-			this.btnCheck.Location = new System.Drawing.Point(202, 345);
+			this.btnCheck.Location = new System.Drawing.Point(308, 345);
 			this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnCheck.Name = "btnCheck";
 			this.btnCheck.Size = new System.Drawing.Size(91, 36);
@@ -87,7 +87,7 @@ namespace moogabox
 			this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox1.Size = new System.Drawing.Size(378, 136);
+			this.groupBox1.Size = new System.Drawing.Size(484, 136);
 			this.groupBox1.TabIndex = 8;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "예매 결제정보";
@@ -106,7 +106,7 @@ namespace moogabox
 			this.lvMovie.HideSelection = false;
 			this.lvMovie.Location = new System.Drawing.Point(6, 19);
 			this.lvMovie.Name = "lvMovie";
-			this.lvMovie.Size = new System.Drawing.Size(364, 86);
+			this.lvMovie.Size = new System.Drawing.Size(472, 86);
 			this.lvMovie.TabIndex = 10;
 			this.lvMovie.UseCompatibleStateImageBehavior = false;
 			this.lvMovie.View = System.Windows.Forms.View.Details;
@@ -128,7 +128,7 @@ namespace moogabox
 			// SeatNum
 			// 
 			this.SeatNum.Text = "좌석";
-			this.SeatNum.Width = 46;
+			this.SeatNum.Width = 143;
 			// 
 			// Count
 			// 
@@ -141,7 +141,7 @@ namespace moogabox
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(195, 113);
+			this.label4.Location = new System.Drawing.Point(301, 114);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(69, 12);
 			this.label4.TabIndex = 9;
@@ -149,7 +149,7 @@ namespace moogabox
 			// 
 			// txtSumMovie
 			// 
-			this.txtSumMovie.Location = new System.Drawing.Point(270, 110);
+			this.txtSumMovie.Location = new System.Drawing.Point(378, 111);
 			this.txtSumMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtSumMovie.Name = "txtSumMovie";
 			this.txtSumMovie.Size = new System.Drawing.Size(100, 21);
@@ -164,7 +164,7 @@ namespace moogabox
 			this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox2.Size = new System.Drawing.Size(378, 169);
+			this.groupBox2.Size = new System.Drawing.Size(484, 169);
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "매점 결제정보";
@@ -182,7 +182,7 @@ namespace moogabox
 			this.lvMajum.HideSelection = false;
 			this.lvMajum.Location = new System.Drawing.Point(6, 19);
 			this.lvMajum.Name = "lvMajum";
-			this.lvMajum.Size = new System.Drawing.Size(364, 120);
+			this.lvMajum.Size = new System.Drawing.Size(472, 120);
 			this.lvMajum.TabIndex = 11;
 			this.lvMajum.UseCompatibleStateImageBehavior = false;
 			this.lvMajum.View = System.Windows.Forms.View.Details;
@@ -213,7 +213,7 @@ namespace moogabox
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(195, 147);
+			this.label3.Location = new System.Drawing.Point(303, 147);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(69, 12);
 			this.label3.TabIndex = 9;
@@ -221,7 +221,7 @@ namespace moogabox
 			// 
 			// txtSumMajum
 			// 
-			this.txtSumMajum.Location = new System.Drawing.Point(270, 144);
+			this.txtSumMajum.Location = new System.Drawing.Point(378, 144);
 			this.txtSumMajum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtSumMajum.Name = "txtSumMajum";
 			this.txtSumMajum.Size = new System.Drawing.Size(100, 21);
@@ -229,16 +229,16 @@ namespace moogabox
 			// 
 			// txtSumTotal
 			// 
-			this.txtSumTotal.Location = new System.Drawing.Point(91, 354);
+			this.txtSumTotal.Location = new System.Drawing.Point(169, 354);
 			this.txtSumTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtSumTotal.Name = "txtSumTotal";
-			this.txtSumTotal.Size = new System.Drawing.Size(90, 21);
+			this.txtSumTotal.Size = new System.Drawing.Size(133, 21);
 			this.txtSumTotal.TabIndex = 0;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(16, 357);
+			this.label2.Location = new System.Drawing.Point(94, 357);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(69, 12);
 			this.label2.TabIndex = 9;
@@ -246,7 +246,7 @@ namespace moogabox
 			// 
 			// btnBack
 			// 
-			this.btnBack.Location = new System.Drawing.Point(299, 345);
+			this.btnBack.Location = new System.Drawing.Point(405, 345);
 			this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.Size = new System.Drawing.Size(91, 36);
@@ -259,7 +259,7 @@ namespace moogabox
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(401, 400);
+			this.ClientSize = new System.Drawing.Size(519, 400);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtSumTotal);
 			this.Controls.Add(this.groupBox2);
