@@ -43,7 +43,7 @@ namespace moogabox
 
 		private void Form6_Load(object sender, EventArgs e)
 		{
-			string path = "../../Resource/" + DataLoad() + ".jpg";
+			string path = "../../Resources/" + DataLoad() + ".png";
 			Image img = Image.FromFile(path);
 			pbMovie.Load(path);
 			pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;

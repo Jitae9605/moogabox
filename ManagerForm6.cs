@@ -16,7 +16,7 @@ namespace moogabox
     public partial class ManagerForm6 : Form
     {
         Timer timer1 = new Timer();
-        Bitmap bit;
+        //Bitmap bit;
         public ManagerForm6()
         {
             InitializeComponent();
@@ -49,5 +49,10 @@ namespace moogabox
                 timer1.Stop();
             }
         }
-    }
+
+		private void ManagerForm6_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
