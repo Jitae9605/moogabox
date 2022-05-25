@@ -53,11 +53,11 @@ namespace moogabox
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 15F);
-            this.label1.Location = new System.Drawing.Point(218, 280);
+            this.label1.Location = new System.Drawing.Point(231, 280);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 20);
+            this.label1.Size = new System.Drawing.Size(46, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "7";
+            this.label1.Text = "TXT";
             // 
             // pictureBox1
             // 

@@ -10,18 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-
 namespace moogabox
 {
     public partial class ManagerForm6 : Form
     {
         Timer timer1 = new Timer();
-        Bitmap bit;
+
         public ManagerForm6()
         {
             InitializeComponent();
 
-            timer1.Interval = 50;
+            timer1.Interval = 40;
             timer1.Tick += timer2_Tick;
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
@@ -35,7 +34,18 @@ namespace moogabox
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
 
         }
-
+        private void Delay_Manual(int iDelay)
+        {
+            DateTime thisMoment = DateTime.Now;
+            TimeSpan duration = new TimeSpan(0, 0, 0, iDelay * 1000);
+            DateTime AfterWards = thisMoment.Add(duration);
+            while(true)
+            {
+                thisMoment = DateTime.Now;
+                System.Windows.Forms.Application.DoEvents();
+                if (AfterWards <= thisMoment) break;
+            }
+        }
         private void timer2_Tick(object sender, EventArgs e)
         {
             if(progressBar1.Value < 100)
@@ -47,6 +57,7 @@ namespace moogabox
             else
             {
                 timer1.Stop();
+                this.Visible = false;
             }
         }
     }
