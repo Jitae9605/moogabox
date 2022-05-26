@@ -81,6 +81,7 @@ namespace moogabox
 
 			Conn.Close();
 
+			if (this.txtMovie.Text == "") return "범죄도시2";
 			return this.txtMovie.Text;
 
 			
