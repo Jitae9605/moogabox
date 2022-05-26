@@ -5,12 +5,12 @@ using System.Data.SqlClient;
 
 namespace moogabox
 {
-    public partial class 회원가입 : Form
+    public partial class Form10 : Form
     {
         public int Who { get; set; }
         private string Constr = "Server=(local);database=MoogaBox;" + "Integrated Security=true";
 
-        public 회원가입()
+        public Form10()
         {
             InitializeComponent();
         }
@@ -52,7 +52,8 @@ namespace moogabox
 
                 if (DataChk())
                 {
-
+                    try
+                    {
                         int insertRowCnt = Comm.ExecuteNonQuery();
                         Conn.Close();
 
@@ -69,12 +70,14 @@ namespace moogabox
                             MessageBox.Show("회원가입이 실패하였습니다.", "회원가입 실패",
                                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                    
 
-/*                        MessageBox.Show("중복되는 ID입니다", "회원가입 실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("중복되는 ID입니다", "회원가입 실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         TxtClear();
-                        this.ActiveControl = txtID;*/
-                    
+                        this.ActiveControl = txtID;
+                    }
                 }
             }
             catch(Exception ex)
@@ -111,6 +114,8 @@ namespace moogabox
         private void Form10_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txtID;
+            pbMooga1.Load(@"D:\C++\Mooga1.png");
+            pbMooga1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
