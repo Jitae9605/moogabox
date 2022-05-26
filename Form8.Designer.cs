@@ -51,7 +51,7 @@ namespace moogabox
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold);
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(160, 9);
+			this.label1.Location = new System.Drawing.Point(165, 12);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(136, 44);
 			this.label1.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace moogabox
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
 			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(40, 32);
+			this.label2.Location = new System.Drawing.Point(47, 29);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(88, 23);
 			this.label2.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace moogabox
 			// txtMovie
 			// 
 			this.txtMovie.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-			this.txtMovie.Location = new System.Drawing.Point(134, 31);
+			this.txtMovie.Location = new System.Drawing.Point(141, 28);
 			this.txtMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtMovie.Name = "txtMovie";
 			this.txtMovie.Size = new System.Drawing.Size(232, 24);
@@ -82,7 +82,7 @@ namespace moogabox
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
 			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(74, 61);
+			this.label3.Location = new System.Drawing.Point(81, 60);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(54, 23);
 			this.label3.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace moogabox
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(74, 127);
+			this.label4.Location = new System.Drawing.Point(81, 130);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(54, 23);
 			this.label4.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace moogabox
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
 			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(40, 160);
+			this.label5.Location = new System.Drawing.Point(47, 165);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(88, 23);
 			this.label5.TabIndex = 3;
@@ -113,7 +113,7 @@ namespace moogabox
 			// txtTime
 			// 
 			this.txtTime.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-			this.txtTime.Location = new System.Drawing.Point(134, 64);
+			this.txtTime.Location = new System.Drawing.Point(141, 63);
 			this.txtTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtTime.Name = "txtTime";
 			this.txtTime.Size = new System.Drawing.Size(136, 24);
@@ -122,7 +122,7 @@ namespace moogabox
 			// txtSeatNum
 			// 
 			this.txtSeatNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-			this.txtSeatNum.Location = new System.Drawing.Point(134, 130);
+			this.txtSeatNum.Location = new System.Drawing.Point(141, 133);
 			this.txtSeatNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtSeatNum.Name = "txtSeatNum";
 			this.txtSeatNum.Size = new System.Drawing.Size(174, 24);
@@ -131,7 +131,7 @@ namespace moogabox
 			// txtNum
 			// 
 			this.txtNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-			this.txtNum.Location = new System.Drawing.Point(134, 163);
+			this.txtNum.Location = new System.Drawing.Point(141, 168);
 			this.txtNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtNum.Name = "txtNum";
 			this.txtNum.Size = new System.Drawing.Size(174, 24);
@@ -159,7 +159,7 @@ namespace moogabox
 			this.lbHall.Cursor = System.Windows.Forms.Cursors.Default;
 			this.lbHall.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
 			this.lbHall.ForeColor = System.Drawing.Color.White;
-			this.lbHall.Location = new System.Drawing.Point(57, 94);
+			this.lbHall.Location = new System.Drawing.Point(64, 95);
 			this.lbHall.Name = "lbHall";
 			this.lbHall.Size = new System.Drawing.Size(71, 23);
 			this.lbHall.TabIndex = 3;
@@ -168,7 +168,7 @@ namespace moogabox
 			// txtHallNum
 			// 
 			this.txtHallNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-			this.txtHallNum.Location = new System.Drawing.Point(134, 97);
+			this.txtHallNum.Location = new System.Drawing.Point(141, 98);
 			this.txtHallNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.txtHallNum.Name = "txtHallNum";
 			this.txtHallNum.Size = new System.Drawing.Size(136, 24);

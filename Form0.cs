@@ -115,7 +115,7 @@ namespace moogabox
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            회원가입 frm10 = new 회원가입();
+            Form10 frm10 = new Form10();
             DialogResult result = frm10.ShowDialog();
             if (result == DialogResult.Cancel || result == DialogResult.OK)
             {

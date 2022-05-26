@@ -30,8 +30,6 @@ namespace moogabox
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tapSet = new Guna.UI2.WinForms.Guna2Button();
             this.tapDrink = new Guna.UI2.WinForms.Guna2Button();
@@ -71,16 +69,16 @@ namespace moogabox
             this.CH3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -88,27 +86,6 @@ namespace moogabox
             this.panel1.Size = new System.Drawing.Size(713, 105);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(151, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "매점";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220525_141938370;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 105);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -609,6 +586,17 @@ namespace moogabox
             this.CH5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.CH5.Width = 100;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220526_152108642;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(713, 105);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form9
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -625,11 +613,10 @@ namespace moogabox
             this.Name = "Form9";
             this.Text = "Form10";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -637,9 +624,7 @@ namespace moogabox
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelContainer;
         private Guna.UI2.WinForms.Guna2Button tapSet;
@@ -678,6 +663,6 @@ namespace moogabox
         private System.Windows.Forms.Button btnSet3;
         private System.Windows.Forms.Button btnSet2;
         private System.Windows.Forms.Button btnSet1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

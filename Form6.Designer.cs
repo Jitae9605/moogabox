@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbTitle = new System.Windows.Forms.Label();
 			this.lbSitnum = new System.Windows.Forms.Label();
@@ -48,33 +49,33 @@ namespace moogabox
 			// lbTime
 			// 
 			this.lbTime.AutoSize = true;
-			this.lbTime.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+			this.lbTime.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
 			this.lbTime.ForeColor = System.Drawing.Color.White;
-			this.lbTime.Location = new System.Drawing.Point(170, 348);
+			this.lbTime.Location = new System.Drawing.Point(174, 349);
 			this.lbTime.Name = "lbTime";
-			this.lbTime.Size = new System.Drawing.Size(59, 32);
+			this.lbTime.Size = new System.Drawing.Size(55, 30);
 			this.lbTime.TabIndex = 7;
 			this.lbTime.Text = "시간";
 			// 
 			// lbTitle
 			// 
 			this.lbTitle.AutoSize = true;
-			this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+			this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
 			this.lbTitle.ForeColor = System.Drawing.Color.White;
-			this.lbTitle.Location = new System.Drawing.Point(170, 311);
+			this.lbTitle.Location = new System.Drawing.Point(174, 311);
 			this.lbTitle.Name = "lbTitle";
-			this.lbTitle.Size = new System.Drawing.Size(59, 32);
+			this.lbTitle.Size = new System.Drawing.Size(55, 30);
 			this.lbTitle.TabIndex = 6;
 			this.lbTitle.Text = "영화";
 			// 
 			// lbSitnum
 			// 
 			this.lbSitnum.AutoSize = true;
-			this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+			this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
 			this.lbSitnum.ForeColor = System.Drawing.Color.White;
-			this.lbSitnum.Location = new System.Drawing.Point(148, 385);
+			this.lbSitnum.Location = new System.Drawing.Point(153, 385);
 			this.lbSitnum.Name = "lbSitnum";
-			this.lbSitnum.Size = new System.Drawing.Size(81, 32);
+			this.lbSitnum.Size = new System.Drawing.Size(76, 30);
 			this.lbSitnum.TabIndex = 8;
 			this.lbSitnum.Text = "상영관";
 			// 
@@ -139,11 +140,11 @@ namespace moogabox
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(170, 422);
+			this.label1.Location = new System.Drawing.Point(174, 420);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(59, 32);
+			this.label1.Size = new System.Drawing.Size(55, 30);
 			this.label1.TabIndex = 8;
 			this.label1.Text = "좌석";
 			// 
@@ -158,10 +159,10 @@ namespace moogabox
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Image = global::moogabox.Properties.Resources.KakaoTalk_20220525_141938370;
-			this.pictureBox1.Location = new System.Drawing.Point(-1, 2);
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(9, 7);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(195, 115);
+			this.pictureBox1.Size = new System.Drawing.Size(215, 50);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 12;
 			this.pictureBox1.TabStop = false;
