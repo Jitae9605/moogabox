@@ -49,11 +49,11 @@ namespace moogabox
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 26F, System.Drawing.FontStyle.Bold);
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold);
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(174, 9);
+			this.label1.Location = new System.Drawing.Point(160, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(122, 41);
+			this.label1.Size = new System.Drawing.Size(136, 44);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "예매완료";
 			// 
@@ -144,7 +144,7 @@ namespace moogabox
 			this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnBack.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
 			this.btnBack.ForeColor = System.Drawing.Color.White;
-			this.btnBack.Location = new System.Drawing.Point(149, 211);
+			this.btnBack.Location = new System.Drawing.Point(156, 210);
 			this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.Size = new System.Drawing.Size(135, 49);
@@ -204,6 +204,7 @@ namespace moogabox
 			this.ClientSize = new System.Drawing.Size(458, 363);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "Form8";
