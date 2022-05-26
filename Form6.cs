@@ -81,6 +81,7 @@ namespace moogabox
 
 			Conn.Close();
 
+			if (this.txtMovie.Text == "") return "MvName";
 			return this.txtMovie.Text;
 
 			
