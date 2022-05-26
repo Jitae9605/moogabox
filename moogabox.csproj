@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -357,8 +358,12 @@
     <None Include="Resources\MvName.png" />
     <Content Include="Resources\MoogaBox_Icon.ico" />
     <Content Include="Resources\premium-icon-film-726322.ico" />
+    <None Include="Resources\moogabox.png" />
+    <None Include="Resources\pc배경화면_벚꽃.png" />
     <Content Include="Resources\닥터.png" />
+    <None Include="Resources\닥터new.png" />
     <Content Include="Resources\쥬라기월드.png" />
+    <None Include="Resources\쥬라기월드new.png" />
     <Content Include="sql 작성.sql" />
     <Content Include="sql 작성2.sql" />
   </ItemGroup>

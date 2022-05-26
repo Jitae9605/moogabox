@@ -73,9 +73,9 @@ namespace moogabox.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap KakaoTalk_20220526_152108642 {
+        internal static System.Drawing.Bitmap moogabox {
             get {
-                object obj = ResourceManager.GetObject("KakaoTalk_20220526_152108642", resourceCulture);
+                object obj = ResourceManager.GetObject("moogabox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,29 @@ namespace moogabox.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap pc배경화면_벚꽃 {
+            get {
+                object obj = ResourceManager.GetObject("pc배경화면_벚꽃", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 닥터 {
             get {
                 object obj = ResourceManager.GetObject("닥터", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 닥터new {
+            get {
+                object obj = ResourceManager.GetObject("닥터new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +236,16 @@ namespace moogabox.Properties {
         internal static System.Drawing.Bitmap 쥬라기월드 {
             get {
                 object obj = ResourceManager.GetObject("쥬라기월드", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 쥬라기월드new {
+            get {
+                object obj = ResourceManager.GetObject("쥬라기월드new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
