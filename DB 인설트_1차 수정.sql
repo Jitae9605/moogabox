@@ -317,6 +317,3 @@ UPDATE Movie Set MvNum = 'JW03' WHERE StartTime = '15:20:00' and MvName ='¡Í∂Û±‚
 UPDATE Movie Set MvNum = 'JW04' WHERE StartTime = '17:40:00';
 UPDATE Movie Set MvNum = 'JW05' WHERE StartTime = '20:00:00';
 UPDATE Movie Set MvNum = 'JW06' WHERE StartTime = '22:20:00';
-
-
-select * from Maejum
