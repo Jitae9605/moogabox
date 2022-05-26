@@ -39,10 +39,10 @@ namespace moogabox
 			this.txtHallNum = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtSeatNum = new System.Windows.Forms.TextBox();
-			this.pbMovie = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
+			this.pbMovie = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbTime
@@ -152,18 +152,6 @@ namespace moogabox
 			this.txtSeatNum.Size = new System.Drawing.Size(237, 21);
 			this.txtSeatNum.TabIndex = 11;
 			// 
-			// pbMovie
-			// 
-			this.pbMovie.BackColor = System.Drawing.Color.Firebrick;
-			this.pbMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.pbMovie.Location = new System.Drawing.Point(235, 27);
-			this.pbMovie.Margin = new System.Windows.Forms.Padding(5);
-			this.pbMovie.Name = "pbMovie";
-			this.pbMovie.Size = new System.Drawing.Size(237, 270);
-			this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pbMovie.TabIndex = 5;
-			this.pbMovie.TabStop = false;
-			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = global::moogabox.Properties.Resources.KakaoTalk_20220525_141938370;
@@ -173,6 +161,19 @@ namespace moogabox
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 12;
 			this.pictureBox1.TabStop = false;
+			// 
+			// pbMovie
+			// 
+			this.pbMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.pbMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.pbMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.pbMovie.Location = new System.Drawing.Point(235, 27);
+			this.pbMovie.Margin = new System.Windows.Forms.Padding(5);
+			this.pbMovie.Name = "pbMovie";
+			this.pbMovie.Size = new System.Drawing.Size(237, 270);
+			this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pbMovie.TabIndex = 5;
+			this.pbMovie.TabStop = false;
 			// 
 			// Form6
 			// 
@@ -196,8 +197,8 @@ namespace moogabox
 			this.Text = "선택 확인";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
 			this.Load += new System.EventHandler(this.Form6_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
