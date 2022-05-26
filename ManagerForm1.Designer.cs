@@ -98,7 +98,7 @@ namespace moogabox
             this.Controls.Add(this.Btn_Sale);
             this.Name = "ManagerForm1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "관리자(관리선택)";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

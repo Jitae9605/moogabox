@@ -212,7 +212,7 @@ namespace moogabox
             this.Controls.Add(this.listView1);
             this.Name = "ManagerForm5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ManagerForm5";
+            this.Text = "관리자(발주관리)";
             this.Load += new System.EventHandler(this.ManagerForm5_Load);
             this.contextMenuStrip3.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);

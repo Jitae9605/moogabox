@@ -231,7 +231,7 @@ namespace moogabox
             this.Controls.Add(this.View_StoreStock);
             this.Name = "ManagerForm4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "관리자(재고관리)";
             this.Load += new System.EventHandler(this.ManagerForm4_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
