@@ -139,6 +139,21 @@
   <data name="스몰 어니언팝콘 - 수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\스몰 어니언팝콘 - 수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="무가박스 팝콘 -수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\무가박스 팝콘 -수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="범죄도시2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\범죄도시2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="무가박스 콤보 2 - 수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\무가박스 콤보 2 - 수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="무가박스 고소 - 수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\무가박스 고소 - 수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MvName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MvName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="무가박스 달콤스몰  -수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\무가박스 달콤스몰  -수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +162,9 @@
   </data>
   <data name="무가박스 스몰기본 -수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\무가박스 스몰기본 -수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="닥터new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\닥터new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="무가박스 스몰더블 -수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\무가박스 스몰더블 -수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,10 +178,25 @@
   <data name="무가박스 콤보 1 -수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\무가박스 콤보 1 -수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="스몰 어니언팝콘 - 수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\스몰 어니언팝콘 - 수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moogabox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moogabox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KakaoTalk_20220525_141938370" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\KakaoTalk_20220525_141938370.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="무가박스 콜라 -수정본" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\무가박스 콜라 -수정본.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="무가박스 콤보 1 -수정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\무가박스 콤보 1 -수정.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="쥬라기월드" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\쥬라기월드.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KakaoTalk_20220526_152108642" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\KakaoTalk_20220526_152108642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="쥬라기월드new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\쥬라기월드new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
