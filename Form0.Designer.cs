@@ -68,7 +68,7 @@ namespace moogabox
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnNext.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNext.Location = new System.Drawing.Point(58, 436);
             this.btnNext.Name = "btnNext";
@@ -81,7 +81,7 @@ namespace moogabox
             // btnSignup
             // 
             this.btnSignup.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnSignup.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.Location = new System.Drawing.Point(190, 436);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(77, 34);
