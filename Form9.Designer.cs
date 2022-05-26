@@ -30,8 +30,6 @@ namespace moogabox
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tapSet = new Guna.UI2.WinForms.Guna2Button();
             this.tapDrink = new Guna.UI2.WinForms.Guna2Button();
@@ -42,26 +40,14 @@ namespace moogabox
             this.txtSet3 = new System.Windows.Forms.TextBox();
             this.txtSet2 = new System.Windows.Forms.TextBox();
             this.txtSet1 = new System.Windows.Forms.TextBox();
-            this.btnSet4 = new System.Windows.Forms.Button();
-            this.btnSet3 = new System.Windows.Forms.Button();
-            this.btnSet2 = new System.Windows.Forms.Button();
-            this.btnSet1 = new System.Windows.Forms.Button();
             this.txtDrink4 = new System.Windows.Forms.TextBox();
-            this.btnDrink4 = new System.Windows.Forms.Button();
             this.txtDrink3 = new System.Windows.Forms.TextBox();
-            this.btnDrink3 = new System.Windows.Forms.Button();
             this.txtDrink2 = new System.Windows.Forms.TextBox();
-            this.btnDrink2 = new System.Windows.Forms.Button();
             this.txtDrink1 = new System.Windows.Forms.TextBox();
-            this.btnDrink1 = new System.Windows.Forms.Button();
             this.txtPopcorn4 = new System.Windows.Forms.TextBox();
             this.txtPopcorn3 = new System.Windows.Forms.TextBox();
             this.txtPopcorn2 = new System.Windows.Forms.TextBox();
             this.txtPopcorn1 = new System.Windows.Forms.TextBox();
-            this.btnPopcorn4 = new System.Windows.Forms.Button();
-            this.btnPopcorn3 = new System.Windows.Forms.Button();
-            this.btnPopcorn2 = new System.Windows.Forms.Button();
-            this.btnPopcorn1 = new System.Windows.Forms.Button();
             this.btnSelCancel = new System.Windows.Forms.Button();
             this.btnSign = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -71,16 +57,28 @@ namespace moogabox
             this.CH3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnSet4 = new System.Windows.Forms.Button();
+            this.btnSet3 = new System.Windows.Forms.Button();
+            this.btnSet2 = new System.Windows.Forms.Button();
+            this.btnSet1 = new System.Windows.Forms.Button();
+            this.btnDrink4 = new System.Windows.Forms.Button();
+            this.btnDrink3 = new System.Windows.Forms.Button();
+            this.btnDrink2 = new System.Windows.Forms.Button();
+            this.btnDrink1 = new System.Windows.Forms.Button();
+            this.btnPopcorn4 = new System.Windows.Forms.Button();
+            this.btnPopcorn3 = new System.Windows.Forms.Button();
+            this.btnPopcorn2 = new System.Windows.Forms.Button();
+            this.btnPopcorn1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -88,27 +86,6 @@ namespace moogabox
             this.panel1.Size = new System.Drawing.Size(713, 105);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(151, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "매점";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220525_141938370;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 105);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -262,66 +239,6 @@ namespace moogabox
             this.txtSet1.Text = "C01M";
             this.txtSet1.Visible = false;
             // 
-            // btnSet4
-            // 
-            this.btnSet4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSet4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_기본스몰콤보__수정;
-            this.btnSet4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSet4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSet4.Location = new System.Drawing.Point(278, 146);
-            this.btnSet4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSet4.Name = "btnSet4";
-            this.btnSet4.Size = new System.Drawing.Size(70, 59);
-            this.btnSet4.TabIndex = 37;
-            this.btnSet4.Text = "스몰콤보";
-            this.btnSet4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSet4.UseVisualStyleBackColor = false;
-            // 
-            // btnSet3
-            // 
-            this.btnSet3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSet3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콤보_2___수정본;
-            this.btnSet3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSet3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSet3.Location = new System.Drawing.Point(202, 143);
-            this.btnSet3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSet3.Name = "btnSet3";
-            this.btnSet3.Size = new System.Drawing.Size(70, 59);
-            this.btnSet3.TabIndex = 38;
-            this.btnSet3.Text = "라지콤보";
-            this.btnSet3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSet3.UseVisualStyleBackColor = false;
-            // 
-            // btnSet2
-            // 
-            this.btnSet2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSet2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_스몰더블__수정본;
-            this.btnSet2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSet2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSet2.Location = new System.Drawing.Point(129, 143);
-            this.btnSet2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSet2.Name = "btnSet2";
-            this.btnSet2.Size = new System.Drawing.Size(70, 59);
-            this.btnSet2.TabIndex = 39;
-            this.btnSet2.Text = "더블콤보";
-            this.btnSet2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSet2.UseVisualStyleBackColor = false;
-            // 
-            // btnSet1
-            // 
-            this.btnSet1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSet1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콤보_1__수정;
-            this.btnSet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSet1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSet1.Location = new System.Drawing.Point(57, 143);
-            this.btnSet1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSet1.Name = "btnSet1";
-            this.btnSet1.Size = new System.Drawing.Size(70, 59);
-            this.btnSet1.TabIndex = 40;
-            this.btnSet1.Text = "무성콤보";
-            this.btnSet1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSet1.UseVisualStyleBackColor = false;
-            // 
             // txtDrink4
             // 
             this.txtDrink4.Location = new System.Drawing.Point(280, 120);
@@ -330,21 +247,6 @@ namespace moogabox
             this.txtDrink4.TabIndex = 36;
             this.txtDrink4.Text = "D02L";
             this.txtDrink4.Visible = false;
-            // 
-            // btnDrink4
-            // 
-            this.btnDrink4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDrink4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
-            this.btnDrink4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink4.Location = new System.Drawing.Point(280, 82);
-            this.btnDrink4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDrink4.Name = "btnDrink4";
-            this.btnDrink4.Size = new System.Drawing.Size(70, 59);
-            this.btnDrink4.TabIndex = 29;
-            this.btnDrink4.Text = "스프라이트(L)";
-            this.btnDrink4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDrink4.UseVisualStyleBackColor = false;
             // 
             // txtDrink3
             // 
@@ -355,21 +257,6 @@ namespace moogabox
             this.txtDrink3.Text = "D02M";
             this.txtDrink3.Visible = false;
             // 
-            // btnDrink3
-            // 
-            this.btnDrink3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDrink3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
-            this.btnDrink3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink3.Location = new System.Drawing.Point(205, 80);
-            this.btnDrink3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDrink3.Name = "btnDrink3";
-            this.btnDrink3.Size = new System.Drawing.Size(70, 59);
-            this.btnDrink3.TabIndex = 30;
-            this.btnDrink3.Text = "스프라이트(M)";
-            this.btnDrink3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDrink3.UseVisualStyleBackColor = false;
-            // 
             // txtDrink2
             // 
             this.txtDrink2.Location = new System.Drawing.Point(129, 118);
@@ -379,21 +266,6 @@ namespace moogabox
             this.txtDrink2.Text = "D01L";
             this.txtDrink2.Visible = false;
             // 
-            // btnDrink2
-            // 
-            this.btnDrink2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDrink2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
-            this.btnDrink2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink2.Location = new System.Drawing.Point(129, 80);
-            this.btnDrink2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDrink2.Name = "btnDrink2";
-            this.btnDrink2.Size = new System.Drawing.Size(70, 59);
-            this.btnDrink2.TabIndex = 31;
-            this.btnDrink2.Text = "코카콜라(L)";
-            this.btnDrink2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDrink2.UseVisualStyleBackColor = false;
-            // 
             // txtDrink1
             // 
             this.txtDrink1.Location = new System.Drawing.Point(57, 118);
@@ -402,21 +274,6 @@ namespace moogabox
             this.txtDrink1.TabIndex = 33;
             this.txtDrink1.Text = "D01M";
             this.txtDrink1.Visible = false;
-            // 
-            // btnDrink1
-            // 
-            this.btnDrink1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDrink1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
-            this.btnDrink1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink1.Location = new System.Drawing.Point(56, 80);
-            this.btnDrink1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDrink1.Name = "btnDrink1";
-            this.btnDrink1.Size = new System.Drawing.Size(70, 59);
-            this.btnDrink1.TabIndex = 32;
-            this.btnDrink1.Text = "코카콜라(M)";
-            this.btnDrink1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDrink1.UseVisualStyleBackColor = false;
             // 
             // txtPopcorn4
             // 
@@ -453,66 +310,6 @@ namespace moogabox
             this.txtPopcorn1.TabIndex = 25;
             this.txtPopcorn1.Text = "P01M";
             this.txtPopcorn1.Visible = false;
-            // 
-            // btnPopcorn4
-            // 
-            this.btnPopcorn4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPopcorn4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_팝콘__수정;
-            this.btnPopcorn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnPopcorn4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPopcorn4.Location = new System.Drawing.Point(283, 16);
-            this.btnPopcorn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPopcorn4.Name = "btnPopcorn4";
-            this.btnPopcorn4.Size = new System.Drawing.Size(67, 59);
-            this.btnPopcorn4.TabIndex = 21;
-            this.btnPopcorn4.Text = "달콤팝콘(L)";
-            this.btnPopcorn4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPopcorn4.UseVisualStyleBackColor = false;
-            // 
-            // btnPopcorn3
-            // 
-            this.btnPopcorn3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPopcorn3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_달콤스몰___수정본;
-            this.btnPopcorn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnPopcorn3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPopcorn3.Location = new System.Drawing.Point(205, 16);
-            this.btnPopcorn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPopcorn3.Name = "btnPopcorn3";
-            this.btnPopcorn3.Size = new System.Drawing.Size(67, 59);
-            this.btnPopcorn3.TabIndex = 22;
-            this.btnPopcorn3.Text = "달콤팝콘(M)";
-            this.btnPopcorn3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPopcorn3.UseVisualStyleBackColor = false;
-            // 
-            // btnPopcorn2
-            // 
-            this.btnPopcorn2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_고소___수정본;
-            this.btnPopcorn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnPopcorn2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPopcorn2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPopcorn2.Location = new System.Drawing.Point(132, 16);
-            this.btnPopcorn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPopcorn2.Name = "btnPopcorn2";
-            this.btnPopcorn2.Size = new System.Drawing.Size(67, 59);
-            this.btnPopcorn2.TabIndex = 23;
-            this.btnPopcorn2.Text = "고소팝콘(L)";
-            this.btnPopcorn2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPopcorn2.UseVisualStyleBackColor = true;
-            // 
-            // btnPopcorn1
-            // 
-            this.btnPopcorn1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPopcorn1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_스몰기본__수정본;
-            this.btnPopcorn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPopcorn1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPopcorn1.Location = new System.Drawing.Point(56, 16);
-            this.btnPopcorn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPopcorn1.Name = "btnPopcorn1";
-            this.btnPopcorn1.Size = new System.Drawing.Size(70, 59);
-            this.btnPopcorn1.TabIndex = 24;
-            this.btnPopcorn1.Text = "고소팝콘(M)";
-            this.btnPopcorn1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPopcorn1.UseVisualStyleBackColor = false;
             // 
             // btnSelCancel
             // 
@@ -609,6 +406,197 @@ namespace moogabox
             this.CH5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.CH5.Width = 100;
             // 
+            // btnSet4
+            // 
+            this.btnSet4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSet4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_기본스몰콤보__수정;
+            this.btnSet4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSet4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSet4.Location = new System.Drawing.Point(278, 146);
+            this.btnSet4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSet4.Name = "btnSet4";
+            this.btnSet4.Size = new System.Drawing.Size(70, 59);
+            this.btnSet4.TabIndex = 37;
+            this.btnSet4.Text = "스몰콤보";
+            this.btnSet4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSet4.UseVisualStyleBackColor = false;
+            // 
+            // btnSet3
+            // 
+            this.btnSet3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSet3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콤보_2___수정본;
+            this.btnSet3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSet3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSet3.Location = new System.Drawing.Point(202, 143);
+            this.btnSet3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSet3.Name = "btnSet3";
+            this.btnSet3.Size = new System.Drawing.Size(70, 59);
+            this.btnSet3.TabIndex = 38;
+            this.btnSet3.Text = "라지콤보";
+            this.btnSet3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSet3.UseVisualStyleBackColor = false;
+            // 
+            // btnSet2
+            // 
+            this.btnSet2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSet2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_스몰더블__수정본;
+            this.btnSet2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSet2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSet2.Location = new System.Drawing.Point(129, 143);
+            this.btnSet2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSet2.Name = "btnSet2";
+            this.btnSet2.Size = new System.Drawing.Size(70, 59);
+            this.btnSet2.TabIndex = 39;
+            this.btnSet2.Text = "더블콤보";
+            this.btnSet2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSet2.UseVisualStyleBackColor = false;
+            // 
+            // btnSet1
+            // 
+            this.btnSet1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSet1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콤보_1__수정;
+            this.btnSet1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSet1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSet1.Location = new System.Drawing.Point(57, 143);
+            this.btnSet1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSet1.Name = "btnSet1";
+            this.btnSet1.Size = new System.Drawing.Size(70, 59);
+            this.btnSet1.TabIndex = 40;
+            this.btnSet1.Text = "무성콤보";
+            this.btnSet1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSet1.UseVisualStyleBackColor = false;
+            // 
+            // btnDrink4
+            // 
+            this.btnDrink4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDrink4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
+            this.btnDrink4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDrink4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnDrink4.Location = new System.Drawing.Point(280, 82);
+            this.btnDrink4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDrink4.Name = "btnDrink4";
+            this.btnDrink4.Size = new System.Drawing.Size(70, 59);
+            this.btnDrink4.TabIndex = 29;
+            this.btnDrink4.Text = "스프라이트(L)";
+            this.btnDrink4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDrink4.UseVisualStyleBackColor = false;
+            // 
+            // btnDrink3
+            // 
+            this.btnDrink3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDrink3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
+            this.btnDrink3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDrink3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnDrink3.Location = new System.Drawing.Point(205, 80);
+            this.btnDrink3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDrink3.Name = "btnDrink3";
+            this.btnDrink3.Size = new System.Drawing.Size(70, 59);
+            this.btnDrink3.TabIndex = 30;
+            this.btnDrink3.Text = "스프라이트(M)";
+            this.btnDrink3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDrink3.UseVisualStyleBackColor = false;
+            // 
+            // btnDrink2
+            // 
+            this.btnDrink2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDrink2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
+            this.btnDrink2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDrink2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnDrink2.Location = new System.Drawing.Point(129, 80);
+            this.btnDrink2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDrink2.Name = "btnDrink2";
+            this.btnDrink2.Size = new System.Drawing.Size(70, 59);
+            this.btnDrink2.TabIndex = 31;
+            this.btnDrink2.Text = "코카콜라(L)";
+            this.btnDrink2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDrink2.UseVisualStyleBackColor = false;
+            // 
+            // btnDrink1
+            // 
+            this.btnDrink1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDrink1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
+            this.btnDrink1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDrink1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnDrink1.Location = new System.Drawing.Point(56, 80);
+            this.btnDrink1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDrink1.Name = "btnDrink1";
+            this.btnDrink1.Size = new System.Drawing.Size(70, 59);
+            this.btnDrink1.TabIndex = 32;
+            this.btnDrink1.Text = "코카콜라(M)";
+            this.btnDrink1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDrink1.UseVisualStyleBackColor = false;
+            // 
+            // btnPopcorn4
+            // 
+            this.btnPopcorn4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPopcorn4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_팝콘__수정;
+            this.btnPopcorn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPopcorn4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPopcorn4.Location = new System.Drawing.Point(283, 16);
+            this.btnPopcorn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPopcorn4.Name = "btnPopcorn4";
+            this.btnPopcorn4.Size = new System.Drawing.Size(67, 59);
+            this.btnPopcorn4.TabIndex = 21;
+            this.btnPopcorn4.Text = "달콤팝콘(L)";
+            this.btnPopcorn4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPopcorn4.UseVisualStyleBackColor = false;
+            // 
+            // btnPopcorn3
+            // 
+            this.btnPopcorn3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPopcorn3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_달콤스몰___수정본;
+            this.btnPopcorn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPopcorn3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPopcorn3.Location = new System.Drawing.Point(205, 16);
+            this.btnPopcorn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPopcorn3.Name = "btnPopcorn3";
+            this.btnPopcorn3.Size = new System.Drawing.Size(67, 59);
+            this.btnPopcorn3.TabIndex = 22;
+            this.btnPopcorn3.Text = "달콤팝콘(M)";
+            this.btnPopcorn3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPopcorn3.UseVisualStyleBackColor = false;
+            // 
+            // btnPopcorn2
+            // 
+            this.btnPopcorn2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_고소___수정본;
+            this.btnPopcorn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPopcorn2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPopcorn2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPopcorn2.Location = new System.Drawing.Point(132, 16);
+            this.btnPopcorn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPopcorn2.Name = "btnPopcorn2";
+            this.btnPopcorn2.Size = new System.Drawing.Size(67, 59);
+            this.btnPopcorn2.TabIndex = 23;
+            this.btnPopcorn2.Text = "고소팝콘(L)";
+            this.btnPopcorn2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPopcorn2.UseVisualStyleBackColor = true;
+            // 
+            // btnPopcorn1
+            // 
+            this.btnPopcorn1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPopcorn1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_스몰기본__수정본;
+            this.btnPopcorn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPopcorn1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPopcorn1.Location = new System.Drawing.Point(56, 16);
+            this.btnPopcorn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPopcorn1.Name = "btnPopcorn1";
+            this.btnPopcorn1.Size = new System.Drawing.Size(70, 59);
+            this.btnPopcorn1.TabIndex = 24;
+            this.btnPopcorn1.Text = "고소팝콘(M)";
+            this.btnPopcorn1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPopcorn1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220526_152108642;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(713, 105);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form9
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -625,11 +613,10 @@ namespace moogabox
             this.Name = "Form9";
             this.Text = "Form10";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -637,9 +624,7 @@ namespace moogabox
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelContainer;
         private Guna.UI2.WinForms.Guna2Button tapSet;
@@ -678,5 +663,6 @@ namespace moogabox
         private System.Windows.Forms.Button btnSet3;
         private System.Windows.Forms.Button btnSet2;
         private System.Windows.Forms.Button btnSet1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
