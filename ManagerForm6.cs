@@ -60,5 +60,10 @@ namespace moogabox
                 this.Visible = false;
             }
         }
-    }
+
+		private void ManagerForm6_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

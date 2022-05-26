@@ -73,6 +73,26 @@ namespace moogabox.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap MvName {
+            get {
+                object obj = ResourceManager.GetObject("MvName", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 닥터 {
+            get {
+                object obj = ResourceManager.GetObject("닥터", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 무가박스_고소___수정본 {
             get {
                 object obj = ResourceManager.GetObject("무가박스 고소 - 수정본", resourceCulture);
@@ -163,9 +183,29 @@ namespace moogabox.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 범죄도시2 {
+            get {
+                object obj = ResourceManager.GetObject("범죄도시2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 스몰_어니언팝콘___수정 {
             get {
                 object obj = ResourceManager.GetObject("스몰 어니언팝콘 - 수정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 쥬라기월드 {
+            get {
+                object obj = ResourceManager.GetObject("쥬라기월드", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
