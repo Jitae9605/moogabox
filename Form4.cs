@@ -628,5 +628,25 @@ namespace moogabox
 			form1.Show();
 			this.Hide();
 		}
-	}
+
+        private void pbMovie1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbMovie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
