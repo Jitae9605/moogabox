@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using moogabox;
-
 
 namespace moogabox
 {
@@ -19,5 +16,21 @@ namespace moogabox
         {
             InitializeComponent();
         }
-	}
+
+        private void Btn_Stock_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            ManagerForm3 M_frm3 = new ManagerForm3();
+            M_frm3.ShowDialog();
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form0 frm0 = new Form0();
+            frm0.ShowDialog();
+            Application.Exit();
+        }
+    }
 }
