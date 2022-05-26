@@ -28,7 +28,7 @@ namespace Cinema_Kiosk_SalesManager
             DataSet ds = new DataSet();
             con.Open();
 
-            SqlDataAdapter adapt = new SqlDataAdapter("USE MoogaBox SELECT SnackName ,SnackNum, BuyPrice, BuyCount FROM BuySnack", con);
+            SqlDataAdapter adapt = new SqlDataAdapter("USE MoogaBox SELECT SnackName ,BuyPrice, BuyCount FROM BuySnack", con);
             adapt.Fill(ds);
             chart1.DataSource = ds;
             chart1.Series["Count"].XValueMember = "SnackName";
