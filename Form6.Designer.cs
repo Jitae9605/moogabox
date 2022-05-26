@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbTitle = new System.Windows.Forms.Label();
 			this.lbSitnum = new System.Windows.Forms.Label();
@@ -39,107 +40,142 @@ namespace moogabox
 			this.txtHallNum = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtSeatNum = new System.Windows.Forms.TextBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pbMovie = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbTime
 			// 
 			this.lbTime.AutoSize = true;
-			this.lbTime.Font = new System.Drawing.Font("굴림", 20F);
-			this.lbTime.Location = new System.Drawing.Point(124, 231);
+			this.lbTime.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+			this.lbTime.ForeColor = System.Drawing.Color.White;
+			this.lbTime.Location = new System.Drawing.Point(174, 349);
 			this.lbTime.Name = "lbTime";
-			this.lbTime.Size = new System.Drawing.Size(66, 27);
+			this.lbTime.Size = new System.Drawing.Size(55, 30);
 			this.lbTime.TabIndex = 7;
 			this.lbTime.Text = "시간";
 			// 
 			// lbTitle
 			// 
 			this.lbTitle.AutoSize = true;
-			this.lbTitle.Font = new System.Drawing.Font("굴림", 20F);
-			this.lbTitle.Location = new System.Drawing.Point(124, 194);
+			this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+			this.lbTitle.ForeColor = System.Drawing.Color.White;
+			this.lbTitle.Location = new System.Drawing.Point(174, 311);
 			this.lbTitle.Name = "lbTitle";
-			this.lbTitle.Size = new System.Drawing.Size(66, 27);
+			this.lbTitle.Size = new System.Drawing.Size(55, 30);
 			this.lbTitle.TabIndex = 6;
 			this.lbTitle.Text = "영화";
 			// 
 			// lbSitnum
 			// 
 			this.lbSitnum.AutoSize = true;
-			this.lbSitnum.Font = new System.Drawing.Font("굴림", 20F);
-			this.lbSitnum.Location = new System.Drawing.Point(97, 269);
+			this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+			this.lbSitnum.ForeColor = System.Drawing.Color.White;
+			this.lbSitnum.Location = new System.Drawing.Point(153, 385);
 			this.lbSitnum.Name = "lbSitnum";
-			this.lbSitnum.Size = new System.Drawing.Size(93, 27);
+			this.lbSitnum.Size = new System.Drawing.Size(76, 30);
 			this.lbSitnum.TabIndex = 8;
 			this.lbSitnum.Text = "상영관";
 			// 
 			// btnOK
 			// 
-			this.btnOK.Location = new System.Drawing.Point(195, 375);
+			this.btnOK.BackColor = System.Drawing.Color.Firebrick;
+			this.btnOK.FlatAppearance.BorderSize = 0;
+			this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnOK.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+			this.btnOK.ForeColor = System.Drawing.Color.White;
+			this.btnOK.Location = new System.Drawing.Point(235, 474);
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new System.Drawing.Size(104, 45);
 			this.btnOK.TabIndex = 9;
 			this.btnOK.Text = "확인";
-			this.btnOK.UseVisualStyleBackColor = true;
+			this.btnOK.UseVisualStyleBackColor = false;
 			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
 			// 
 			// btnCancel
 			// 
-			this.btnCancel.Location = new System.Drawing.Point(340, 375);
+			this.btnCancel.BackColor = System.Drawing.Color.Gray;
+			this.btnCancel.FlatAppearance.BorderSize = 0;
+			this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+			this.btnCancel.ForeColor = System.Drawing.Color.White;
+			this.btnCancel.Location = new System.Drawing.Point(368, 474);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(104, 45);
 			this.btnCancel.TabIndex = 10;
 			this.btnCancel.Text = "취소";
-			this.btnCancel.UseVisualStyleBackColor = true;
+			this.btnCancel.UseVisualStyleBackColor = false;
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// txtMovie
 			// 
+			this.txtMovie.BackColor = System.Drawing.Color.White;
 			this.txtMovie.CausesValidation = false;
-			this.txtMovie.Location = new System.Drawing.Point(207, 200);
+			this.txtMovie.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+			this.txtMovie.Location = new System.Drawing.Point(235, 317);
 			this.txtMovie.Name = "txtMovie";
-			this.txtMovie.Size = new System.Drawing.Size(237, 21);
+			this.txtMovie.Size = new System.Drawing.Size(237, 24);
 			this.txtMovie.TabIndex = 11;
 			// 
 			// txtTime
 			// 
 			this.txtTime.CausesValidation = false;
-			this.txtTime.Location = new System.Drawing.Point(207, 237);
+			this.txtTime.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+			this.txtTime.Location = new System.Drawing.Point(235, 353);
 			this.txtTime.Name = "txtTime";
-			this.txtTime.Size = new System.Drawing.Size(237, 21);
+			this.txtTime.Size = new System.Drawing.Size(237, 24);
 			this.txtTime.TabIndex = 11;
 			// 
 			// txtHallNum
 			// 
 			this.txtHallNum.CausesValidation = false;
-			this.txtHallNum.Location = new System.Drawing.Point(207, 275);
+			this.txtHallNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+			this.txtHallNum.Location = new System.Drawing.Point(235, 389);
 			this.txtHallNum.Name = "txtHallNum";
-			this.txtHallNum.Size = new System.Drawing.Size(237, 21);
+			this.txtHallNum.Size = new System.Drawing.Size(237, 24);
 			this.txtHallNum.TabIndex = 11;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("굴림", 20F);
-			this.label1.Location = new System.Drawing.Point(124, 306);
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+			this.label1.ForeColor = System.Drawing.Color.White;
+			this.label1.Location = new System.Drawing.Point(174, 420);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(66, 27);
+			this.label1.Size = new System.Drawing.Size(55, 30);
 			this.label1.TabIndex = 8;
 			this.label1.Text = "좌석";
 			// 
 			// txtSeatNum
 			// 
 			this.txtSeatNum.CausesValidation = false;
-			this.txtSeatNum.Location = new System.Drawing.Point(207, 312);
+			this.txtSeatNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+			this.txtSeatNum.Location = new System.Drawing.Point(235, 426);
 			this.txtSeatNum.Name = "txtSeatNum";
-			this.txtSeatNum.Size = new System.Drawing.Size(237, 21);
+			this.txtSeatNum.Size = new System.Drawing.Size(237, 24);
 			this.txtSeatNum.TabIndex = 11;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(9, 7);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(215, 50);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 12;
+			this.pictureBox1.TabStop = false;
 			// 
 			// pbMovie
 			// 
-			this.pbMovie.Location = new System.Drawing.Point(246, 12);
+			this.pbMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.pbMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.pbMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.pbMovie.Location = new System.Drawing.Point(235, 27);
+			this.pbMovie.Margin = new System.Windows.Forms.Padding(5);
 			this.pbMovie.Name = "pbMovie";
-			this.pbMovie.Size = new System.Drawing.Size(145, 159);
+			this.pbMovie.Size = new System.Drawing.Size(237, 270);
 			this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pbMovie.TabIndex = 5;
 			this.pbMovie.TabStop = false;
@@ -148,7 +184,9 @@ namespace moogabox
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(652, 450);
+			this.BackColor = System.Drawing.Color.Black;
+			this.ClientSize = new System.Drawing.Size(711, 540);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.txtSeatNum);
 			this.Controls.Add(this.txtHallNum);
 			this.Controls.Add(this.txtTime);
@@ -160,10 +198,12 @@ namespace moogabox
 			this.Controls.Add(this.lbTime);
 			this.Controls.Add(this.lbTitle);
 			this.Controls.Add(this.pbMovie);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "Form6";
-			this.Text = "Form6";
+			this.Text = "선택 확인";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
 			this.Load += new System.EventHandler(this.Form6_Load);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -183,5 +223,6 @@ namespace moogabox
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtSeatNum;
 		private System.Windows.Forms.PictureBox pbMovie;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }

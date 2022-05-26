@@ -43,7 +43,7 @@ namespace moogabox
 
 		private void Form6_Load(object sender, EventArgs e)
 		{
-			string path = "../../Resource/" + DataLoad() + ".jpg";
+			string path = "../../Resources/" + DataLoad() + ".png";
 			Image img = Image.FromFile(path);
 			pbMovie.Load(path);
 			pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -61,13 +61,27 @@ namespace moogabox
 				this.txtMovie.Text = myRead[0].ToString();
 				this.txtTime.Text = myRead[1].ToString();
 				this.txtHallNum.Text = myRead[2].ToString();
-				this.txtSeatNum.Text = myRead[3].ToString();
+				string[] SeatNum = new string[4];
+				int length = myRead[3].ToString().Length / 4;
+
+				int j = 0;
+				for (int i = 0; i < length; i++)
+				{
+					SeatNum[i] = myRead[3].ToString().Substring(j, 3);
+					j += 4;
+					this.txtSeatNum.Text += SeatNum[i];
+					if (i >= length - 1) break;
+					this.txtSeatNum.Text += ", ";
+				}
+
+				
 			}
 
 			myRead.Close();
 
 			Conn.Close();
 
+			if (this.txtMovie.Text == "") return "쥬라기월드";
 			return this.txtMovie.Text;
 
 			

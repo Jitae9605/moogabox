@@ -96,5 +96,15 @@ namespace moogabox
             Form1 frm1 = new Form1();
             frm1.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

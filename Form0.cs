@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using moogabox;
+using System.Drawing;
 
 
 namespace moogabox
@@ -9,11 +9,53 @@ namespace moogabox
     public partial class Form0 : Form
     {
         private string Constr = "Server=(local);database=MoogaBox;" + "Integrated Security=true";
+
+        public bool test = false;
+        TextBox[] txtList;
+        const string IdPlaceholder = "계정 (아이디 또는 이메일)";
+        const string PwPlaceholder = "비밀번호";
         public Form0()
         {
             InitializeComponent();
+
+
+            //ID, Password TextBox Placeholder 설정
+            txtList = new TextBox[] { txtId, txtPw };
+            foreach (var txt in txtList)
+            {
+                //처음 공백 Placeholder 지정
+                txt.ForeColor = Color.DarkGray;
+                if (txt == txtId) txt.Text = IdPlaceholder;
+                else if (txt == txtPw) txt.Text = PwPlaceholder;
+                //텍스트박스 커서 Focus 여부에 따라 이벤트 지정
+                txt.GotFocus += RemovePlaceholder;
+                txt.LostFocus += SetPlaceholder;
+            }
         }
 
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            if (txt.Text == IdPlaceholder | txt.Text == PwPlaceholder)
+            { //텍스트박스 내용이 사용자가 입력한 값이 아닌 Placeholder일 경우에만, 커서 포커스일때 빈칸으로 만들기
+                txt.ForeColor = Color.Black; //사용자 입력 진한 글씨
+                txt.Text = string.Empty;
+                if (txt == txtPw) txtPw.PasswordChar = '●';
+            }
+        }
+
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(txt.Text))
+            {
+                //사용자 입력값이 하나도 없는 경우에 포커스 잃으면 Placeholder 적용해주기
+                txt.ForeColor = Color.DarkGray; //Placeholder 흐린 글씨
+                if (txt == txtId) txt.Text = IdPlaceholder;
+                else if (txt == txtPw) { txt.Text = PwPlaceholder; txtPw.PasswordChar = default; }
+            }
+        }
         private void Form0_FormClosing(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -73,17 +115,14 @@ namespace moogabox
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            회원가입 frm10 = new 회원가입();
+            Form10 frm10 = new Form10();
             DialogResult result = frm10.ShowDialog();
-            if(result == DialogResult.Cancel || result == DialogResult.OK)
+            if (result == DialogResult.Cancel || result == DialogResult.OK)
             {
                 frm10.Close();
             }
         }
 
-        private void Form0_Load(object sender, EventArgs e)
-        {
-            this.ActiveControl = txtId;
-        }
+       
     }
 }
