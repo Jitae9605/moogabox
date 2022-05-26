@@ -81,6 +81,7 @@ namespace moogabox
 
 			Conn.Close();
 
+			if (this.txtMovie.Text == "") return "쥬라기월드";
 			return this.txtMovie.Text;
 
 			

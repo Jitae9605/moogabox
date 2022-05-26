@@ -354,6 +354,8 @@
     <Content Include="Resources.resx.txt" />
     <None Include="Resources\범죄도시2.png" />
     <None Include="Resources\MvName.png" />
+    <Content Include="Resources\MoogaBox_Icon.ico" />
+    <Content Include="Resources\premium-icon-film-726322.ico" />
     <Content Include="Resources\닥터.png" />
     <Content Include="Resources\쥬라기월드.png" />
     <Content Include="sql 작성.sql" />
