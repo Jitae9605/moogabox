@@ -26,25 +26,12 @@ namespace moogabox
             progressBar1.Maximum = 100;
             progressBar1.Value = 0;
             timer1.Start();
-
             ////////////////////
-			var CurrentDirectory = Directory.GetCurrentDirectory();
-			string newPath = Path.GetFullPath(Path.Combine(CurrentDirectory, @"..\..\Media\PopCorn.gif"));
+            var CurrentDirectory = Directory.GetCurrentDirectory();
+            string newPath = Path.GetFullPath(Path.Combine(CurrentDirectory, @"..\..\Media\PopCorn.gif"));
             pictureBox1.Load(newPath);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
 
-        }
-        private void Delay_Manual(int iDelay)
-        {
-            DateTime thisMoment = DateTime.Now;
-            TimeSpan duration = new TimeSpan(0, 0, 0, iDelay * 1000);
-            DateTime AfterWards = thisMoment.Add(duration);
-            while(true)
-            {
-                thisMoment = DateTime.Now;
-                System.Windows.Forms.Application.DoEvents();
-                if (AfterWards <= thisMoment) break;
-            }
         }
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -60,10 +47,5 @@ namespace moogabox
                 this.Visible = false;
             }
         }
-
-		private void ManagerForm6_Load(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

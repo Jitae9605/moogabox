@@ -311,6 +311,7 @@ namespace moogabox
 
             var myCom = new SqlCommand(Sql, Conn);
             ManagerForm6 Mfrm6 = new ManagerForm6();
+            ManagerForm7 Mfrm7 = new ManagerForm7();
 
             //생산 
             //코카콜라(M)
@@ -342,6 +343,7 @@ namespace moogabox
                     myCom_Sql_Co_Sy_M.ExecuteNonQuery();
                     myCom_Sql_Spark_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -375,6 +377,7 @@ namespace moogabox
                     myCom_Sql_Co_Sy_L.ExecuteNonQuery();
                     myCom_Sql_Spark_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -408,6 +411,7 @@ namespace moogabox
                     myCom_Sql_Sp_Sy_M.ExecuteNonQuery();
                     myCom_Sql_Spark_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -441,6 +445,7 @@ namespace moogabox
                     myCom_Sql_Sp_Sy_L.ExecuteNonQuery();
                     myCom_Sql_Spark_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -474,6 +479,7 @@ namespace moogabox
                     myCom_Sql_Fan_O_Sy_M.ExecuteNonQuery();
                     myCom_Sql_Spark_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -507,6 +513,7 @@ namespace moogabox
                     myCom_Sql_Fan_O_Sy_L.ExecuteNonQuery();
                     myCom_Sql_Spark_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -540,6 +547,7 @@ namespace moogabox
                     myCom_Sql_Fan_F_Sy_M.ExecuteNonQuery();
                     myCom_Sql_Spark_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -573,6 +581,7 @@ namespace moogabox
                     myCom_Sql_Fan_F_Sy_L.ExecuteNonQuery();
                     myCom_Sql_Spark_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
+                    Mfrm7.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -607,7 +616,6 @@ namespace moogabox
                     myCom_BT_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
                     Mfrm6.ShowDialog();
-
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -642,7 +650,6 @@ namespace moogabox
                     myCom_BT_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
                     Mfrm6.ShowDialog();
-
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
             }
@@ -687,7 +694,6 @@ namespace moogabox
                     myCom_BT_M.ExecuteNonQuery();
                     myCom_SD_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
@@ -733,7 +739,6 @@ namespace moogabox
                     myCom_BT_L.ExecuteNonQuery();
                     myCom_SD_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
@@ -779,7 +784,6 @@ namespace moogabox
                     myCom_BT_M.ExecuteNonQuery();
                     myCom_SC_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
@@ -825,7 +829,6 @@ namespace moogabox
                     myCom_BT_L.ExecuteNonQuery();
                     myCom_SC_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
@@ -871,7 +874,6 @@ namespace moogabox
                     myCom_BT_M.ExecuteNonQuery();
                     myCom_SO_M.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
@@ -917,7 +919,6 @@ namespace moogabox
                     myCom_BT_L.ExecuteNonQuery();
                     myCom_SO_L.ExecuteNonQuery();
                     myCom.ExecuteNonQuery();
-
                     Mfrm6.ShowDialog();
                     MessageBox.Show($"{lvi.Text}이(가) {input}개 생산되었습니다.");
                 }
