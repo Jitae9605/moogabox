@@ -71,6 +71,7 @@ namespace moogabox
             // columnHeader1
             // 
             this.columnHeader1.Text = "이름";
+            this.columnHeader1.Width = 114;
             // 
             // columnHeader2
             // 

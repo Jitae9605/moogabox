@@ -72,6 +72,7 @@ namespace moogabox
             // columnHeader8
             // 
             this.columnHeader8.Text = "이름";
+            this.columnHeader8.Width = 134;
             // 
             // columnHeader9
             // 
@@ -129,6 +130,7 @@ namespace moogabox
             // columnHeader4
             // 
             this.columnHeader4.Text = "이름";
+            this.columnHeader4.Width = 133;
             // 
             // columnHeader5
             // 
@@ -137,6 +139,7 @@ namespace moogabox
             // columnHeader6
             // 
             this.columnHeader6.Text = "개수";
+            this.columnHeader6.Width = 70;
             // 
             // columnHeader7
             // 
