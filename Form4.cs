@@ -629,8 +629,14 @@ namespace moogabox
 			form1.Show();
 			this.Hide();
 		}
+		private void Time(object sender, EventArgs e)
+		{
 
-        private void pbMovie1_Click(object sender, EventArgs e)
+			string Nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분");
+			lblTime.Text = Nowtime;
+		}
+
+		private void pbMovie1_Click(object sender, EventArgs e)
         {
 
         }
