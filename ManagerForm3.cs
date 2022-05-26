@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace moogabox
         public ManagerForm3()
         {
             InitializeComponent();
+
+            var CurrentDirectory = Directory.GetCurrentDirectory();
+            string newPath = Path.GetFullPath(Path.Combine(CurrentDirectory, @"..\..\Image\KakaoTalk_20220525_141938370.png"));
+            pictureBox1.Load(newPath);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Btn_StoreStock_Click(object sender, EventArgs e)
@@ -39,6 +45,15 @@ namespace moogabox
             ManagerForm1 M_frm1 = new ManagerForm1();
             M_frm1.ShowDialog();
             Application.Exit();
+        }
+
+        bool TagMove;
+        int MvalX, MValY;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            TagMove = true;
+            MvalX = e.X;
+            MValY = e.Y;
         }
     }
 }
