@@ -40,7 +40,7 @@ namespace moogabox
 			int sum = 0;
 			while (R.Read())    // R에 아직 읽을 행이 남아있는동안 무한반복(한행 읽고 다음행을 읽는다
 			{
-				sum += (int)R["Mmoney"];
+				sum += Convert.ToInt32(R["Mmoney"].ToString());
 				string MvName = R["MvName"].ToString();       
 				string StartTime = R["StartTime"].ToString(); 
 				string Hall = R["Hall"].ToString();  
@@ -81,7 +81,7 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			var Comm = new SqlCommand("Select SnackName, SnackNum, BuyPrice, BuyCount from TmpBuySnack", Conn);
+			var Comm = new SqlCommand("Select SnackName, SnackNum, BuyPrice, BuyCount,SnackPrice from TmpBuySnack", Conn);
 			SqlDataReader R;
 			R = Comm.ExecuteReader();
 
@@ -93,13 +93,12 @@ namespace moogabox
 				string SnackNum = R["SnackNum"].ToString();     
 				string BuyPrice = R["BuyPrice"].ToString();     
 				string BuyCount = R["BuyCount"].ToString();     
+				string SnackPrice = R["SnackPrice"].ToString();
 
-				string Mmoney = ((int)R["BuyPrice"] * (int)R["BuyCount"]).ToString();       
-				sum += Convert.ToInt32(Mmoney);
-
+				sum += Convert.ToInt32(BuyPrice);
 
 				// 이렇게 저장된 string 문자열들을 문자열배열을 선언해 삽입
-				string[] strs = new string[] { SnackName, SnackNum, BuyPrice, BuyCount, Mmoney };
+				string[] strs = new string[] { SnackName, SnackNum, SnackPrice, BuyCount, BuyPrice};
 
 				// ListView에 Item으로 삽입되려면 열수에 맞는 배열요소를 가진 문자열 배열이어야 하므로
 				ListViewItem getItem = new ListViewItem(strs);

@@ -23,7 +23,7 @@ StartTime time,							--영화 시작 시간
 RunningTime time							--영화 러닝 시간
 );
 
-alter table Movie add MvNum varchar(10);
+
 
 create table Theater					--상영관 테이블
 (
@@ -293,6 +293,7 @@ values
 ('ghldnjs2', 'q1q2q3','010-1111-2222', 0),
 ('ghldnjs3', 'abc123','010-1111-2222', 0);
 
+alter table Movie add MvNum varchar(10);
 
 UPDATE Movie Set MvNum = 'DR01' WHERE StartTime = '10:10:00';
 UPDATE Movie Set MvNum = 'DR02' WHERE StartTime = '12:45:00';
