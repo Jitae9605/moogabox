@@ -72,7 +72,7 @@ namespace moogabox
 			this.lbSitnum.AutoSize = true;
 			this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
 			this.lbSitnum.ForeColor = System.Drawing.Color.White;
-			this.lbSitnum.Location = new System.Drawing.Point(148, 383);
+			this.lbSitnum.Location = new System.Drawing.Point(148, 385);
 			this.lbSitnum.Name = "lbSitnum";
 			this.lbSitnum.Size = new System.Drawing.Size(81, 32);
 			this.lbSitnum.TabIndex = 8;
@@ -83,7 +83,7 @@ namespace moogabox
 			this.btnOK.BackColor = System.Drawing.Color.Firebrick;
 			this.btnOK.FlatAppearance.BorderSize = 0;
 			this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.btnOK.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOK.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
 			this.btnOK.ForeColor = System.Drawing.Color.White;
 			this.btnOK.Location = new System.Drawing.Point(235, 474);
 			this.btnOK.Name = "btnOK";
@@ -98,7 +98,7 @@ namespace moogabox
 			this.btnCancel.BackColor = System.Drawing.Color.Gray;
 			this.btnCancel.FlatAppearance.BorderSize = 0;
 			this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
+			this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
 			this.btnCancel.ForeColor = System.Drawing.Color.White;
 			this.btnCancel.Location = new System.Drawing.Point(368, 474);
 			this.btnCancel.Name = "btnCancel";
@@ -112,25 +112,28 @@ namespace moogabox
 			// 
 			this.txtMovie.BackColor = System.Drawing.Color.White;
 			this.txtMovie.CausesValidation = false;
+			this.txtMovie.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
 			this.txtMovie.Location = new System.Drawing.Point(235, 317);
 			this.txtMovie.Name = "txtMovie";
-			this.txtMovie.Size = new System.Drawing.Size(237, 21);
+			this.txtMovie.Size = new System.Drawing.Size(237, 24);
 			this.txtMovie.TabIndex = 11;
 			// 
 			// txtTime
 			// 
 			this.txtTime.CausesValidation = false;
+			this.txtTime.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
 			this.txtTime.Location = new System.Drawing.Point(235, 353);
 			this.txtTime.Name = "txtTime";
-			this.txtTime.Size = new System.Drawing.Size(237, 21);
+			this.txtTime.Size = new System.Drawing.Size(237, 24);
 			this.txtTime.TabIndex = 11;
 			// 
 			// txtHallNum
 			// 
 			this.txtHallNum.CausesValidation = false;
+			this.txtHallNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
 			this.txtHallNum.Location = new System.Drawing.Point(235, 389);
 			this.txtHallNum.Name = "txtHallNum";
-			this.txtHallNum.Size = new System.Drawing.Size(237, 21);
+			this.txtHallNum.Size = new System.Drawing.Size(237, 24);
 			this.txtHallNum.TabIndex = 11;
 			// 
 			// label1
@@ -138,7 +141,7 @@ namespace moogabox
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(170, 418);
+			this.label1.Location = new System.Drawing.Point(170, 422);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(59, 32);
 			this.label1.TabIndex = 8;
@@ -147,9 +150,10 @@ namespace moogabox
 			// txtSeatNum
 			// 
 			this.txtSeatNum.CausesValidation = false;
+			this.txtSeatNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
 			this.txtSeatNum.Location = new System.Drawing.Point(235, 426);
 			this.txtSeatNum.Name = "txtSeatNum";
-			this.txtSeatNum.Size = new System.Drawing.Size(237, 21);
+			this.txtSeatNum.Size = new System.Drawing.Size(237, 24);
 			this.txtSeatNum.TabIndex = 11;
 			// 
 			// pictureBox1
