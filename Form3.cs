@@ -61,5 +61,27 @@ namespace moogabox
             Form1 frm1 = new Form1();
             frm1.Show();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Form1 newform1 = new Form1();
+            newform1.Show();
+            this.Hide();            //현재폼을 제거해줌
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

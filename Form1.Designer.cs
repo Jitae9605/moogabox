@@ -35,8 +35,10 @@ namespace moogabox
             this.btnStore = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInquiry
@@ -75,9 +77,9 @@ namespace moogabox
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(747, 74);
+            this.pictureBox2.Size = new System.Drawing.Size(632, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -85,12 +87,23 @@ namespace moogabox
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(748, 395);
             this.panel1.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220525_141938370;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(314, 145);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 105);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -106,6 +119,7 @@ namespace moogabox
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,5 +131,6 @@ namespace moogabox
         private System.Windows.Forms.Button btnStore;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

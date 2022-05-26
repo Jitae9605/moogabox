@@ -26,9 +26,12 @@ namespace moogabox
 
 		private void Form4_Load(object sender, EventArgs e)
 		{
-			string Nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분");
-			lblTime.Text = Nowtime;
+			Timer timer = new Timer();
+			timer.Interval = 100;
+			timer.Tick += Time;
 
+			timer.Start();
+			
 			Con = new SqlConnection();
 			Con.ConnectionString = "Server=(local);database=MoogaBox;" +
 				"Integrated Security=true";
@@ -51,73 +54,26 @@ namespace moogabox
 			{
 				if (!Btn_enabled(time[j]) && (j == 0))
 				{
-					btnTime01.Enabled = false;
-
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 1))
-				{
-
-					btnTime02.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 2))
-				{
-
-					btnTime03.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 3))
-				{
-
-					btnTime04.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 4))
-				{
-
-					btnTime05.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 5))
-				{
-
-					btnTime06.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 6))
-				{
-
-					btnTime13.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 7))
-				{
 
 					btnTime07.Enabled = false;
 				}
 
 
-				if (!Btn_enabled(time[j]) && (j == 8))
+				if (!Btn_enabled(time[j]) && (j == 1))
 				{
 
 					btnTime08.Enabled = false;
 				}
 
 
-				if (!Btn_enabled(time[j]) && (j == 9))
+				if (!Btn_enabled(time[j]) && (j == 2))
 				{
 
 					btnTime09.Enabled = false;
 				}
 
 
-				if (!Btn_enabled(time[j]) && (j == 10))
+				if (!Btn_enabled(time[j]) && (j == 3))
 				{
 
 					btnTime010.Enabled = false;
@@ -125,19 +81,64 @@ namespace moogabox
 				}
 
 
-				if (!Btn_enabled(time[j]) && (j == 11))
+				if (!Btn_enabled(time[j]) && (j == 4))
 				{
 
 					btnTime11.Enabled = false;
 				}
 
 
-				if (!Btn_enabled(time[j]) && (j == 12))
+				if (!Btn_enabled(time[j]) && (j == 5))
 				{
 
 					btnTime12.Enabled = false;
 				}
 
+				if (!Btn_enabled(time[j]) && (j == 6))
+				{
+					btnTime01.Enabled = false;
+
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 7))
+				{
+
+					btnTime02.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 8))
+				{
+
+					btnTime03.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 9))
+				{
+
+					btnTime04.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 10))
+				{
+
+					btnTime05.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 11))
+				{
+
+					btnTime06.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 12))
+				{
+
+					btnTime13.Enabled = false;
+				}
 
 				if (!Btn_enabled(time[j]) && (j == 13))
 				{

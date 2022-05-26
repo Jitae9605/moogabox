@@ -329,6 +329,7 @@
     <Content Include="bin\Debug\moogabox.exe" />
     <Content Include="bin\Debug\moogabox.pdb" />
     <Content Include="Image\KakaoTalk_20220525_141938370.png" />
+    <Content Include="Image\KakaoTalk_20220526_152108642.png" />
     <Content Include="Image\무가박스 고소 - 수정본.png" />
     <Content Include="Image\무가박스 기본스몰콤보 -수정.png" />
     <Content Include="Image\무가박스 달콤스몰  -수정본.png" />
@@ -355,6 +356,8 @@
     <Content Include="Resources.resx.txt" />
     <None Include="Resources\범죄도시2.png" />
     <None Include="Resources\MvName.png" />
+    <Content Include="Resources\MoogaBox_Icon.ico" />
+    <Content Include="Resources\premium-icon-film-726322.ico" />
     <None Include="Resources\moogabox.png" />
     <None Include="Resources\pc배경화면_벚꽃.png" />
     <Content Include="Resources\닥터.png" />

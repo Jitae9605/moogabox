@@ -19,7 +19,6 @@ namespace moogabox
         public ManagerForm6()
         {
             InitializeComponent();
-
             timer1.Interval = 40;
             timer1.Tick += timer2_Tick;
             progressBar1.Minimum = 0;
