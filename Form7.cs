@@ -33,14 +33,14 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			var Comm = new SqlCommand("Select MvName, StartTime, Hall, SeatNum, Ccount, Mmoney from TmpReservation", Conn);
+			var Comm = new SqlCommand("Select MvName, StartTime, Hall, SeatNum from TmpReservation", Conn);
 			SqlDataReader R;
 			R = Comm.ExecuteReader();
 
+			int Count = 0; 
 			int sum = 0;
-			while (R.Read())    // R에 아직 읽을 행이 남아있는동안 무한반복(한행 읽고 다음행을 읽는다
+			if (R.Read())    // R에 아직 읽을 행이 남아있는동안 무한반복(한행 읽고 다음행을 읽는다
 			{
-				sum += Convert.ToInt32(R["Mmoney"].ToString());
 				string MvName = R["MvName"].ToString();       
 				string StartTime = R["StartTime"].ToString(); 
 				string Hall = R["Hall"].ToString();  
@@ -48,20 +48,23 @@ namespace moogabox
 				string SeatNum = "";
 
 				string[] SeatNumArray = new string[4];
-				int length = R["SeatNum"].ToString().Length / 2;
+				int length = R["SeatNum"].ToString().Length/4;
 
 				int j = 0;
 				for (int i = 0; i < length; i++)
 				{
-					SeatNumArray[i] = R["SeatNum"].ToString().Substring(j, 2);
-					j += 2;
+					SeatNumArray[i] = R["SeatNum"].ToString().Substring(j, 3);
+					j += 4;
 					SeatNum += SeatNumArray[i];
 					if (i >= length - 1) break;
 					SeatNum += ", ";
+					Count++;
 				}
 
-				string Ccount = R["Ccount"].ToString();     
-				string Mmoney = R["Mmoney"].ToString();       
+				sum = 14000 * Count;
+
+				string Ccount = Count.ToString();     
+				string Mmoney = sum.ToString();       
 
 				// 이렇게 저장된 string 문자열들을 문자열배열을 선언해 삽입
 				string[] strs = new string[] { MvName, StartTime, Hall, SeatNum, Ccount, Mmoney };
@@ -70,6 +73,7 @@ namespace moogabox
 				ListViewItem getItem = new ListViewItem(strs);
 				lvMovie.Items.Add(getItem);
 			}
+
 			this.txtSumMovie.Text = sum.ToString();
 			R.Close();
 			Conn.Close();

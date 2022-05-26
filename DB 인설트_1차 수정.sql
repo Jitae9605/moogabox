@@ -42,8 +42,8 @@ Who int
 
 create table Reservation						--예매 테이블
 (
-ID varchar(10) ,
-RsvCode varchar(10)  ,		--예매번호 (데이터는 랜덤값으로 )
+ID varchar(20) ,
+RsvCode varchar(20)  ,		--예매번호 (데이터는 랜덤값으로 )
 MvName nvarchar(20),	--예매 영화 이름
 Hall int,										--예매 영화 상영관
 SeatNum varchar(20),							--예매 좌석 번호
@@ -55,7 +55,7 @@ Mmoney int										--총  구매 금액
 
 create table TmpReservation						--예매 임시 테이블
 (
-ID varchar(10) ,
+ID varchar(20) ,
 MvName nvarchar(20),	--예매 영화 이름
 Hall int,										--예매 영화 상영관
 SeatNum varchar(20),							--예매 좌석 번호
@@ -317,3 +317,6 @@ UPDATE Movie Set MvNum = 'JW03' WHERE StartTime = '15:20:00' and MvName ='쥬라기
 UPDATE Movie Set MvNum = 'JW04' WHERE StartTime = '17:40:00';
 UPDATE Movie Set MvNum = 'JW05' WHERE StartTime = '20:00:00';
 UPDATE Movie Set MvNum = 'JW06' WHERE StartTime = '22:20:00';
+
+
+select * from Maejum

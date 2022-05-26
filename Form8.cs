@@ -50,8 +50,13 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			string InsertSql = string.Format("insert into Reservation select * from TmpReservation");
-			var Com = new SqlCommand(InsertSql, Conn);
+			string SetID = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + DateTime.Now.ToString("HH") + DateTime.Now.ToString("mm") + DateTime.Now.ToString("ss");
+			string AddID = "update TmpReservation set ID = '" + SetID + "'";
+			var Com = new SqlCommand(AddID, Conn);
+			Com.ExecuteNonQuery();
+
+			string InsertSql = string.Format("insert into Reservation(ID,MvName,Hall,SeatNum,StartTime,RunningTime,Ccount,Mmoney) select * from TmpReservation");
+			Com = new SqlCommand(InsertSql, Conn);
 			Com.ExecuteNonQuery();
 
 			var Comm = new SqlCommand("Select ID from TmpReservation", Conn);
@@ -64,8 +69,7 @@ namespace moogabox
 			}
 			myRead.Close();
 
-			int a = 1;
-			string TmpRsvCode = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + a++.ToString("D2");
+			string TmpRsvCode = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + DateTime.Now.ToString("HH") + DateTime.Now.ToString("mm") + DateTime.Now.ToString("ss");
 
 			InsertSql = "update Reservation set RsvCode = '" + TmpRsvCode + "' where ID = '" + CurCustomerID + "'";
 
@@ -82,13 +86,13 @@ namespace moogabox
 				this.txtTime.Text = myRead[1].ToString();
 				this.txtHallNum.Text = myRead[2].ToString();
 				string[] SeatNum = new string[4];
-				int length = myRead[3].ToString().Length / 2;
+				int length = myRead[3].ToString().Length / 4;
 
 				int j = 0;
 				for (int i = 0; i < length; i++)
 				{
-					SeatNum[i] = myRead[3].ToString().Substring(j, 2);
-					j += 2;
+					SeatNum[i] = myRead[3].ToString().Substring(j, 3);
+					j += 4;
 					this.txtSeatNum.Text += SeatNum[i];
 					if (i >= length - 1) break;
 					this.txtSeatNum.Text += ", ";
