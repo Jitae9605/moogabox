@@ -197,6 +197,7 @@ namespace moogabox
 			this.Controls.Add(this.lbTime);
 			this.Controls.Add(this.lbTitle);
 			this.Controls.Add(this.pbMovie);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "Form6";
 			this.Text = "선택 확인";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
