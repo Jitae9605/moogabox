@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSeat = new System.Windows.Forms.TextBox();
@@ -49,22 +50,28 @@ namespace moogabox
             this.cHall = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cSeatNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cStartTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPoster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(253, 18);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(257, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 32);
+            this.label1.Size = new System.Drawing.Size(132, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "예매현황";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtSeat);
             this.panel1.Controls.Add(this.txtTime);
@@ -76,114 +83,131 @@ namespace moogabox
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Controls.Add(this.pbPoster);
             this.panel1.Controls.Add(this.listView1);
-            this.panel1.Location = new System.Drawing.Point(12, 59);
+            this.panel1.Location = new System.Drawing.Point(12, 79);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 295);
+            this.panel1.Size = new System.Drawing.Size(609, 394);
             this.panel1.TabIndex = 1;
             // 
             // txtSeat
             // 
-            this.txtSeat.Location = new System.Drawing.Point(395, 222);
+            this.txtSeat.Location = new System.Drawing.Point(395, 296);
+            this.txtSeat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSeat.Name = "txtSeat";
-            this.txtSeat.Size = new System.Drawing.Size(121, 21);
+            this.txtSeat.Size = new System.Drawing.Size(194, 22);
             this.txtSeat.TabIndex = 5;
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(395, 258);
+            this.txtTime.Location = new System.Drawing.Point(395, 345);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(103, 21);
+            this.txtTime.Size = new System.Drawing.Size(194, 22);
             this.txtTime.TabIndex = 5;
             // 
             // txtHall
             // 
-            this.txtHall.Location = new System.Drawing.Point(250, 222);
+            this.txtHall.Location = new System.Drawing.Point(250, 296);
+            this.txtHall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHall.Name = "txtHall";
-            this.txtHall.Size = new System.Drawing.Size(55, 21);
+            this.txtHall.Size = new System.Drawing.Size(55, 22);
             this.txtHall.TabIndex = 5;
             // 
             // txtMvName
             // 
-            this.txtMvName.Location = new System.Drawing.Point(80, 259);
+            this.txtMvName.Location = new System.Drawing.Point(80, 345);
+            this.txtMvName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMvName.Name = "txtMvName";
-            this.txtMvName.Size = new System.Drawing.Size(225, 21);
+            this.txtMvName.Size = new System.Drawing.Size(225, 22);
             this.txtMvName.TabIndex = 4;
             // 
             // txtRvcode
             // 
-            this.txtRvcode.Location = new System.Drawing.Point(80, 222);
+            this.txtRvcode.Location = new System.Drawing.Point(80, 296);
+            this.txtRvcode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRvcode.Name = "txtRvcode";
-            this.txtRvcode.Size = new System.Drawing.Size(100, 21);
+            this.txtRvcode.Size = new System.Drawing.Size(100, 22);
             this.txtRvcode.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(6, 260);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(6, 347);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "영화이름 :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(320, 260);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(320, 347);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.Size = new System.Drawing.Size(62, 16);
             this.label5.TabIndex = 3;
             this.label5.Text = "상영시간 :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(320, 224);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(320, 299);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 17);
+            this.label6.Size = new System.Drawing.Size(62, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "좌석번호 :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(190, 224);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(190, 299);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 17);
+            this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "상영관 :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(6, 224);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(6, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "예매번호 :";
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(520, 250);
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnPrint.Location = new System.Drawing.Point(535, 504);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(78, 38);
+            this.btnPrint.Size = new System.Drawing.Size(78, 51);
             this.btnPrint.TabIndex = 2;
             this.btnPrint.Text = "발권";
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // pbPoster
             // 
-            this.pbPoster.Location = new System.Drawing.Point(458, 14);
+            this.pbPoster.BackColor = System.Drawing.Color.Gray;
+            this.pbPoster.Location = new System.Drawing.Point(460, 21);
+            this.pbPoster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbPoster.Name = "pbPoster";
-            this.pbPoster.Size = new System.Drawing.Size(140, 186);
+            this.pbPoster.Size = new System.Drawing.Size(140, 248);
             this.pbPoster.TabIndex = 1;
             this.pbPoster.TabStop = false;
             // 
@@ -195,12 +219,15 @@ namespace moogabox
             this.cHall,
             this.cSeatNum,
             this.cStartTime});
+            this.listView1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(18, 12);
+            this.listView1.Location = new System.Drawing.Point(18, 16);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(433, 190);
+            this.listView1.Size = new System.Drawing.Size(433, 252);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -234,19 +261,42 @@ namespace moogabox
             this.cStartTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cStartTime.Width = 65;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 504);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(251, 59);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
             // Form11
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 366);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(633, 596);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnPrint);
+            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form11";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "예매현황";
             this.Load += new System.EventHandler(this.Form11_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPoster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +324,7 @@ namespace moogabox
         private System.Windows.Forms.ColumnHeader cHall;
         private System.Windows.Forms.ColumnHeader cSeatNum;
         private System.Windows.Forms.ColumnHeader cStartTime;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }
