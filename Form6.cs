@@ -81,7 +81,7 @@ namespace moogabox
 
 			Conn.Close();
 
-			if (this.txtMovie.Text == "") return "쥬라기월드";
+			if (this.txtMovie.Text == "쥬라기 월드: 도미니언") return "쥬라기월드";
 			return this.txtMovie.Text;
 
 			

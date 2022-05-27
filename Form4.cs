@@ -15,6 +15,8 @@ namespace moogabox
 	//btnTime01.Enabled = false;
 	public partial class Form4 : Form
 	{
+		public string ID { get; set; }
+
 		private SqlConnection Con;
 		public Form4()
 		{
@@ -582,15 +584,17 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			string Sql = "insert into TmpReservation(MvName,Hall,StartTime) "
-								+ "values( @MvName,@Hall, @StartTime )";
+			string Sql = "insert into TmpReservation(ID,MvName,Hall,StartTime) "
+								+ "values(@ID, @MvName,@Hall, @StartTime )";
 
 			var Comm = new SqlCommand(Sql, Conn);
 
+			Comm.Parameters.Add("@ID", SqlDbType.VarChar, 10);
 			Comm.Parameters.Add("@MvName", SqlDbType.NVarChar, 20);
 			Comm.Parameters.Add("@Hall", SqlDbType.Int);
 			Comm.Parameters.Add("@StartTime", SqlDbType.Time, 7);
 
+			Comm.Parameters["@ID"].Value = this.ID;
 			Comm.Parameters["@MvName"].Value = this.name.Text;
 			Comm.Parameters["@Hall"].Value = Convert.ToInt32(this.lblhall1.Text);
 			Comm.Parameters["@StartTime"].Value = this.time.Text;

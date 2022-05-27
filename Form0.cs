@@ -81,6 +81,7 @@ namespace moogabox
                     if (Who == 0)
                     {
                         Form1 frm1 = new Form1();
+						frm1.ID = this.txtId.Text;
                         frm1.Show();
                         this.Hide();
                     }
@@ -123,6 +124,19 @@ namespace moogabox
             }
         }
 
-       
-    }
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void Form0_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

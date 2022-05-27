@@ -26,8 +26,9 @@ namespace moogabox
 
 		private void Form7_Load(object sender, EventArgs e)
 		{
-			this.txtSumTotal.Text = (DataLoadMajum()+DataLoadMovie()).ToString();
+			this.txtSumTotal.Text = (DataLoadMajum() + DataLoadMovie()).ToString();
 		}
+
 		private int DataLoadMovie()
 		{
 			var Conn = new SqlConnection(Constr);
@@ -37,7 +38,7 @@ namespace moogabox
 			SqlDataReader R;
 			R = Comm.ExecuteReader();
 
-			int Count = 0; 
+			int Count = 1; 
 			int sum = 0;
 			if (R.Read())    // R에 아직 읽을 행이 남아있는동안 무한반복(한행 읽고 다음행을 읽는다
 			{
@@ -64,7 +65,9 @@ namespace moogabox
 				sum = 14000 * Count;
 
 				string Ccount = Count.ToString();     
-				string Mmoney = sum.ToString();       
+				string Mmoney = sum.ToString();
+
+				
 
 				// 이렇게 저장된 string 문자열들을 문자열배열을 선언해 삽입
 				string[] strs = new string[] { MvName, StartTime, Hall, SeatNum, Ccount, Mmoney };
@@ -73,9 +76,13 @@ namespace moogabox
 				ListViewItem getItem = new ListViewItem(strs);
 				lvMovie.Items.Add(getItem);
 			}
+			R.Close();
+
+			string UpdateCount_Money = string.Format("update TmpReservation set Ccount = {0}, Mmoney = {1}", Count, sum);
+			Comm = new SqlCommand(UpdateCount_Money, Conn);
+			Comm.ExecuteNonQuery();
 
 			this.txtSumMovie.Text = sum.ToString();
-			R.Close();
 			Conn.Close();
 			return sum;
 		}
@@ -178,6 +185,11 @@ namespace moogabox
 		private void Form7_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

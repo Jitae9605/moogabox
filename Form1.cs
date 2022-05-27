@@ -10,9 +10,13 @@ using System.Windows.Forms;
 
 namespace moogabox
 {
+	
     public partial class Form1 : Form
     {
-        public Form1()
+
+		public string ID { get; set; }
+
+		public Form1()
         {
             InitializeComponent();
         }
@@ -31,6 +35,7 @@ namespace moogabox
         private void btnticket_Click(object sender, EventArgs e)
         {
             Form4 frm4 = new Form4();
+			frm4.ID = ID;
             frm4.Show();
             this.Hide();
         }
@@ -43,6 +48,11 @@ namespace moogabox
         }
 
 		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
 		{
 
 		}
