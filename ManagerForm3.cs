@@ -49,7 +49,13 @@ namespace moogabox
 
         bool TagMove;
         int MvalX, MValY;
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+
+		private void ManagerForm3_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             TagMove = true;
             MvalX = e.X;

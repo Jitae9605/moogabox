@@ -161,10 +161,19 @@ namespace moogabox
 			Com = new SqlCommand("delete from TmpBuySnack", Conn);
 			Com.ExecuteNonQuery();
 
-
-			Form8 form8 = new Form8();
-			form8.Show();
-			this.Hide();
+			if(!(this.txtSumMovie.Text == "0"))
+			{
+				Form8 form8 = new Form8();
+				form8.Show();
+				this.Hide();
+			}
+			else
+			{
+				Form1 form1 = new Form1();
+				form1.Show();
+				this.Hide();
+			}
+			
 		}
 
 		private void btnBack_Click(object sender, EventArgs e)

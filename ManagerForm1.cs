@@ -46,5 +46,10 @@ namespace moogabox
             M_frm2.ShowDialog();
             Application.Exit();
         }
-    }
+
+		private void ManagerForm1_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

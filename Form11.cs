@@ -79,7 +79,7 @@ namespace moogabox
                     pbPoster.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
-                else if (txtMvName.Text == "쥬라기 월드:도미니언")
+                else if (txtMvName.Text == "쥬라기 월드: 도미니언")
                 {
                     pbPoster.Load(@"..\..\Resources\쥬라기월드new.png");
                     pbPoster.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -89,8 +89,18 @@ namespace moogabox
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+			string txt = "";
+
+			char a = '\n';
+
+			string[] txt1 = this.txtSeat.Text.Split(a);
+
+			for(int i = 0; i < txt1.Length; i++)
+			{
+				txt += txt1[i] + " ";
+			}
             MessageBox.Show("영화 : " + this.txtMvName.Text + "\n\n시간 : " + this.txtTime.Text + "\n\n상영관 : " + txtHall.Text + 
-                "\n\n좌석 : " + this.txtSeat.Text + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.DialogResult = DialogResult.OK;
 
             Form1 frm1 = new Form1();
@@ -106,5 +116,10 @@ namespace moogabox
         {
 
         }
-    }
+
+		private void Form11_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

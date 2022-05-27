@@ -928,5 +928,10 @@ namespace moogabox
             PrintTable_jaego();
             Conn.Close();
         }
-    }
+
+		private void ManagerForm4_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

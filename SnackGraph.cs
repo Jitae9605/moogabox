@@ -41,5 +41,10 @@ namespace Cinema_Kiosk_SalesManager
         {
             this.Close();
         }
-    }
+
+		private void SnackGraph_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

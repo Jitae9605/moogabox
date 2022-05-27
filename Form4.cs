@@ -60,127 +60,6 @@ namespace moogabox
 					button[j].Enabled = false;
 				}
 			}
-
-				/*if (!Btn_enabled(time[j]) && (j == 1))
-				{
-
-					btnTime08.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 2))
-				{
-
-					btnTime09.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 3))
-				{
-
-					btnTime010.Enabled = false;
-
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 4))
-				{
-
-					btnTime11.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 5))
-				{
-
-					btnTime12.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 6))
-				{
-					btnTime01.Enabled = false;
-
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 7))
-				{
-
-					btnTime02.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 8))
-				{
-
-					btnTime03.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 9))
-				{
-
-					btnTime04.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 10))
-				{
-
-					btnTime05.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 11))
-				{
-
-					btnTime06.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 12))
-				{
-
-					btnTime13.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 13))
-				{
-
-					btnTime15.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 14))
-				{
-
-					btnTime16.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 15))
-				{
-
-					btnTime17.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 16))
-				{
-
-					btnTime18.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 17))
-				{
-
-					btnTime19.Enabled = false;
-
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 18))
-				{
-
-					btnTime20.Enabled = false;
-
-				}*/
-
 			
 			myRead01.Close();
 
@@ -598,16 +477,17 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			string Sql = "insert into TmpReservation(MvName,Hall,StartTime) "
-								+ "values( @MvName,@Hall, @StartTime)";
+			string Sql = "insert into TmpReservation(ID, MvName,Hall,StartTime) "
+								+ "values(@ID, @MvName,@Hall, @StartTime)";
 
 			var Comm = new SqlCommand(Sql, Conn);
 
+			Comm.Parameters.Add("@ID", SqlDbType.VarChar, 10);
 			Comm.Parameters.Add("@MvName", SqlDbType.NVarChar, 20);
 			Comm.Parameters.Add("@Hall", SqlDbType.Int);
 			Comm.Parameters.Add("@StartTime", SqlDbType.Time, 7);
 
-
+			Comm.Parameters["@ID"].Value = ID;
 			Comm.Parameters["@MvName"].Value = this.name.Text;
 			Comm.Parameters["@Hall"].Value = Convert.ToInt32(this.lblhall1.Text);
 			Comm.Parameters["@StartTime"].Value = this.time.Text;
@@ -646,6 +526,11 @@ namespace moogabox
 			Form1 form1 = new Form1();
 			form1.Show();
 			this.Hide();
+		}
+
+		private void Form4_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 	}
 }

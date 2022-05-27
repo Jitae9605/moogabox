@@ -42,5 +42,10 @@ namespace Cinema_Kiosk_SalesManager
         {
             this.Close();
         }
-    }
+
+		private void MovieTicketGraph_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

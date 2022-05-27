@@ -587,11 +587,7 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-            for (int i = 0; i < 20; i++)
-            {
-                Button[i].BackColor = Color.Black;
-                Button[i].ForeColor = Color.White;
-            }
+           
 			var Comm1 = new SqlCommand("SELECT Eempty FROM Crjo where MvNum = '" + Passvalue + "'", Conn);
 			var MyRead1 = Comm1.ExecuteReader();
 
@@ -611,8 +607,9 @@ namespace moogabox
 				if (Eempty[j] == 0)
 				{
 					Button[j].BackColor = Color.Black;
+					Button[j].ForeColor = Color.White;
 				}
-            }
+			}
 
             Conn.Close();
 
@@ -702,5 +699,10 @@ namespace moogabox
                 }
             }
         }
-    }
+
+		private void Form5_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

@@ -138,5 +138,10 @@ namespace moogabox
 		{
 
 		}
+
+		private void Form0_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }

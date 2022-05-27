@@ -46,5 +46,10 @@ namespace moogabox
                 this.Visible = false;
             }
         }
-    }
+
+		private void ManagerForm6_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

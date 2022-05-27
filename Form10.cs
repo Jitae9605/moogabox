@@ -117,5 +117,10 @@ namespace moogabox
             pbMooga1.Load(@"..\..\Resources\moogabox.png");
             pbMooga1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-    }
+
+		private void Form10_FormClosing(object sender, FormClosingEventArgs e)
+		{
+
+		}
+	}
 }

@@ -41,7 +41,7 @@ namespace moogabox
                     pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
-                else if(myRead[0].ToString() == "쥬라기 월드:도미니언")
+                else if(myRead[0].ToString() == "쥬라기 월드: 도미니언")
                 {
                     pbMovie.Load(@"..\..\Resources\쥬라기월드new.png");
                     pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -52,41 +52,31 @@ namespace moogabox
             Conn.Close();
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("영화 : " + this.lblName.Text + "\n\n시간 : " + this.lblTime.Text + "\n\n상영관 : "
-                + this.lblHall.Text + "\n\n좌석 : " + this.lblSeat.Text + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK,MessageBoxIcon.Information);
-            this.DialogResult = DialogResult.OK;
-
-            Form1 frm1 = new Form1();
-            frm1.Show();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Form1 newform1 = new Form1();
-            newform1.Show();
-            this.Hide();            //현재폼을 제거해줌
-        }
+			string txt = "";
 
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
+			char a = '\n';
 
-        }
+			string[] txt1 = this.lblSeat.Text.Split(a);
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+			for (int i = 0; i < txt1.Length; i++)
+			{
+				txt += txt1[i] + " ";
+			}
 
-        }
-    }
+			MessageBox.Show("영화 : " + this.lblName.Text + "\n\n시간 : " + this.lblTime.Text + "\n\n상영관 : "
+				+ this.lblHall.Text + "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			this.DialogResult = DialogResult.OK;
+
+			Form1 frm1 = new Form1();
+			frm1.Show();
+			this.Hide();
+		}
+
+		private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }

@@ -170,5 +170,10 @@ namespace moogabox
                 Conn.Close();
             }
         }
-    }
+
+		private void ManagerForm5_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
+	}
 }
