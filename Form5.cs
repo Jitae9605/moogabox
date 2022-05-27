@@ -564,18 +564,30 @@ namespace moogabox
                                 btnB1, btnB2, btnB3, btnB4, btnB5,
                                 btnC1, btnC2, btnC3, btnC4, btnC5,
                                 btnD1, btnD2, btnD3, btnD4, btnD5};
+			var Conn = new SqlConnection(Constr);
+			Conn.Open();
 
-            for (int i = 0; i < 20; i++)
+			var Comm1 = new SqlCommand("SELECT Eempty FROM Crjo where MvNum = '" + Passvalue + "'", Conn);
+			var MyRead1 = Comm1.ExecuteReader();
+
+			int[] Eempty = new int[20];
+
+			int i = 0;
+			while (MyRead1.Read())
+			{
+				Eempty[i] = Convert.ToInt32(MyRead1[0]);
+				i++;
+			}
+
+			MyRead1.Close();
+
+			for (int j = 0; j < 20; j++)
             {
-                Button[i].BackColor = SystemColors.Control;
+				if (Eempty[j] == 0)
+				{
+					Button[j].BackColor = Color.Black;
+				}
             }
-
-            var Conn = new SqlConnection(Constr);
-            Conn.Open();
-
-            string sql = "UPDATE Crjo set Eempty =" + 0 + "WHERE MvNum = '" + Passvalue + "'";
-            var Comm = new SqlCommand(sql, Conn);
-            Comm.ExecuteNonQuery();
 
             Conn.Close();
 
@@ -614,11 +626,18 @@ namespace moogabox
         
             int hallnum = Convert.ToInt32(this.lblhall.Text);
             string txt = "";
-            for(int i = 0; i < strtmp.Length; i++)
-            {
-                txt += strtmp[i] + " ";
-            }
+			string txt1 = "";
 
+            for(int i = 0; i < strtmp.Length;)
+            {
+                txt1 += "'" + strtmp[i] + "'" ;
+				txt += strtmp[i];
+				i++;
+				if (i >= strtmp.Length - 1) break;
+				else txt1 += ",";
+
+			}
+			
             for (int i = 0; i < strtmp.Length; i++)
             {
                 string sql = "UPDATE Crjo set Eempty =" + 1 + "WHERE MvNum = '" + Passvalue + "' and SeatNum = '" + strtmp[i] + "'";
@@ -638,6 +657,7 @@ namespace moogabox
             //다음창으로 이동
             Form6 form6 = new Form6();
             form6.Passvalue = Passvalue;
+			form6.SelectedSeatNum = txt1;
             form6.Show();
             this.Hide();
         }

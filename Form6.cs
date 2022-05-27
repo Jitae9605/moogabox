@@ -18,6 +18,7 @@ namespace moogabox
 		private string Constr = "Server=(local);database=moogabox;" +
 			   "Integrated Security=true";
 
+		public string SelectedSeatNum { get; set; }
 		public string Passvalue { get; set; }
 		public Form6()
         {
@@ -96,8 +97,13 @@ namespace moogabox
 			var Comm = new SqlCommand("update TmpReservation set SeatNum = null", Conn);
 			Comm.ExecuteNonQuery();
 
+			string sql = "UPDATE Crjo set Eempty =" + 0 + "WHERE MvNum = '" + Passvalue + "' and SeatNum in(" + SelectedSeatNum + ")";
+			Comm = new SqlCommand(sql, Conn);
+			Comm.ExecuteNonQuery();
+
 			Conn.Close();
 			Form5 form5 = new Form5();
+			form5.Passvalue = Passvalue;
 			form5.Show();
 			this.Hide();
 		}
