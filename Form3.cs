@@ -68,16 +68,16 @@ namespace moogabox
 			DialogResult OKonly = 
 			MessageBox.Show("영화 : " + this.lblName.Text + "\n\n시간 : " + this.lblTime.Text + "\n\n상영관 : "
 				+ this.lblHall.Text + "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			if(OKonly == DialogResult.OK)
-			{
+			//if(OKonly == DialogResult.OK)
+			//{
                 this.Visible = false;
                 Form1 frm1 = new Form1();
                 Form2 frm2 = new Form2();
                 frm2.Close();
 				frm1.ShowDialog();
-                Application.Exit();
+                //Application.Exit();
 
-            }
+            //}
 			
 
 			

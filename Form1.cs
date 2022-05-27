@@ -32,16 +32,18 @@ namespace moogabox
         private void btnticket_Click(object sender, EventArgs e)
         {
             Form4 frm4 = new Form4();
-			frm4.ID = ID;
-            frm4.Show();
-            this.Hide();
+            this.Visible = false;
+            frm4.ID = ID;
+            frm4.ShowDialog();
+            Application.Exit();
         }
 
         private void btnStore_Click(object sender, EventArgs e)
         {
             Form9 frm9 = new Form9();
-            frm9.Show();
-            this.Hide();
+            this.Visible = false;
+            frm9.ShowDialog();
+            Application.Exit();
         }
 
 		private void Form1_Load(object sender, EventArgs e)
