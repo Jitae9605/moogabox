@@ -350,7 +350,7 @@ namespace moogabox
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "선택 내용 확인";
             this.groupBox1.Visible = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label4
             // 

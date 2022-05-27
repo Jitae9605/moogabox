@@ -55,7 +55,7 @@ namespace Cinema_Kiosk_SalesManager
             legend1.IsTextAutoFit = false;
             legend1.Name = "Legend1";
             legend1.Title = "스낵의 총 판매수량과 판매금액";
-            legend1.TitleFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            legend1.TitleFont = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
@@ -78,7 +78,7 @@ namespace Cinema_Kiosk_SalesManager
             this.btxExit.BackColor = System.Drawing.Color.Firebrick;
             this.btxExit.FlatAppearance.BorderSize = 0;
             this.btxExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btxExit.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btxExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btxExit.ForeColor = System.Drawing.Color.White;
             this.btxExit.Location = new System.Drawing.Point(490, 414);
             this.btxExit.Name = "btxExit";

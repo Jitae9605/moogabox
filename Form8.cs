@@ -50,13 +50,9 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			string SetID = DateTime.Now.ToString("yyyy") + DateTime.Now.ToString("MM") + DateTime.Now.ToString("dd") + DateTime.Now.ToString("HH") + DateTime.Now.ToString("mm") + DateTime.Now.ToString("ss");
-			string AddID = "update TmpReservation set ID = '" + SetID + "'";
-			var Com = new SqlCommand(AddID, Conn);
-			Com.ExecuteNonQuery();
 
 			string InsertSql = string.Format("insert into Reservation(ID,MvName,Hall,SeatNum,StartTime,RunningTime,Ccount,Mmoney) select * from TmpReservation");
-			Com = new SqlCommand(InsertSql, Conn);
+			var Com = new SqlCommand(InsertSql, Conn);
 			Com.ExecuteNonQuery();
 
 			var Comm = new SqlCommand("Select ID from TmpReservation", Conn);

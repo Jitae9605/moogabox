@@ -31,19 +31,19 @@ namespace moogabox
 
                 if (myRead[0].ToString() == "닥터 스트레인지")
                 {
-                    pbMovie.Load(@"D:\C++\Dr.strange.jpg");
+                    pbMovie.Load(@"..\..\Resources\닥터 스트레인지.png");
                     pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
                 else if(myRead[0].ToString() == "범죄도시2")
                 {
-                    pbMovie.Load(@"D:\C++\City2.jpg");
+                    pbMovie.Load(@"..\..\Resources\범죄도시2.png");
                     pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
                 else if(myRead[0].ToString() == "쥬라기 월드:도미니언")
                 {
-                    pbMovie.Load(@"D:\C++\Jurassicworld.jpg");
+                    pbMovie.Load(@"..\..\Resources\쥬라기월드new.png");
                     pbMovie.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }

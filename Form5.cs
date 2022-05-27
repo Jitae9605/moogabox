@@ -38,8 +38,22 @@ namespace moogabox
             }
             myRead.Close();
 
-            Conn.Close();
-            MessageBox.Show("최대 선택 좌석은 4개입니다.", "주의사항",
+			var Comm1 = new SqlCommand("select * from Movie cross join Theater where Movie.Hall = ThNum", Conn);
+			
+			var MyRead1 = Comm1.ExecuteReader();
+
+			int[] Eempty = new int[20];
+
+			int i = 0;
+			while (MyRead1.Read())
+			{
+				Eempty[i] = Convert.ToInt32(MyRead1[1]);
+				i++;
+			}
+			MyRead1.Close();
+			Conn.Close();
+			Seat(Eempty);
+			MessageBox.Show("최대 선택 좌석은 4개입니다.", "주의사항",
                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
         private void btnA1_Click_1(object sender, EventArgs e)
@@ -619,6 +633,22 @@ namespace moogabox
             form6.Show();
             this.Hide();
         }
+		public void Seat(int[] empty)
+		{
+			Button[] Button = { btnA1, btnA2, btnA3, btnA4, btnA5,
+								btnB1, btnB2, btnB3, btnB4, btnB5,
+								btnC1, btnC2, btnC3, btnC4, btnC5,
+								btnD1, btnD2, btnD3, btnD4, btnD5};
+			for (int i = 0; i < 20; i++)
+			{
+				if (empty[i] == 1)
+				{
+					Button[i].BackColor = Color.Red;
+
+				}
+			}
+		}
+	}
 
         private void label1_Click(object sender, EventArgs e)
         {

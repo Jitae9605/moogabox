@@ -103,7 +103,7 @@ namespace moogabox
             this.label1.Size = new System.Drawing.Size(504, 70);
             this.label1.TabIndex = 0;
             this.label1.Text = "S   C   R   E   E   N";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbTitle
             // 
@@ -955,7 +955,7 @@ namespace moogabox
             this.lblhall.Size = new System.Drawing.Size(58, 19);
             this.lblhall.TabIndex = 32;
             this.lblhall.Text = "label5";
-            this.lblhall.Click += new System.EventHandler(this.lblhall_Click);
+            //this.lblhall.Click += new System.EventHandler(this.lblhall_Click);
             // 
             // label4
             // 

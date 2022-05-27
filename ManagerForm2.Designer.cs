@@ -77,7 +77,7 @@ namespace moogabox
             this.Btn_Cancle.BackColor = System.Drawing.Color.Firebrick;
             this.Btn_Cancle.FlatAppearance.BorderSize = 0;
             this.Btn_Cancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cancle.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Btn_Cancle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Cancle.ForeColor = System.Drawing.Color.White;
             this.Btn_Cancle.Location = new System.Drawing.Point(490, 414);
             this.Btn_Cancle.Name = "Btn_Cancle";
@@ -90,22 +90,22 @@ namespace moogabox
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(179, 307);
+            this.label2.Location = new System.Drawing.Point(179, 308);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 23);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "총 매출액";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(217, 9);
+            this.label1.Location = new System.Drawing.Point(212, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 37);
+            this.label1.Size = new System.Drawing.Size(170, 44);
             this.label1.TabIndex = 9;
             this.label1.Text = "총 판매수량";
             // 
@@ -134,6 +134,7 @@ namespace moogabox
             this.BuyPrice,
             this.BuyCount,
             this.SnackNum});
+            this.View_TotalSale.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_TotalSale.HideSelection = false;
             this.View_TotalSale.Location = new System.Drawing.Point(33, 53);
             this.View_TotalSale.Name = "View_TotalSale";
@@ -146,22 +147,25 @@ namespace moogabox
             // 
             // textTotal
             // 
-            this.textTotal.Location = new System.Drawing.Point(269, 309);
+            this.textTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTotal.Location = new System.Drawing.Point(267, 310);
             this.textTotal.Name = "textTotal";
             this.textTotal.ReadOnly = true;
-            this.textTotal.Size = new System.Drawing.Size(298, 21);
+            this.textTotal.ShortcutsEnabled = false;
+            this.textTotal.Size = new System.Drawing.Size(300, 23);
             this.textTotal.TabIndex = 13;
+            this.textTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnSG
             // 
             this.btnSG.BackColor = System.Drawing.Color.Firebrick;
             this.btnSG.FlatAppearance.BorderSize = 0;
             this.btnSG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSG.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSG.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSG.ForeColor = System.Drawing.Color.White;
-            this.btnSG.Location = new System.Drawing.Point(419, 336);
+            this.btnSG.Location = new System.Drawing.Point(407, 339);
             this.btnSG.Name = "btnSG";
-            this.btnSG.Size = new System.Drawing.Size(148, 23);
+            this.btnSG.Size = new System.Drawing.Size(160, 23);
             this.btnSG.TabIndex = 14;
             this.btnSG.Text = "스낵의 판매량 그래프";
             this.btnSG.UseVisualStyleBackColor = false;
@@ -172,11 +176,11 @@ namespace moogabox
             this.btnMG.BackColor = System.Drawing.Color.Firebrick;
             this.btnMG.FlatAppearance.BorderSize = 0;
             this.btnMG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMG.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnMG.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMG.ForeColor = System.Drawing.Color.White;
-            this.btnMG.Location = new System.Drawing.Point(419, 365);
+            this.btnMG.Location = new System.Drawing.Point(407, 368);
             this.btnMG.Name = "btnMG";
-            this.btnMG.Size = new System.Drawing.Size(148, 23);
+            this.btnMG.Size = new System.Drawing.Size(160, 23);
             this.btnMG.TabIndex = 15;
             this.btnMG.Text = "영화티켓 판매량 그래프";
             this.btnMG.UseVisualStyleBackColor = false;

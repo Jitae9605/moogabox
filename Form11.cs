@@ -69,19 +69,19 @@ namespace moogabox
 
                 if (txtMvName.Text == "닥터 스트레인지")
                 {
-                    pbPoster.Load(@"D:\C++\Dr.strange.jpg");
+                    pbPoster.Load(@"..\..\Resources\닥터 스트레인지.png");
                     pbPoster.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
                 else if (txtMvName.Text == "범죄도시2")
                 {
-                    pbPoster.Load(@"D:\C++\City2.jpg");
+                    pbPoster.Load(@"..\..\Resources\범죄도시2.png");
                     pbPoster.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
 
                 else if (txtMvName.Text == "쥬라기 월드:도미니언")
                 {
-                    pbPoster.Load(@"D:\C++\Jurassicworld.jpg");
+                    pbPoster.Load(@"..\..\Resources\쥬라기월드new.png");
                     pbPoster.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }

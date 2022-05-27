@@ -114,7 +114,7 @@ namespace moogabox
         private void Form10_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txtID;
-            pbMooga1.Load(@"D:\C++\Mooga1.png");
+            pbMooga1.Load(@"..\..\Resources\moogabox.png");
             pbMooga1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
