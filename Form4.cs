@@ -52,139 +52,17 @@ namespace moogabox
 				i++;
 			}
 
+			Button[] button = {btnTime07, btnTime08, btnTime09, btnTime010, btnTime11,
+							btnTime12, btnTime01, btnTime02, btnTime03, btnTime04,
+							btnTime05, btnTime06, btnTime13, btnTime15, btnTime16,
+							btnTime17, btnTime18, btnTime19, btnTime20};
+
 			for (int j = 0; j < 19; j++)
 			{
-				if (!Btn_enabled(time[j]) && (j == 0))
+				if (!Btn_enabled(time[j]))
 				{
-
-					btnTime07.Enabled = false;
+					button[j].Enabled = false;
 				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 1))
-				{
-
-					btnTime08.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 2))
-				{
-
-					btnTime09.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 3))
-				{
-
-					btnTime010.Enabled = false;
-
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 4))
-				{
-
-					btnTime11.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 5))
-				{
-
-					btnTime12.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 6))
-				{
-					btnTime01.Enabled = false;
-
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 7))
-				{
-
-					btnTime02.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 8))
-				{
-
-					btnTime03.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 9))
-				{
-
-					btnTime04.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 10))
-				{
-
-					btnTime05.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 11))
-				{
-
-					btnTime06.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 12))
-				{
-
-					btnTime13.Enabled = false;
-				}
-
-				if (!Btn_enabled(time[j]) && (j == 13))
-				{
-
-					btnTime15.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 14))
-				{
-
-					btnTime16.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 15))
-				{
-
-					btnTime17.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 16))
-				{
-
-					btnTime18.Enabled = false;
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 17))
-				{
-
-					btnTime19.Enabled = false;
-
-				}
-
-
-				if (!Btn_enabled(time[j]) && (j == 18))
-				{
-
-					btnTime20.Enabled = false;
-
-				}
-
 			}
 			myRead01.Close();
 
@@ -651,11 +529,6 @@ namespace moogabox
         }
 
         private void pbMovie_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
