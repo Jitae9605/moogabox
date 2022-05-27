@@ -36,12 +36,13 @@ namespace moogabox
 
                 Form3 frm3 = new Form3();
                 frm3.Reservation_Num = Reservation_Num;
-                DialogResult result = frm3.ShowDialog();
-                if(result == DialogResult.OK)
-                {
-                    frm3.Hide();
-                    this.Hide();
-                }
+                //DialogResult result = frm3.ShowDialog();
+                //if(result == DialogResult.OK)
+                //{
+                this.Visible = false;
+                frm3.ShowDialog();
+                Application.Exit();
+               // }
             }
             else
             {
@@ -67,13 +68,14 @@ namespace moogabox
                 Form11 frm11 = new Form11();
                 frm11.Phone_Num = Phone_num;
 
-                DialogResult result = frm11.ShowDialog();
+                //DialogResult result = frm11.ShowDialog();
 
-                if (result == DialogResult.OK)
-                {
+                //if (result == DialogResult.OK)
+                //{
 					this.Visible = false;
-					frm11.Show();
-                }
+					frm11.ShowDialog();
+                    Application.Exit();
+               //}
             }
 
             else

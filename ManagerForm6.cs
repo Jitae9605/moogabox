@@ -49,7 +49,7 @@ namespace moogabox
 
 		private void ManagerForm6_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			Application.Exit();
+			//Application.Exit();
 		}
 	}
 }

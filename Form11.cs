@@ -106,9 +106,12 @@ namespace moogabox
 			
 			if (OKonly == DialogResult.OK)
 			{
+                this.Visible = false;
 				Form1 frm1 = new Form1();
-				frm1.Show();
-				this.Hide();
+                Form2 frm2 = new Form2();
+                frm2.Close();
+				frm1.ShowDialog();
+                Application.Exit();
 			}
 		}
 

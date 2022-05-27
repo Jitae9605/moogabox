@@ -23,9 +23,10 @@ namespace moogabox
 
         private void btnInquiry_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Form2 frm2 = new Form2();
-            frm2.Show();
-            this.Hide();
+            frm2.ShowDialog();
+            Application.Exit();
         }
 
         private void btnticket_Click(object sender, EventArgs e)

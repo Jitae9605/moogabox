@@ -70,11 +70,14 @@ namespace moogabox
 				+ this.lblHall.Text + "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			if(OKonly == DialogResult.OK)
 			{
-				Form1 frm1 = new Form1();
-				this.Visible = false;
+                this.Visible = false;
+                Form1 frm1 = new Form1();
+                Form2 frm2 = new Form2();
+                frm2.Close();
 				frm1.ShowDialog();
-				
-			}
+                Application.Exit();
+
+            }
 			
 
 			
