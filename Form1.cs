@@ -20,10 +20,6 @@ namespace moogabox
         {
             InitializeComponent();
         }
-        private void Form1_FormClosing(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void btnInquiry_Click(object sender, EventArgs e)
         {
@@ -60,6 +56,11 @@ namespace moogabox
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void panel1_Paint_1(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

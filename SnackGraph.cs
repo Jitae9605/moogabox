@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Collections;
+using moogabox;
 
 namespace Cinema_Kiosk_SalesManager
 {
@@ -39,8 +40,9 @@ namespace Cinema_Kiosk_SalesManager
 
         private void btxExit_Click(object sender, EventArgs e)               //  취소버튼
         {
-            this.Close();
-        }
+			ManagerForm2 M_frm2 = new ManagerForm2();
+			M_frm2.ShowDialog();
+		}
 
 		private void SnackGraph_FormClosing(object sender, FormClosingEventArgs e)
 		{

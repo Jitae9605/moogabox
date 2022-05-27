@@ -65,7 +65,7 @@ namespace moogabox
 			this.Btn_Next.BackColor = System.Drawing.Color.Firebrick;
 			this.Btn_Next.FlatAppearance.BorderSize = 0;
 			this.Btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Btn_Next.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Btn_Next.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Bold);
 			this.Btn_Next.ForeColor = System.Drawing.Color.White;
 			this.Btn_Next.Location = new System.Drawing.Point(243, 259);
 			this.Btn_Next.Name = "Btn_Next";
@@ -170,7 +170,7 @@ namespace moogabox
 			this.txtPhone.ForeColor = System.Drawing.Color.Black;
 			this.txtPhone.Location = new System.Drawing.Point(131, 145);
 			this.txtPhone.Name = "txtPhone";
-			this.txtPhone.Size = new System.Drawing.Size(264, 43);
+			this.txtPhone.Size = new System.Drawing.Size(237, 43);
 			this.txtPhone.TabIndex = 1;
 			// 
 			// label3

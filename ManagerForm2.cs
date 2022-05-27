@@ -193,7 +193,6 @@ namespace moogabox
             this.Visible = false;
             ManagerForm1 M_frm1 = new ManagerForm1();
             M_frm1.ShowDialog();
-            Application.Exit();
         }
 
         private void btnSG_Click(object sender, EventArgs e)  //  스낵의 판매량 그래프로 이동

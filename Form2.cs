@@ -39,8 +39,8 @@ namespace moogabox
                 DialogResult result = frm3.ShowDialog();
                 if(result == DialogResult.OK)
                 {
-                    frm3.Close();
-                    this.Close();
+                    frm3.Hide();
+                    this.Hide();
                 }
             }
             else
@@ -66,13 +66,16 @@ namespace moogabox
 
                 Form11 frm11 = new Form11();
                 frm11.Phone_Num = Phone_num;
+
                 DialogResult result = frm11.ShowDialog();
+
                 if (result == DialogResult.OK)
                 {
-                    frm11.Close();
-                    this.Close();
+					this.Visible = false;
+					frm11.Show();
                 }
             }
+
             else
             {
                 MessageBox.Show("전화번호가 존재하지 않습니다.", "알람", MessageBoxButtons.OK, MessageBoxIcon.Error);

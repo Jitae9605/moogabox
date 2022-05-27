@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Collections;
 using Cinema_Kiosk_SalesManager;
 using System.Windows.Forms.DataVisualization.Charting;
+using moogabox;
 
 namespace Cinema_Kiosk_SalesManager
 {
@@ -40,12 +41,18 @@ namespace Cinema_Kiosk_SalesManager
 
         private void btxExit_Click(object sender, EventArgs e)       //  취소버튼
         {
-            this.Close();
-        }
+			ManagerForm2 M_frm2 = new ManagerForm2();
+			M_frm2.ShowDialog();
+		}
 
 		private void MovieTicketGraph_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void chart1_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

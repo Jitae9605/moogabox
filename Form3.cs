@@ -65,18 +65,29 @@ namespace moogabox
 				txt += txt1[i] + " ";
 			}
 
+			DialogResult OKonly = 
 			MessageBox.Show("영화 : " + this.lblName.Text + "\n\n시간 : " + this.lblTime.Text + "\n\n상영관 : "
 				+ this.lblHall.Text + "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			this.DialogResult = DialogResult.OK;
+			if(OKonly == DialogResult.OK)
+			{
+				Form1 frm1 = new Form1();
+				this.Visible = false;
+				frm1.ShowDialog();
+				
+			}
+			
 
-			Form1 frm1 = new Form1();
-			frm1.Show();
-			this.Hide();
+			
 		}
 
 		private void Form3_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			Application.Exit();
+			//Application.Exit();
+		}
+
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

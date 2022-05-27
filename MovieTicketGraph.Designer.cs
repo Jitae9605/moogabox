@@ -71,6 +71,7 @@ namespace Cinema_Kiosk_SalesManager
 			this.chart1.Size = new System.Drawing.Size(600, 394);
 			this.chart1.TabIndex = 2;
 			this.chart1.Text = "chart1";
+			this.chart1.Click += new System.EventHandler(this.chart1_Click);
 			// 
 			// btxExit
 			// 

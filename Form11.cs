@@ -99,13 +99,18 @@ namespace moogabox
 			{
 				txt += txt1[i] + " ";
 			}
+
+			DialogResult OKonly =
             MessageBox.Show("영화 : " + this.txtMvName.Text + "\n\n시간 : " + this.txtTime.Text + "\n\n상영관 : " + txtHall.Text + 
                 "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.DialogResult = DialogResult.OK;
-
-            Form1 frm1 = new Form1();
-            frm1.Show();
-        }
+			
+			if (OKonly == DialogResult.OK)
+			{
+				Form1 frm1 = new Form1();
+				frm1.Show();
+				this.Hide();
+			}
+		}
 
         private void label1_Click(object sender, EventArgs e)
         {
