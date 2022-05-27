@@ -332,3 +332,14 @@ select * from Jaego;
 select * from Maejum;
 select * from Balju;
 select * from Edong;
+
+
+
+
+delete from TmpReservation;
+delete from TmpBuySnack;
+
+
+UPDATE Movie Set MvNum = 'JW03' WHERE StartTime = '15:20:00' and Hall = 3
+
+select * from Movie cross join Theater where Movie.Hall =ThNum
