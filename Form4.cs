@@ -16,7 +16,6 @@ namespace moogabox
 	public partial class Form4 : Form
 	{
 		public string ID { get; set; }
-
 		private SqlConnection Con;
 		public Form4()
 		{
@@ -28,12 +27,9 @@ namespace moogabox
 
 		private void Form4_Load(object sender, EventArgs e)
 		{
-			Timer timer = new Timer();
-			timer.Interval = 100;
-			timer.Tick += Time;
+			string Nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분");
+			lblTime.Text = Nowtime;
 
-			timer.Start();
-			
 			Con = new SqlConnection();
 			Con.ConnectionString = "Server=(local);database=MoogaBox;" +
 				"Integrated Security=true";
@@ -64,6 +60,128 @@ namespace moogabox
 					button[j].Enabled = false;
 				}
 			}
+
+				/*if (!Btn_enabled(time[j]) && (j == 1))
+				{
+
+					btnTime08.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 2))
+				{
+
+					btnTime09.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 3))
+				{
+
+					btnTime010.Enabled = false;
+
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 4))
+				{
+
+					btnTime11.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 5))
+				{
+
+					btnTime12.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 6))
+				{
+					btnTime01.Enabled = false;
+
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 7))
+				{
+
+					btnTime02.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 8))
+				{
+
+					btnTime03.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 9))
+				{
+
+					btnTime04.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 10))
+				{
+
+					btnTime05.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 11))
+				{
+
+					btnTime06.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 12))
+				{
+
+					btnTime13.Enabled = false;
+				}
+
+				if (!Btn_enabled(time[j]) && (j == 13))
+				{
+
+					btnTime15.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 14))
+				{
+
+					btnTime16.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 15))
+				{
+
+					btnTime17.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 16))
+				{
+
+					btnTime18.Enabled = false;
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 17))
+				{
+
+					btnTime19.Enabled = false;
+
+				}
+
+
+				if (!Btn_enabled(time[j]) && (j == 18))
+				{
+
+					btnTime20.Enabled = false;
+
+				}*/
+
+			
 			myRead01.Close();
 
 		}
@@ -86,8 +204,8 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie1.Image;
-
 				/*                Date2 = myRead01[2].ToString();
 
 								DateTime t2 = DateTime.Parse(Date2);
@@ -98,7 +216,7 @@ namespace moogabox
 			}
 			myRead01.Close();
 
-			string InsertSql = string.Format("insert into TmpReservation(MvName, Hall,StartTime) select MvName,Hall,StartTime from Movie where MvNum='CC01' ");
+			string InsertSql = string.Format("insert into TmpReservation(MvName, Hall,StartTime,MvNum) select MvName,Hall,StartTime from Movie where MvNum='CC01' ");
 			var Com = new SqlCommand(InsertSql, Con);
 
 			groupBox1.Visible = true;
@@ -114,6 +232,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie1.Image;
 			}
 			myRead01.Close();
@@ -135,6 +254,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString(); ;
 				pbMovie.Image = pbMovie1.Image;
 			}
 			myRead01.Close();
@@ -155,6 +275,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie1.Image;
 			}
 			myRead01.Close();
@@ -175,6 +296,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie1.Image;
 			}
 			myRead01.Close();
@@ -194,6 +316,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie1.Image;
 			}
 			myRead01.Close();
@@ -212,6 +335,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -232,6 +356,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -251,6 +376,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -270,6 +396,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -289,6 +416,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -308,6 +436,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -327,6 +456,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie2.Image;
 			}
 			myRead01.Close();
@@ -347,6 +477,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -367,6 +498,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -386,6 +518,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -405,6 +538,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -424,6 +558,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -443,6 +578,7 @@ namespace moogabox
 				this.name.Text = myRead01[0].ToString();
 				this.time.Text = myRead01[2].ToString();
 				this.lblhall1.Text = myRead01[1].ToString();
+				this.mvnum.Text = myRead01[4].ToString();
 				pbMovie.Image = pbMovie3.Image;
 			}
 			myRead01.Close();
@@ -462,17 +598,16 @@ namespace moogabox
 			var Conn = new SqlConnection(Constr);
 			Conn.Open();
 
-			string Sql = "insert into TmpReservation(ID,MvName,Hall,StartTime) "
-								+ "values(@ID, @MvName,@Hall, @StartTime )";
+			string Sql = "insert into TmpReservation(MvName,Hall,StartTime) "
+								+ "values( @MvName,@Hall, @StartTime)";
 
 			var Comm = new SqlCommand(Sql, Conn);
 
-			Comm.Parameters.Add("@ID", SqlDbType.VarChar, 10);
 			Comm.Parameters.Add("@MvName", SqlDbType.NVarChar, 20);
 			Comm.Parameters.Add("@Hall", SqlDbType.Int);
 			Comm.Parameters.Add("@StartTime", SqlDbType.Time, 7);
 
-			Comm.Parameters["@ID"].Value = this.ID;
+
 			Comm.Parameters["@MvName"].Value = this.name.Text;
 			Comm.Parameters["@Hall"].Value = Convert.ToInt32(this.lblhall1.Text);
 			Comm.Parameters["@StartTime"].Value = this.time.Text;
@@ -481,6 +616,7 @@ namespace moogabox
 
 			//좌석창으로 이동
 			Form5 form5 = new Form5();
+			form5.Passvalue = this.mvnum.Text;  
 			form5.Show();
 			this.Hide();
 
@@ -511,26 +647,5 @@ namespace moogabox
 			form1.Show();
 			this.Hide();
 		}
-		private void Time(object sender, EventArgs e)
-		{
-
-			string Nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분");
-			lblTime.Text = Nowtime;
-		}
-
-		private void pbMovie1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbMovie_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
+	}
 }

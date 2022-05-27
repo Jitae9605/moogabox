@@ -20,11 +20,12 @@ namespace moogabox
             InitializeComponent();
         }
         int count = 0;
-        public int Hall_Num { get; set; }
+        public string Passvalue { get; set; }
         string joasuk = "";
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            joasuk = "";
             var Conn = new SqlConnection(Constr);
             Conn.Open();
 
@@ -37,23 +38,23 @@ namespace moogabox
                 this.lblhall.Text = myRead[1].ToString();
             }
             myRead.Close();
+           
+            var Comm1 = new SqlCommand("SELECT Eempty FROM Crjo where MvNum = '" + Passvalue + "'", Conn);
+            var MyRead1 = Comm1.ExecuteReader();
 
-			var Comm1 = new SqlCommand("select * from Movie cross join Theater where Movie.Hall = ThNum", Conn);
-			
-			var MyRead1 = Comm1.ExecuteReader();
+            //MessageBox.Show(Passvalue);
+            int[] Eempty = new int[20];
 
-			int[] Eempty = new int[20];
-
-			int i = 0;
-			while (MyRead1.Read())
-			{
-				Eempty[i] = Convert.ToInt32(MyRead1[1]);
-				i++;
-			}
-			MyRead1.Close();
-			Conn.Close();
-			Seat(Eempty);
-			MessageBox.Show("최대 선택 좌석은 4개입니다.", "주의사항",
+            int i = 0;
+            while (MyRead1.Read())
+            {
+                Eempty[i] = Convert.ToInt32(MyRead1[0]);
+                i++;
+            }
+            MyRead1.Close();
+            Conn.Close();
+            Seat(Eempty);
+            MessageBox.Show("최대 선택 좌석은 4개입니다.", "주의사항",
                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
         private void btnA1_Click_1(object sender, EventArgs e)
@@ -61,18 +62,18 @@ namespace moogabox
             if (btnA1.BackColor == Color.Red)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
-                  MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                  MessageBoxButtons.OK, MessageBoxIcon.Exclamation);       
             }
             else
             {
                 if (count < 4)
                 {
+
                     label2.Text += "A01\n";
                     btnA1.BackColor = Color.Red;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A01,";
-
                 }
                 else if (count >= 4)
                 {
@@ -80,8 +81,7 @@ namespace moogabox
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-
-        }
+            }
         private void btnA2_Click(object sender, EventArgs e)
         {
             if (btnA2.BackColor == Color.Red)
@@ -131,8 +131,7 @@ namespace moogabox
                 }
             }
         }
-
-        private void btnA4_Click(object sender, EventArgs e)
+         private void btnA4_Click(object sender, EventArgs e)
         {
             if (btnA4.BackColor == Color.Red)
             {
@@ -405,6 +404,7 @@ namespace moogabox
                 }
             }
         }
+
         private void btnC5_Click(object sender, EventArgs e)
         {
             if (btnC5.BackColor == Color.Red)
@@ -454,7 +454,6 @@ namespace moogabox
                 }
             }
         }
-
         private void btnD2_Click(object sender, EventArgs e)
         {
             if (btnD2.BackColor == Color.Red)
@@ -554,32 +553,35 @@ namespace moogabox
                 }
             }
         }
-     
+        private void btnPeople_Click(object sender, EventArgs e)
+        {
+            label3.Text = Convert.ToString(count);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            btnA1.BackColor = SystemColors.ActiveCaptionText;
-            btnA2.BackColor = SystemColors.ActiveCaptionText;
-            btnA3.BackColor = SystemColors.ActiveCaptionText;
-            btnA4.BackColor = SystemColors.ActiveCaptionText;
-            btnA5.BackColor = SystemColors.ActiveCaptionText;
-            btnB1.BackColor = SystemColors.ActiveCaptionText;
-            btnB2.BackColor = SystemColors.ActiveCaptionText;
-            btnB3.BackColor = SystemColors.ActiveCaptionText;
-            btnB4.BackColor = SystemColors.ActiveCaptionText;
-            btnB5.BackColor = SystemColors.ActiveCaptionText;
-            btnC1.BackColor = SystemColors.ActiveCaptionText;
-            btnC2.BackColor = SystemColors.ActiveCaptionText;
-            btnC3.BackColor = SystemColors.ActiveCaptionText;
-            btnC4.BackColor = SystemColors.ActiveCaptionText;
-            btnC5.BackColor = SystemColors.ActiveCaptionText;
-            btnD1.BackColor = SystemColors.ActiveCaptionText;
-            btnD2.BackColor = SystemColors.ActiveCaptionText;
-            btnD3.BackColor = SystemColors.ActiveCaptionText;
-            btnD4.BackColor = SystemColors.ActiveCaptionText;
-            btnD5.BackColor = SystemColors.ActiveCaptionText;
+            Button[] Button = { btnA1, btnA2, btnA3, btnA4, btnA5,
+                                btnB1, btnB2, btnB3, btnB4, btnB5,
+                                btnC1, btnC2, btnC3, btnC4, btnC5,
+                                btnD1, btnD2, btnD3, btnD4, btnD5};
+
+            for (int i = 0; i < 20; i++)
+            {
+                Button[i].BackColor = SystemColors.Control;
+            }
+
+            var Conn = new SqlConnection(Constr);
+            Conn.Open();
+
+            string sql = "UPDATE Crjo set Eempty =" + 0 + "WHERE MvNum = '" + Passvalue + "'";
+            var Comm = new SqlCommand(sql, Conn);
+            Comm.ExecuteNonQuery();
+
+            Conn.Close();
 
             label2.Text = "";
             label3.Text = "";
+            joasuk = "";
             count = 0;
         }
 
@@ -609,12 +611,17 @@ namespace moogabox
             char sp = ',';
 
             string[] strtmp = Tmp_text.Split(sp);
-
+        
             int hallnum = Convert.ToInt32(this.lblhall.Text);
+            string txt = "";
+            for(int i = 0; i < strtmp.Length; i++)
+            {
+                txt += strtmp[i] + " ";
+            }
 
             for (int i = 0; i < strtmp.Length; i++)
             {
-                string sql = "update Theater set Eempty = " + 1 + "where SeatNum ='" + strtmp[i] + "' and ThNum =" + hallnum + "";
+                string sql = "UPDATE Crjo set Eempty =" + 1 + "WHERE MvNum = '" + Passvalue + "' and SeatNum = '" + strtmp[i] + "'";
                 var Comm = new SqlCommand(sql, Conn);
                 Comm.ExecuteNonQuery();
             }
@@ -630,34 +637,25 @@ namespace moogabox
 
             //다음창으로 이동
             Form6 form6 = new Form6();
+            form6.Passvalue = Passvalue;
             form6.Show();
             this.Hide();
         }
-		public void Seat(int[] empty)
-		{
-			Button[] Button = { btnA1, btnA2, btnA3, btnA4, btnA5,
-								btnB1, btnB2, btnB3, btnB4, btnB5,
-								btnC1, btnC2, btnC3, btnC4, btnC5,
-								btnD1, btnD2, btnD3, btnD4, btnD5};
-			for (int i = 0; i < 20; i++)
-			{
-				if (empty[i] == 1)
-				{
-					Button[i].BackColor = Color.Red;
-
-				}
-			}
-		}
-	}
-
-        private void label1_Click(object sender, EventArgs e)
+        
+        public void Seat(int[] empty)
         {
+            Button[] Button = { btnA1, btnA2, btnA3, btnA4, btnA5,
+                                btnB1, btnB2, btnB3, btnB4, btnB5,
+                                btnC1, btnC2, btnC3, btnC4, btnC5,
+                                btnD1, btnD2, btnD3, btnD4, btnD5};
+            for (int i = 0; i < 20; i++)
+            {
+                if (empty[i] == 1)
+                {
+                    Button[i].BackColor = Color.Red;
 
-        }
-
-        private void lblhall_Click(object sender, EventArgs e)
-        {
-
+                }
+            }
         }
     }
 }

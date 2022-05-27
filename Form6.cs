@@ -18,6 +18,7 @@ namespace moogabox
 		private string Constr = "Server=(local);database=moogabox;" +
 			   "Integrated Security=true";
 
+		public string Passvalue { get; set; }
 		public Form6()
         {
             InitializeComponent();

@@ -456,7 +456,6 @@ namespace moogabox
             this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMovie.TabIndex = 2;
             this.pbMovie.TabStop = false;
-            this.pbMovie.Click += new System.EventHandler(this.pbMovie_Click);
             // 
             // pbmove1txt
             // 
@@ -510,7 +509,6 @@ namespace moogabox
             this.label1.Size = new System.Drawing.Size(601, 1);
             this.label1.TabIndex = 30;
             this.label1.Text = "\"\"";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -573,7 +571,6 @@ namespace moogabox
             this.pbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMovie1.TabIndex = 0;
             this.pbMovie1.TabStop = false;
-            this.pbMovie1.Click += new System.EventHandler(this.pbMovie1_Click);
             // 
             // mvnum
             // 
