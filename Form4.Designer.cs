@@ -50,6 +50,7 @@ namespace moogabox
             this.btnTime16 = new System.Windows.Forms.Button();
             this.btnTime15 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblhall1 = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@ namespace moogabox
             this.bntOK = new System.Windows.Forms.Button();
             this.lbTime = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.pbMovie = new System.Windows.Forms.PictureBox();
             this.pbmove1txt = new System.Windows.Forms.Label();
             this.pbmove2txt = new System.Windows.Forms.Label();
             this.pbmove3txt = new System.Windows.Forms.Label();
@@ -65,15 +67,14 @@ namespace moogabox
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbMovie = new System.Windows.Forms.PictureBox();
             this.pbMovie3 = new System.Windows.Forms.PictureBox();
             this.pbMovie2 = new System.Windows.Forms.PictureBox();
             this.pbMovie1 = new System.Windows.Forms.PictureBox();
+            this.mvnum = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie1)).BeginInit();
@@ -351,6 +352,17 @@ namespace moogabox
             this.groupBox1.Visible = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(74, 410);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 47);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "상영관";
+            // 
             // lblhall1
             // 
             this.lblhall1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -435,6 +447,17 @@ namespace moogabox
             this.lbTitle.TabIndex = 3;
             this.lbTitle.Text = "선택 영화";
             // 
+            // pbMovie
+            // 
+            this.pbMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbMovie.Location = new System.Drawing.Point(63, 68);
+            this.pbMovie.Name = "pbMovie";
+            this.pbMovie.Size = new System.Drawing.Size(137, 172);
+            this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMovie.TabIndex = 2;
+            this.pbMovie.TabStop = false;
+            this.pbMovie.Click += new System.EventHandler(this.pbMovie_Click);
+            // 
             // pbmove1txt
             // 
             this.pbmove1txt.AutoSize = true;
@@ -507,37 +530,16 @@ namespace moogabox
             this.label3.TabIndex = 33;
             this.label3.Text = "\"\"";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(74, 410);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 47);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "상영관";
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::moogabox.Properties.Resources.moogabox;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(1035, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
-            // 
-            // pbMovie
-            // 
-            this.pbMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMovie.Location = new System.Drawing.Point(63, 68);
-            this.pbMovie.Name = "pbMovie";
-            this.pbMovie.Size = new System.Drawing.Size(137, 172);
-            this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMovie.TabIndex = 2;
-            this.pbMovie.TabStop = false;
-            this.pbMovie.Click += new System.EventHandler(this.pbMovie_Click);
             // 
             // pbMovie3
             // 
@@ -573,12 +575,22 @@ namespace moogabox
             this.pbMovie1.TabStop = false;
             this.pbMovie1.Click += new System.EventHandler(this.pbMovie1_Click);
             // 
+            // mvnum
+            // 
+            this.mvnum.AutoSize = true;
+            this.mvnum.Location = new System.Drawing.Point(639, 676);
+            this.mvnum.Name = "mvnum";
+            this.mvnum.Size = new System.Drawing.Size(38, 12);
+            this.mvnum.TabIndex = 34;
+            this.mvnum.Text = "label5";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1035, 701);
+            this.ClientSize = new System.Drawing.Size(1035, 700);
+            this.Controls.Add(this.mvnum);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -617,8 +629,8 @@ namespace moogabox
             this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie1)).EndInit();
@@ -670,5 +682,6 @@ namespace moogabox
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label mvnum;
     }
 }

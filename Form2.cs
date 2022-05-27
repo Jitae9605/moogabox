@@ -86,5 +86,14 @@ namespace moogabox
 
 		}
 
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
