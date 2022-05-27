@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManagerForm3));
             this.Btn_StoreStock = new System.Windows.Forms.Button();
             this.Btn_WarehouseStock = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -97,7 +98,7 @@ namespace moogabox
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Btn_WarehouseStock);
             this.Controls.Add(this.Btn_StoreStock);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManagerForm3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "관리자(재고선택)";

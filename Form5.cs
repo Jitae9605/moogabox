@@ -59,7 +59,7 @@ namespace moogabox
         }
         private void btnA1_Click_1(object sender, EventArgs e)
         {
-            if (btnA1.BackColor == Color.Red)
+            if (btnA1.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);       
@@ -70,7 +70,8 @@ namespace moogabox
                 {
 
                     label2.Text += "A01\n";
-                    btnA1.BackColor = Color.Red;
+                    btnA1.BackColor = Color.White;
+                    btnA1.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A01,";
@@ -84,7 +85,7 @@ namespace moogabox
             }
         private void btnA2_Click(object sender, EventArgs e)
         {
-            if (btnA2.BackColor == Color.Red)
+            if (btnA2.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -94,7 +95,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "A02\n";
-                    btnA2.BackColor = Color.Red;
+                    btnA2.BackColor = Color.White;
+                    btnA2.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A02,";
@@ -109,7 +111,7 @@ namespace moogabox
 
         private void btnA3_Click(object sender, EventArgs e)
         {
-            if (btnA3.BackColor == Color.Red)
+            if (btnA3.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -119,7 +121,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "A03\n";
-                    btnA3.BackColor = Color.Red;
+                    btnA3.BackColor = Color.White;
+                    btnA3.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A03,";
@@ -133,7 +136,7 @@ namespace moogabox
         }
          private void btnA4_Click(object sender, EventArgs e)
         {
-            if (btnA4.BackColor == Color.Red)
+            if (btnA4.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -143,7 +146,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "A04\n";
-                    btnA4.BackColor = Color.Red;
+                    btnA4.BackColor = Color.White;
+                    btnA4.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A04,";
@@ -158,7 +162,7 @@ namespace moogabox
 
         private void btnA5_Click(object sender, EventArgs e)
         {
-            if (btnA5.BackColor == Color.Red)
+            if (btnA5.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -168,7 +172,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "A05\n";
-                    btnA5.BackColor = Color.Red;
+                    btnA5.BackColor = Color.White;
+                    btnA5.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "A05,";
@@ -182,7 +187,7 @@ namespace moogabox
         }
         private void btnB1_Click_1(object sender, EventArgs e)
         {
-            if (btnB1.BackColor == Color.Red)
+            if (btnB1.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -192,7 +197,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "B01\n";
-                    btnB1.BackColor = Color.Red;
+                    btnB1.BackColor = Color.White;
+                    btnB1.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "B01,";
@@ -207,7 +213,7 @@ namespace moogabox
 
         private void btnB2_Click(object sender, EventArgs e)
         {
-            if (btnB2.BackColor == Color.Red)
+            if (btnB2.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -217,7 +223,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "B02\n";
-                    btnB2.BackColor = Color.Red;
+                    btnB2.BackColor = Color.White;
+                    btnB2.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "B02,";
@@ -232,7 +239,7 @@ namespace moogabox
 
         private void btnB3_Click(object sender, EventArgs e)
         {
-            if (btnB3.BackColor == Color.Red)
+            if (btnB3.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -242,7 +249,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "B03\n";
-                    btnB3.BackColor = Color.Red;
+                    btnB3.BackColor = Color.White;
+                    btnB3.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "B03,";
@@ -257,7 +265,7 @@ namespace moogabox
 
         private void btnB4_Click(object sender, EventArgs e)
         {
-            if (btnB4.BackColor == Color.Red)
+            if (btnB4.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -267,7 +275,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "B04\n";
-                    btnB4.BackColor = Color.Red;
+                    btnB4.BackColor = Color.White;
+                    btnB4.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "B04,";
@@ -282,7 +291,7 @@ namespace moogabox
 
         private void btnB5_Click(object sender, EventArgs e)
         {
-            if (btnB5.BackColor == Color.Red)
+            if (btnB5.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -292,7 +301,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "B05\n";
-                    btnB5.BackColor = Color.Red;
+                    btnB5.BackColor = Color.White;
+                    btnB5.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "B05,";
@@ -307,7 +317,7 @@ namespace moogabox
 
         private void btnC1_Click(object sender, EventArgs e)
         {
-            if (btnC1.BackColor == Color.Red)
+            if (btnC1.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -317,7 +327,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "C01\n";
-                    btnC1.BackColor = Color.Red;
+                    btnC1.BackColor = Color.White;
+                    btnC1.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "C01,";
@@ -332,7 +343,7 @@ namespace moogabox
 
         private void btnC2_Click(object sender, EventArgs e)
         {
-            if (btnC2.BackColor == Color.Red)
+            if (btnC2.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -342,7 +353,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "C02\n";
-                    btnC2.BackColor = Color.Red;
+                    btnC2.BackColor = Color.White;
+                    btnC2.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "C02,";
@@ -357,7 +369,7 @@ namespace moogabox
 
         private void btnC3_Click(object sender, EventArgs e)
         {
-            if (btnC3.BackColor == Color.Red)
+            if (btnC3.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -367,7 +379,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "C03\n";
-                    btnC3.BackColor = Color.Red;
+                    btnC3.BackColor = Color.White;
+                    btnC3.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "C03,";
@@ -382,7 +395,7 @@ namespace moogabox
 
         private void btnC4_Click(object sender, EventArgs e)
         {
-            if (btnC4.BackColor == Color.Red)
+            if (btnC4.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -392,7 +405,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "C04\n";
-                    btnC4.BackColor = Color.Red;
+                    btnC4.BackColor = Color.White;
+                    btnC4.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "C04,";
@@ -407,7 +421,7 @@ namespace moogabox
 
         private void btnC5_Click(object sender, EventArgs e)
         {
-            if (btnC5.BackColor == Color.Red)
+            if (btnC5.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -417,7 +431,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "C05\n";
-                    btnC5.BackColor = Color.Red;
+                    btnC5.BackColor = Color.White;
+                    btnC5.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "C05,";
@@ -432,7 +447,7 @@ namespace moogabox
 
         private void btnD1_Click(object sender, EventArgs e)
         {
-            if (btnD1.BackColor == Color.Red)
+            if (btnD1.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -442,7 +457,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "D01\n";
-                    btnD1.BackColor = Color.Red;
+                    btnD1.BackColor = Color.White;
+                    btnD1.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "D01,";
@@ -456,7 +472,7 @@ namespace moogabox
         }
         private void btnD2_Click(object sender, EventArgs e)
         {
-            if (btnD2.BackColor == Color.Red)
+            if (btnD2.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -466,7 +482,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "D02\n";
-                    btnD2.BackColor = Color.Red;
+                    btnD2.BackColor = Color.White;
+                    btnD2.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "D02,";
@@ -481,7 +498,7 @@ namespace moogabox
 
         private void btnD3_Click(object sender, EventArgs e)
         {
-            if (btnD3.BackColor == Color.Red)
+            if (btnD3.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -491,7 +508,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "D03\n";
-                    btnD3.BackColor = Color.Red;
+                    btnD3.BackColor = Color.White;
+                    btnD3.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "D03,";
@@ -506,7 +524,7 @@ namespace moogabox
 
         private void btnD4_Click(object sender, EventArgs e)
         {
-            if (btnD4.BackColor == Color.Red)
+            if (btnD4.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -516,7 +534,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "D04\n";
-                    btnD4.BackColor = Color.Red;
+                    btnD4.BackColor = Color.White;
+                    btnD4.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "D04,";
@@ -531,7 +550,7 @@ namespace moogabox
 
         private void btnD5_Click(object sender, EventArgs e)
         {
-            if (btnD5.BackColor == Color.Red)
+            if (btnD5.BackColor == Color.White)
             {
                 MessageBox.Show("좌석 중복불가.", "좌석선택오류",
                   MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -541,7 +560,8 @@ namespace moogabox
                 if (count < 4)
                 {
                     label2.Text += "D05\n";
-                    btnD5.BackColor = Color.Red;
+                    btnD5.BackColor = Color.White;
+                    btnD5.ForeColor = Color.Black;
                     count++;
                     label3.Text = Convert.ToString(count);
                     joasuk += "D05,";
@@ -567,7 +587,8 @@ namespace moogabox
 
             for (int i = 0; i < 20; i++)
             {
-                Button[i].BackColor = SystemColors.Control;
+                Button[i].BackColor = Color.Black;
+                Button[i].ForeColor = Color.White;
             }
 
             var Conn = new SqlConnection(Constr);
@@ -652,7 +673,7 @@ namespace moogabox
             {
                 if (empty[i] == 1)
                 {
-                    Button[i].BackColor = Color.Red;
+                    Button[i].BackColor = Color.White;
 
                 }
             }

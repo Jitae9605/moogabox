@@ -30,6 +30,7 @@ namespace moogabox
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btnTime01 = new System.Windows.Forms.Button();
             this.btnTime02 = new System.Windows.Forms.Button();
             this.btnTime03 = new System.Windows.Forms.Button();
@@ -350,7 +351,6 @@ namespace moogabox
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "선택 내용 확인";
             this.groupBox1.Visible = false;
-            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label4
             // 
@@ -620,6 +620,7 @@ namespace moogabox
             this.Controls.Add(this.pbMovie2);
             this.Controls.Add(this.pbMovie1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";

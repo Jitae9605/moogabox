@@ -212,7 +212,7 @@ namespace moogabox
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_Stock);
             this.Controls.Add(this.Btn_Sale);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManagerForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerForm2";

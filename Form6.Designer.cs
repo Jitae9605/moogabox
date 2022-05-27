@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.lbTime = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbSitnum = new System.Windows.Forms.Label();
@@ -51,35 +52,35 @@ namespace moogabox
             // lbTime
             // 
             this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+            this.lbTime.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(576, 297);
+            this.lbTime.Location = new System.Drawing.Point(476, 306);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(55, 30);
+            this.lbTime.Size = new System.Drawing.Size(131, 36);
             this.lbTime.TabIndex = 7;
-            this.lbTime.Text = "시간";
+            this.lbTime.Text = "상영시간 :";
             // 
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
-            this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+            this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(576, 259);
+            this.lbTitle.Location = new System.Drawing.Point(526, 225);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(55, 30);
+            this.lbTitle.Size = new System.Drawing.Size(81, 36);
             this.lbTitle.TabIndex = 6;
-            this.lbTitle.Text = "영화";
+            this.lbTitle.Text = "영화 :";
             // 
             // lbSitnum
             // 
             this.lbSitnum.AutoSize = true;
-            this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+            this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.lbSitnum.ForeColor = System.Drawing.Color.White;
-            this.lbSitnum.Location = new System.Drawing.Point(555, 333);
+            this.lbSitnum.Location = new System.Drawing.Point(501, 393);
             this.lbSitnum.Name = "lbSitnum";
-            this.lbSitnum.Size = new System.Drawing.Size(76, 30);
+            this.lbSitnum.Size = new System.Drawing.Size(106, 36);
             this.lbSitnum.TabIndex = 8;
-            this.lbSitnum.Text = "상영관";
+            this.lbSitnum.Text = "상영관 :";
             // 
             // btnOK
             // 
@@ -115,48 +116,48 @@ namespace moogabox
             // 
             this.txtMovie.BackColor = System.Drawing.Color.White;
             this.txtMovie.CausesValidation = false;
-            this.txtMovie.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.txtMovie.Location = new System.Drawing.Point(637, 265);
+            this.txtMovie.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txtMovie.Location = new System.Drawing.Point(653, 222);
             this.txtMovie.Name = "txtMovie";
-            this.txtMovie.Size = new System.Drawing.Size(237, 24);
+            this.txtMovie.Size = new System.Drawing.Size(237, 43);
             this.txtMovie.TabIndex = 11;
             // 
             // txtTime
             // 
             this.txtTime.CausesValidation = false;
-            this.txtTime.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.txtTime.Location = new System.Drawing.Point(637, 301);
+            this.txtTime.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txtTime.Location = new System.Drawing.Point(653, 306);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(237, 24);
+            this.txtTime.Size = new System.Drawing.Size(237, 43);
             this.txtTime.TabIndex = 11;
             // 
             // txtHallNum
             // 
             this.txtHallNum.CausesValidation = false;
-            this.txtHallNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.txtHallNum.Location = new System.Drawing.Point(637, 337);
+            this.txtHallNum.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txtHallNum.Location = new System.Drawing.Point(653, 390);
             this.txtHallNum.Name = "txtHallNum";
-            this.txtHallNum.Size = new System.Drawing.Size(237, 24);
+            this.txtHallNum.Size = new System.Drawing.Size(237, 43);
             this.txtHallNum.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 19F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(576, 368);
+            this.label1.Location = new System.Drawing.Point(526, 477);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 30);
+            this.label1.Size = new System.Drawing.Size(81, 36);
             this.label1.TabIndex = 8;
-            this.label1.Text = "좌석";
+            this.label1.Text = "좌석 :";
             // 
             // txtSeatNum
             // 
             this.txtSeatNum.CausesValidation = false;
-            this.txtSeatNum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.txtSeatNum.Location = new System.Drawing.Point(637, 374);
+            this.txtSeatNum.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txtSeatNum.Location = new System.Drawing.Point(653, 474);
             this.txtSeatNum.Name = "txtSeatNum";
-            this.txtSeatNum.Size = new System.Drawing.Size(237, 24);
+            this.txtSeatNum.Size = new System.Drawing.Size(237, 43);
             this.txtSeatNum.TabIndex = 11;
             // 
             // pbMovie
@@ -164,10 +165,10 @@ namespace moogabox
             this.pbMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMovie.Location = new System.Drawing.Point(145, 235);
+            this.pbMovie.Location = new System.Drawing.Point(74, 162);
             this.pbMovie.Margin = new System.Windows.Forms.Padding(5);
             this.pbMovie.Name = "pbMovie";
-            this.pbMovie.Size = new System.Drawing.Size(237, 270);
+            this.pbMovie.Size = new System.Drawing.Size(322, 462);
             this.pbMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMovie.TabIndex = 5;
             this.pbMovie.TabStop = false;
@@ -223,7 +224,9 @@ namespace moogabox
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.pbMovie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "선택 확인";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
             this.Load += new System.EventHandler(this.Form6_Load);

@@ -29,9 +29,13 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.pbMovie = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lblHall = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
@@ -41,10 +45,9 @@ namespace moogabox
             this.label1 = new System.Windows.Forms.Label();
             this.lbSitnum = new System.Windows.Forms.Label();
             this.lbTime = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +77,7 @@ namespace moogabox
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.iconButton1);
             this.panel2.Controls.Add(this.pbMovie);
@@ -92,6 +95,37 @@ namespace moogabox
             this.panel2.Size = new System.Drawing.Size(1035, 700);
             this.panel2.TabIndex = 12;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1035, 80);
+            this.panel1.TabIndex = 66;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(411, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(197, 56);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "예매 확인";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::moogabox.Properties.Resources.moogabox;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1035, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
             // 
             // iconButton1
             // 
@@ -117,7 +151,7 @@ namespace moogabox
             this.lblHall.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblHall.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHall.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblHall.Location = new System.Drawing.Point(642, 362);
+            this.lblHall.Location = new System.Drawing.Point(648, 393);
             this.lblHall.Name = "lblHall";
             this.lblHall.Size = new System.Drawing.Size(68, 36);
             this.lblHall.TabIndex = 9;
@@ -129,11 +163,11 @@ namespace moogabox
             this.lbTitle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTitle.Location = new System.Drawing.Point(530, 162);
+            this.lbTitle.Location = new System.Drawing.Point(526, 225);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(106, 36);
+            this.lbTitle.Size = new System.Drawing.Size(81, 36);
             this.lbTitle.TabIndex = 0;
-            this.lbTitle.Text = "영화명 :";
+            this.lbTitle.Text = "영화 :";
             // 
             // lblSeat
             // 
@@ -141,7 +175,7 @@ namespace moogabox
             this.lblSeat.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSeat.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSeat.Location = new System.Drawing.Point(642, 462);
+            this.lblSeat.Location = new System.Drawing.Point(648, 477);
             this.lblSeat.Name = "lblSeat";
             this.lblSeat.Size = new System.Drawing.Size(77, 36);
             this.lblSeat.TabIndex = 9;
@@ -153,7 +187,7 @@ namespace moogabox
             this.lblName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblName.Location = new System.Drawing.Point(642, 162);
+            this.lblName.Location = new System.Drawing.Point(639, 225);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(101, 36);
             this.lblName.TabIndex = 7;
@@ -165,7 +199,7 @@ namespace moogabox
             this.lblTime.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblTime.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTime.Location = new System.Drawing.Point(642, 262);
+            this.lblTime.Location = new System.Drawing.Point(639, 306);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(80, 36);
             this.lblTime.TabIndex = 8;
@@ -177,7 +211,7 @@ namespace moogabox
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(530, 262);
+            this.label1.Location = new System.Drawing.Point(501, 393);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 36);
             this.label1.TabIndex = 1;
@@ -189,7 +223,7 @@ namespace moogabox
             this.lbSitnum.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSitnum.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSitnum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbSitnum.Location = new System.Drawing.Point(530, 462);
+            this.lbSitnum.Location = new System.Drawing.Point(526, 477);
             this.lbSitnum.Name = "lbSitnum";
             this.lbSitnum.Size = new System.Drawing.Size(81, 36);
             this.lbSitnum.TabIndex = 2;
@@ -201,33 +235,11 @@ namespace moogabox
             this.lbTime.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbTime.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTime.Location = new System.Drawing.Point(530, 362);
+            this.lbTime.Location = new System.Drawing.Point(476, 306);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(81, 36);
+            this.lbTime.Size = new System.Drawing.Size(131, 36);
             this.lbTime.TabIndex = 1;
-            this.lbTime.Text = "시간 :";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::moogabox.Properties.Resources.moogabox;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 56);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "예매확인";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lbTime.Text = "상영시간 :";
             // 
             // Form3
             // 
@@ -237,12 +249,16 @@ namespace moogabox
             this.ClientSize = new System.Drawing.Size(1035, 700);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "예매현황";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -261,7 +277,8 @@ namespace moogabox
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Label lbSitnum;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
     }
 }

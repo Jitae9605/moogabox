@@ -107,7 +107,7 @@ namespace Cinema_Kiosk_SalesManager
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btxExit);
             this.Controls.Add(this.chart1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SnackGraph";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SnackGraph";

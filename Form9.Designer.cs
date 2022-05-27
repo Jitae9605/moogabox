@@ -29,7 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
             this.panel2 = new System.Windows.Forms.Panel();
             this.tapSet = new Guna.UI2.WinForms.Guna2Button();
             this.tapDrink = new Guna.UI2.WinForms.Guna2Button();
@@ -69,23 +69,14 @@ namespace moogabox
             this.CH3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(713, 105);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -94,10 +85,9 @@ namespace moogabox
             this.panel2.Controls.Add(this.tapDrink);
             this.panel2.Controls.Add(this.tabPopcorn);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 105);
+            this.panel2.Location = new System.Drawing.Point(0, 141);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(713, 81);
+            this.panel2.Size = new System.Drawing.Size(1038, 81);
             this.panel2.TabIndex = 1;
             // 
             // tapSet
@@ -112,9 +102,9 @@ namespace moogabox
             this.tapSet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.tapSet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.tapSet.FillColor = System.Drawing.Color.Gainsboro;
-            this.tapSet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tapSet.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tapSet.ForeColor = System.Drawing.Color.Black;
-            this.tapSet.Location = new System.Drawing.Point(517, 19);
+            this.tapSet.Location = new System.Drawing.Point(792, 18);
             this.tapSet.Name = "tapSet";
             this.tapSet.Size = new System.Drawing.Size(136, 45);
             this.tapSet.TabIndex = 5;
@@ -133,9 +123,9 @@ namespace moogabox
             this.tapDrink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.tapDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.tapDrink.FillColor = System.Drawing.Color.Gainsboro;
-            this.tapDrink.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tapDrink.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tapDrink.ForeColor = System.Drawing.Color.Black;
-            this.tapDrink.Location = new System.Drawing.Point(283, 19);
+            this.tapDrink.Location = new System.Drawing.Point(449, 18);
             this.tapDrink.Name = "tapDrink";
             this.tapDrink.Size = new System.Drawing.Size(136, 45);
             this.tapDrink.TabIndex = 4;
@@ -155,9 +145,9 @@ namespace moogabox
             this.tabPopcorn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.tabPopcorn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.tabPopcorn.FillColor = System.Drawing.Color.Gainsboro;
-            this.tabPopcorn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPopcorn.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPopcorn.ForeColor = System.Drawing.Color.Black;
-            this.tabPopcorn.Location = new System.Drawing.Point(51, 19);
+            this.tabPopcorn.Location = new System.Drawing.Point(106, 18);
             this.tabPopcorn.Name = "tabPopcorn";
             this.tabPopcorn.Size = new System.Drawing.Size(136, 45);
             this.tabPopcorn.TabIndex = 3;
@@ -173,6 +163,8 @@ namespace moogabox
             // 
             // panelContainer
             // 
+            this.panelContainer.AutoScroll = true;
+            this.panelContainer.AutoScrollMinSize = new System.Drawing.Size(100, 100);
             this.panelContainer.BackColor = System.Drawing.Color.White;
             this.panelContainer.Controls.Add(this.txtSet4);
             this.panelContainer.Controls.Add(this.txtSet3);
@@ -198,9 +190,9 @@ namespace moogabox
             this.panelContainer.Controls.Add(this.btnPopcorn3);
             this.panelContainer.Controls.Add(this.btnPopcorn2);
             this.panelContainer.Controls.Add(this.btnPopcorn1);
-            this.panelContainer.Location = new System.Drawing.Point(0, 185);
+            this.panelContainer.Location = new System.Drawing.Point(0, 221);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(713, 369);
+            this.panelContainer.Size = new System.Drawing.Size(1035, 321);
             this.panelContainer.TabIndex = 2;
             // 
             // txtSet4
@@ -496,12 +488,12 @@ namespace moogabox
             this.btnSelCancel.BackColor = System.Drawing.Color.Gray;
             this.btnSelCancel.FlatAppearance.BorderSize = 0;
             this.btnSelCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelCancel.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.btnSelCancel.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSelCancel.Location = new System.Drawing.Point(534, 578);
+            this.btnSelCancel.Location = new System.Drawing.Point(856, 563);
             this.btnSelCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelCancel.Name = "btnSelCancel";
-            this.btnSelCancel.Size = new System.Drawing.Size(81, 43);
+            this.btnSelCancel.Size = new System.Drawing.Size(81, 58);
             this.btnSelCancel.TabIndex = 9;
             this.btnSelCancel.Text = "취 소";
             this.btnSelCancel.UseVisualStyleBackColor = false;
@@ -512,9 +504,9 @@ namespace moogabox
             this.btnSign.BackColor = System.Drawing.Color.Firebrick;
             this.btnSign.FlatAppearance.BorderSize = 0;
             this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSign.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.btnSign.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSign.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSign.Location = new System.Drawing.Point(534, 625);
+            this.btnSign.Location = new System.Drawing.Point(856, 625);
             this.btnSign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(167, 64);
@@ -528,12 +520,12 @@ namespace moogabox
             this.btnCancel.BackColor = System.Drawing.Color.Gray;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.Location = new System.Drawing.Point(618, 578);
+            this.btnCancel.Location = new System.Drawing.Point(940, 563);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(83, 43);
+            this.btnCancel.Size = new System.Drawing.Size(83, 58);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "뒤 로";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -547,13 +539,14 @@ namespace moogabox
             this.CH3,
             this.CH4,
             this.CH5});
+            this.listTotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listTotal.FullRowSelect = true;
             this.listTotal.GridLines = true;
             this.listTotal.HideSelection = false;
-            this.listTotal.Location = new System.Drawing.Point(3, 578);
+            this.listTotal.Location = new System.Drawing.Point(12, 563);
             this.listTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listTotal.Name = "listTotal";
-            this.listTotal.Size = new System.Drawing.Size(525, 111);
+            this.listTotal.Size = new System.Drawing.Size(838, 126);
             this.listTotal.TabIndex = 6;
             this.listTotal.UseCompatibleStateImageBehavior = false;
             this.listTotal.View = System.Windows.Forms.View.Details;
@@ -561,69 +554,92 @@ namespace moogabox
             // CH1
             // 
             this.CH1.Text = "품번";
-            this.CH1.Width = 80;
+            this.CH1.Width = 100;
             // 
             // CH2
             // 
             this.CH2.Text = "상품명";
             this.CH2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CH2.Width = 150;
+            this.CH2.Width = 203;
             // 
             // CH3
             // 
             this.CH3.Text = "단가";
             this.CH3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CH3.Width = 100;
+            this.CH3.Width = 180;
             // 
             // CH4
             // 
             this.CH4.Text = "수량";
             this.CH4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CH4.Width = 150;
             // 
             // CH5
             // 
             this.CH5.Text = "금액";
             this.CH5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CH5.Width = 100;
+            this.CH5.Width = 200;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1035, 80);
+            this.panel1.TabIndex = 63;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(452, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 56);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "매  점";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::moogabox.Properties.Resources.KakaoTalk_20220526_152108642;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::moogabox.Properties.Resources.moogabox;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 105);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(1035, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
             // Form9
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(713, 704);
+            this.ClientSize = new System.Drawing.Size(1035, 700);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSelCancel);
             this.Controls.Add(this.btnSign);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.listTotal);
             this.Controls.Add(this.panelContainer);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form9";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form10";
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelContainer;
@@ -663,6 +679,8 @@ namespace moogabox
         private System.Windows.Forms.Button btnSet3;
         private System.Windows.Forms.Button btnSet2;
         private System.Windows.Forms.Button btnSet1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

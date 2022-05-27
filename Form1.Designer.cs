@@ -31,11 +31,14 @@ namespace moogabox
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnInquiry = new System.Windows.Forms.PictureBox();
             this.btnStore = new System.Windows.Forms.PictureBox();
             this.btnticket = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnInquiry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStore)).BeginInit();
@@ -45,6 +48,7 @@ namespace moogabox
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnInquiry);
             this.panel1.Controls.Add(this.btnStore);
@@ -55,12 +59,33 @@ namespace moogabox
             this.panel1.Size = new System.Drawing.Size(1019, 661);
             this.panel1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 55);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1019, 80);
+            this.panel2.TabIndex = 62;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(411, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(197, 56);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "메뉴 선택";
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::moogabox.Properties.Resources.moogabox;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(1019, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -108,10 +133,14 @@ namespace moogabox
             this.ClientSize = new System.Drawing.Size(1019, 661);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "메인메뉴";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnInquiry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStore)).EndInit();
@@ -126,5 +155,7 @@ namespace moogabox
         private System.Windows.Forms.PictureBox btnStore;
         private System.Windows.Forms.PictureBox btnInquiry;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label6;
     }
 }

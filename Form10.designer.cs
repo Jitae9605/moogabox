@@ -29,6 +29,7 @@ namespace moogabox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtPW = new System.Windows.Forms.TextBox();
@@ -216,7 +217,9 @@ namespace moogabox
             this.Controls.Add(this.pbMooga1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form10";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "회원가입";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.panel1.ResumeLayout(false);

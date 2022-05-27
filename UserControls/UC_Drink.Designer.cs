@@ -41,7 +41,7 @@ namespace moogabox.UserControls
             // 
             // txtDrink4
             // 
-            this.txtDrink4.Location = new System.Drawing.Point(55, 265);
+            this.txtDrink4.Location = new System.Drawing.Point(217, 265);
             this.txtDrink4.Name = "txtDrink4";
             this.txtDrink4.Size = new System.Drawing.Size(100, 21);
             this.txtDrink4.TabIndex = 24;
@@ -53,11 +53,11 @@ namespace moogabox.UserControls
             this.btnDrink4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDrink4.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
             this.btnDrink4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink4.Location = new System.Drawing.Point(55, 186);
+            this.btnDrink4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDrink4.Location = new System.Drawing.Point(101, 200);
             this.btnDrink4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDrink4.Name = "btnDrink4";
-            this.btnDrink4.Size = new System.Drawing.Size(135, 100);
+            this.btnDrink4.Size = new System.Drawing.Size(150, 150);
             this.btnDrink4.TabIndex = 17;
             this.btnDrink4.Text = "스프라이트(L)";
             this.btnDrink4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -65,7 +65,7 @@ namespace moogabox.UserControls
             // 
             // txtDrink3
             // 
-            this.txtDrink3.Location = new System.Drawing.Point(520, 122);
+            this.txtDrink3.Location = new System.Drawing.Point(683, 122);
             this.txtDrink3.Name = "txtDrink3";
             this.txtDrink3.Size = new System.Drawing.Size(100, 21);
             this.txtDrink3.TabIndex = 23;
@@ -77,11 +77,11 @@ namespace moogabox.UserControls
             this.btnDrink3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDrink3.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
             this.btnDrink3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink3.Location = new System.Drawing.Point(520, 43);
+            this.btnDrink3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDrink3.Location = new System.Drawing.Point(787, 20);
             this.btnDrink3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDrink3.Name = "btnDrink3";
-            this.btnDrink3.Size = new System.Drawing.Size(135, 100);
+            this.btnDrink3.Size = new System.Drawing.Size(150, 150);
             this.btnDrink3.TabIndex = 18;
             this.btnDrink3.Text = "스프라이트(M)";
             this.btnDrink3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,7 +89,7 @@ namespace moogabox.UserControls
             // 
             // txtDrink2
             // 
-            this.txtDrink2.Location = new System.Drawing.Point(286, 122);
+            this.txtDrink2.Location = new System.Drawing.Point(449, 122);
             this.txtDrink2.Name = "txtDrink2";
             this.txtDrink2.Size = new System.Drawing.Size(100, 21);
             this.txtDrink2.TabIndex = 22;
@@ -101,11 +101,11 @@ namespace moogabox.UserControls
             this.btnDrink2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDrink2.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
             this.btnDrink2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink2.Location = new System.Drawing.Point(286, 43);
+            this.btnDrink2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDrink2.Location = new System.Drawing.Point(444, 20);
             this.btnDrink2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDrink2.Name = "btnDrink2";
-            this.btnDrink2.Size = new System.Drawing.Size(135, 100);
+            this.btnDrink2.Size = new System.Drawing.Size(150, 150);
             this.btnDrink2.TabIndex = 19;
             this.btnDrink2.Text = "코카콜라(L)";
             this.btnDrink2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -113,7 +113,7 @@ namespace moogabox.UserControls
             // 
             // txtDrink1
             // 
-            this.txtDrink1.Location = new System.Drawing.Point(55, 122);
+            this.txtDrink1.Location = new System.Drawing.Point(218, 122);
             this.txtDrink1.Name = "txtDrink1";
             this.txtDrink1.Size = new System.Drawing.Size(100, 21);
             this.txtDrink1.TabIndex = 21;
@@ -125,11 +125,11 @@ namespace moogabox.UserControls
             this.btnDrink1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDrink1.BackgroundImage = global::moogabox.Properties.Resources.무가박스_콜라__수정본;
             this.btnDrink1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDrink1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDrink1.Location = new System.Drawing.Point(55, 43);
+            this.btnDrink1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDrink1.Location = new System.Drawing.Point(101, 20);
             this.btnDrink1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDrink1.Name = "btnDrink1";
-            this.btnDrink1.Size = new System.Drawing.Size(135, 100);
+            this.btnDrink1.Size = new System.Drawing.Size(150, 150);
             this.btnDrink1.TabIndex = 20;
             this.btnDrink1.Text = "코카콜라(M)";
             this.btnDrink1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -139,6 +139,9 @@ namespace moogabox.UserControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 30);
+            this.AutoScrollMinSize = new System.Drawing.Size(5, 50);
             this.Controls.Add(this.txtDrink4);
             this.Controls.Add(this.btnDrink4);
             this.Controls.Add(this.txtDrink3);
@@ -148,7 +151,7 @@ namespace moogabox.UserControls
             this.Controls.Add(this.txtDrink1);
             this.Controls.Add(this.btnDrink1);
             this.Name = "UC_Drink";
-            this.Size = new System.Drawing.Size(713, 369);
+            this.Size = new System.Drawing.Size(1035, 700);
             this.ResumeLayout(false);
             this.PerformLayout();
 
