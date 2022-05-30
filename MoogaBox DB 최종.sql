@@ -15,7 +15,6 @@ drop table Edong;
 
 
 
-
 create table Movie						--영화 테이블
 (
 MvName nvarchar(20) ,  --영화이름
@@ -319,27 +318,33 @@ UPDATE Movie Set MvNum = 'JW04' WHERE StartTime = '17:40:00';
 UPDATE Movie Set MvNum = 'JW05' WHERE StartTime = '20:00:00';
 UPDATE Movie Set MvNum = 'JW06' WHERE StartTime = '22:20:00';
 
-
-select * from Movie;
-select * from Theater;
-select * from Member;
-select * from Reservation;
-select * from TmpReservation;
-select * from Snack;
-select * from BuySnack;
-select * from TmpBuySnack;
-select * from Jaego;
-select * from Maejum;
-select * from Balju;
-select * from Edong;
-
-
-
-
-delete from TmpReservation;
-delete from TmpBuySnack;
-
-
 UPDATE Movie Set MvNum = 'JW03' WHERE StartTime = '15:20:00' and Hall = 3
+select * from Movie
 
-select * from Movie cross join Theater where Movie.Hall =ThNum
+
+
+create table CrJo
+(
+MvName nvarchar(20) ,  --영화이름
+Hall Int,                        --상영관( 관 하나에 하나의 영화만 상영)
+StartTime time,                     --영화 시작 시간
+RunningTime time,
+MvNum varchar(10),                     --영화 러닝 시간
+ThNum int Not null,         --상영관 번호
+SeatNum varchar(20),               --상영관 좌석 번호
+Eempty int                        --상영관 좌석 예매여부 
+);
+
+INSERT INTO CrJo 
+(
+MvName  ,  --영화이름
+Hall ,                        --상영관( 관 하나에 하나의 영화만 상영)
+StartTime ,                     --영화 시작 시간
+RunningTime ,
+MvNum,                     --영화 러닝 시간
+ThNum  ,         --상영관 번호
+SeatNum,               --상영관 좌석 번호
+Eempty                         --상영관 좌석 예매여부 
+)
+
+select * from Movie cross join Theater where Movie.Hall =Theater.ThNum
