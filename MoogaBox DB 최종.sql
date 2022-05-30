@@ -1,17 +1,17 @@
 use MoogaBox
 
-drop table Movie;
-drop table Theater;
-drop table Member;
-drop table Reservation;
-drop table TmpReservation;
-drop table Snack;
-drop table BuySnack;
-drop table TmpBuySnack;
-drop table Jaego;
-drop table Maejum;
-drop table Balju;
-drop table Edong;
+--drop table Movie;
+--drop table Theater;
+--drop table Member;
+--drop table Reservation;
+--drop table TmpReservation;
+--drop table Snack;
+--drop table BuySnack;
+--drop table TmpBuySnack;
+--drop table Jaego;
+--drop table Maejum;
+--drop table Balju;
+--drop table Edong;
 
 
 
