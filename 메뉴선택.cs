@@ -24,28 +24,36 @@ namespace moogabox
 
         private void btnInquiry_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            //this.Visible = false;
             예매조회 frm2 = new 예매조회();
-            frm2.ShowDialog();
-            Application.Exit();
+            //frm2.ShowDialog();
+
+			this.Hide();
+			frm2.Show();
+
+			//Application.Exit();
         }
 
         private void btnticket_Click(object sender, EventArgs e)
         {
 			if (ID == null) ID = "1";
 			영화및시간선택 frm4 = new 영화및시간선택();
-            this.Visible = false;
+            //this.Visible = false;
             frm4.ID = ID;
-            frm4.ShowDialog();
-            Application.Exit();
+			// frm4.ShowDialog();
+			this.Hide();
+			frm4.Show();
+			//Application.Exit();
         }
 
         private void btnStore_Click(object sender, EventArgs e)
         {
             매점구매창 frm9 = new 매점구매창();
-            this.Visible = false;
-            frm9.ShowDialog();
-            Application.Exit();
+			//this.Visible = false;
+			//frm9.ShowDialog();
+			this.Hide();
+			frm9.Show();
+            //Application.Exit();
         }
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -60,7 +68,7 @@ namespace moogabox
 
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			Application.Exit();
+			//Application.Exit();
 		}
 
 		private void panel1_Paint_1(object sender, PaintEventArgs e)

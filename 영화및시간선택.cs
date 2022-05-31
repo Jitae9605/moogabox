@@ -22,6 +22,9 @@ namespace moogabox
 			InitializeComponent();
 		}
 
+		private string Constr = "Server=(local);database=MoogaBox;" +
+		"Integrated Security=true";
+
 		private void Form4_Load(object sender, EventArgs e)
 		{
 			if (ID == null) ID = "1";
@@ -494,7 +497,8 @@ namespace moogabox
 
 			//좌석창으로 이동
 			영화좌석선택 form5 = new 영화좌석선택();
-			form5.Passvalue = this.mvnum.Text;  
+			form5.Passvalue = this.mvnum.Text;
+			form5.ID = this.ID;
 			form5.Show();
 			this.Hide();
 
