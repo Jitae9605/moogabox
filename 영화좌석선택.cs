@@ -13,7 +13,7 @@ namespace moogabox
 {
     public partial class 영화좌석선택 : Form
     {
-        private string Constr = "Server=(local);database=MoogaBox;" +
+		private string Constr = "Server=(local);database=MoogaBox;" +
                 "Integrated Security=true"; //SQL 연결문자열
         public 영화좌석선택()
         {
@@ -21,11 +21,13 @@ namespace moogabox
         }
         int count = 0;
         public string Passvalue { get; set; }
+		public string ID { get; set; }
         string joasuk = "";
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            joasuk = "";
+			if (ID == null) ID = "1";
+			joasuk = "";
             var Conn = new SqlConnection(Constr);
             Conn.Open();
 
@@ -51,6 +53,7 @@ namespace moogabox
                 Eempty[i] = Convert.ToInt32(MyRead1[0]);
                 i++;
             }
+
             MyRead1.Close();
             Conn.Close();
             Seat(Eempty);
@@ -703,6 +706,11 @@ namespace moogabox
 		private void Form5_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void panel3_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

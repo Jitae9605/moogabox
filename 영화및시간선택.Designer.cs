@@ -538,6 +538,7 @@ namespace moogabox
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 32;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// pbMovie3
 			// 
@@ -581,7 +582,7 @@ namespace moogabox
 			this.mvnum.TabIndex = 34;
 			this.mvnum.Text = "label5";
 			// 
-			// Form4
+			// 영화및시간선택
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -621,7 +622,7 @@ namespace moogabox
 			this.Controls.Add(this.pbMovie1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "Form4";
+			this.Name = "영화및시간선택";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form4";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);

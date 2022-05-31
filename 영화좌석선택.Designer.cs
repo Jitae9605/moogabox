@@ -236,6 +236,7 @@ namespace moogabox
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(1035, 359);
 			this.panel3.TabIndex = 60;
+			this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
 			// 
 			// iconButton17
 			// 
@@ -1094,7 +1095,7 @@ namespace moogabox
 			this.iconButton16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.iconButton16.UseVisualStyleBackColor = false;
 			// 
-			// Form5
+			// 영화좌석선택
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1102,7 +1103,7 @@ namespace moogabox
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "Form5";
+			this.Name = "영화좌석선택";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form5";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
@@ -1123,7 +1124,7 @@ namespace moogabox
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnB;
+        //private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Button btnOK;

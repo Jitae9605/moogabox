@@ -16,7 +16,7 @@ namespace moogabox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 로그인());
+            Application.Run(new 영화및시간선택());
         }
     }
 }

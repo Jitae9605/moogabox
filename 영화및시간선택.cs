@@ -27,6 +27,7 @@ namespace moogabox
 
 		private void Form4_Load(object sender, EventArgs e)
 		{
+			if (ID == null) ID = "1";
 			string Nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분");
 			lblTime.Text = Nowtime;
 
@@ -531,6 +532,11 @@ namespace moogabox
 		private void Form4_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

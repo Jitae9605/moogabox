@@ -15,6 +15,7 @@ namespace moogabox
     {
 
 		public string ID { get; set; }
+		
 
 		public 메뉴선택()
         {
@@ -31,7 +32,8 @@ namespace moogabox
 
         private void btnticket_Click(object sender, EventArgs e)
         {
-            영화및시간선택 frm4 = new 영화및시간선택();
+			if (ID == null) ID = "1";
+			영화및시간선택 frm4 = new 영화및시간선택();
             this.Visible = false;
             frm4.ID = ID;
             frm4.ShowDialog();
