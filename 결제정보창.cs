@@ -149,12 +149,94 @@ namespace moogabox
 				ItemCount++;
 			}
 			R.Close();
-			
-			for(int i = 0; i < ItemCount; i++)
+
+			for (int i = 0; i < ItemCount; i++)
 			{
-				string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + BuyCountList[i] + " where SnackNum = '" + SnackNumList[i] + "'";
-				Comm = new SqlCommand(UpdateSql, Conn);
-				Comm.ExecuteNonQuery();
+				// 세트아닌 경우
+				if (SnackNumList[i] != "C01M" || SnackNumList[i] != "C02D" || SnackNumList[i] != "C04S" || SnackNumList[i] != "C03L")
+				{
+					string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + BuyCountList[i] + " where SnackNum = '" + SnackNumList[i] + "'";
+					Comm = new SqlCommand(UpdateSql, Conn);
+					Comm.ExecuteNonQuery();
+				}
+
+				// 세트일 경우
+				else
+				{
+					string PopcornNum = "", ColaNum = "";
+					int PopCount = 0, ColaCount = 0;
+					if(SnackNumList[i] == "C01M") //팝콘(L)1+탄산음료(M)2)
+					{
+						PopcornNum = "P01L";
+						ColaNum = "D01M";
+						PopCount = 1;
+						ColaCount = 2;
+
+						// 팝콘 재고 빼기
+						string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + PopCount + " where SnackNum = '" + PopcornNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+
+						// 콜라재고빼기
+						UpdateSql = "Update Maejum set SnackCount = SnackCount - " + ColaCount + " where SnackNum = '" + ColaNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+					}
+
+					if(SnackNumList[i] == "C02D") //콘(M)2+탄산음료(M)2
+					{
+						PopcornNum = "P01M";
+						ColaNum = "D01M";
+						PopCount = 2;
+						ColaCount = 2;
+
+						// 팝콘 재고 빼기
+						string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + PopCount + " where SnackNum = '" + PopcornNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+
+						// 콜라재고빼기
+						UpdateSql = "Update Maejum set SnackCount = SnackCount - " + ColaCount + " where SnackNum = '" + ColaNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+					}
+
+					if(SnackNumList[i] == "C04S") //팝콘(M)1+탄산음료(M)1
+					{
+						PopcornNum = "P01M";
+						ColaNum = "D01M";
+						PopCount = 1;
+						ColaCount = 1;
+
+						// 팝콘 재고 빼기
+						string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + PopCount + " where SnackNum = '" + PopcornNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+
+						// 콜라재고빼기
+						UpdateSql = "Update Maejum set SnackCount = SnackCount - " + ColaCount + " where SnackNum = '" + ColaNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+					}
+
+					if(SnackNumList[i] == "C03L") //팝콘(L)2+탄산음료(L)2
+					{
+						PopcornNum = "P01L";
+						ColaNum = "D01L";
+						PopCount = 2;
+						ColaCount = 2;
+
+						// 팝콘 재고 빼기
+						string UpdateSql = "Update Maejum set SnackCount = SnackCount - " + PopCount + " where SnackNum = '" + PopcornNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+
+						// 콜라재고빼기
+						UpdateSql = "Update Maejum set SnackCount = SnackCount - " + ColaCount + " where SnackNum = '" + ColaNum + "'";
+						Comm = new SqlCommand(UpdateSql, Conn);
+						Comm.ExecuteNonQuery();
+					}
+				}
 			}
 
 

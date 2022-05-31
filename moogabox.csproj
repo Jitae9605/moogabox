@@ -359,8 +359,6 @@
     <None Include="Resources\닥터 스트레인지.png" />
     <Content Include="Resources\쥬라기월드.png" />
     <None Include="Resources\쥬라기월드new.png" />
-    <Content Include="sql 작성.sql" />
-    <Content Include="sql 작성2.sql" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="MediaPlayer">
