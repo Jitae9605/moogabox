@@ -22,9 +22,6 @@ namespace moogabox
 			InitializeComponent();
 		}
 
-		private string Constr = "Server=(local);database=MoogaBox;" +
-		"Integrated Security=true";
-
 		private void Form4_Load(object sender, EventArgs e)
 		{
 			if (ID == null) ID = "1";
