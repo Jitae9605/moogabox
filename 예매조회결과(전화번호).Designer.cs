@@ -305,7 +305,6 @@ namespace moogabox
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "예매현황";
-			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form11_FormClosing);
 			this.Load += new System.EventHandler(this.Form11_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

@@ -695,7 +695,7 @@ namespace moogabox
                 if (empty[i] == 1)
                 {
                     Button[i].BackColor = Color.White;
-
+                    Button[i].ForeColor = Color.Black;
                 }
             }
         }

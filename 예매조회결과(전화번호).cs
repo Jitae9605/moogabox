@@ -89,45 +89,49 @@ namespace moogabox
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-			string txt = "";
+            if (DateChk())
+            {
+                string txt = "";
 
-			char a = '\n';
+                char a = '\n';
 
-			string[] txt1 = this.txtSeat.Text.Split(a);
+                string[] txt1 = this.txtSeat.Text.Split(a);
 
-			for(int i = 0; i < txt1.Length; i++)
-			{
-				txt += txt1[i] + " ";
-			}
+                for (int i = 0; i < txt1.Length; i++)
+                {
+                    txt += txt1[i] + " ";
+                }
 
-			DialogResult OKonly =
-            MessageBox.Show("영화 : " + this.txtMvName.Text + "\n\n시간 : " + this.txtTime.Text + "\n\n상영관 : " + txtHall.Text + 
-                "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			
-			if (OKonly == DialogResult.OK)
-			{
-                this.Visible = false;
-				메뉴선택 frm1 = new 메뉴선택();
-                예매조회 frm2 = new 예매조회();
-                frm2.Close();
-				frm1.ShowDialog();
-                Application.Exit();
-			}
+                DialogResult OKonly =
+                MessageBox.Show("영화 : " + this.txtMvName.Text + "\n\n시간 : " + this.txtTime.Text + "\n\n상영관 : " + txtHall.Text +
+                    "\n\n좌석 : " + txt + "\n\n 발권되었습니다.", "발권 알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (OKonly == DialogResult.OK)
+                {
+                    this.Visible = false;
+                    메뉴선택 frm1 = new 메뉴선택();
+                    예매조회 frm2 = new 예매조회();
+                    frm2.Close();
+                    frm1.ShowDialog();
+                    Application.Exit();
+                }
+            }
 		}
 
-        private void label1_Click(object sender, EventArgs e)
+        private bool DateChk()
         {
+            if (this.txtMvName.Text != "" && this.txtTime.Text != "" &&
+                this.txtHall.Text != "" && this.txtSeat.Text != "" && this.txtMvName.Text != "")
+                return true;
+            else
+            {
+                MessageBox.Show("입력 항목의 데이터를 확인해주세요.", "입력 항목 체크",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return false;
+            }
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-		private void Form11_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			Application.Exit();
-		}
-	}
+    }
 }
