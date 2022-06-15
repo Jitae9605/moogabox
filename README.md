@@ -27,6 +27,6 @@ C# WinForm 소규모 팀프로젝트
 *이미 예매된 좌석은 비활성화
 
 # 추가 정보 및 사진
-- 캡처 이미지 ([바로가기](https://github.com/Jitae9605/moogabox/tree/master/%EC%BA%A1%EC%B3%90)
+- 캡처 이미지 ([바로가기](https://github.com/Jitae9605/moogabox/tree/master/%EC%BA%A1%EC%B3%90))
 - 시연동영상(유튜브) ([바로가기](https://youtu.be/UQH7eHv1bzI))
 - 개발문서([바로가기](https://github.com/Jitae9605/moogabox/blob/master/%EA%B8%B0%EC%88%A0%EB%AC%B8%EC%84%9C(PDF).pdf))
