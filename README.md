@@ -1,9 +1,7 @@
 # MoogaBox([이전으로](https://github.com/Jitae9605/Jitae9605#bar_chart-projectlist-bar_chart))
 - C# WinForm 소규모 팀프로젝트
-
-  - 시연동영상(유튜브) ([바로가기](https://youtu.be/UQH7eHv1bzI))
-
-  - 개발문서([바로가기](https://github.com/Jitae9605/moogabox/blob/master/%EA%B8%B0%EC%88%A0%EB%AC%B8%EC%84%9C(PDF).pdf))
+    - 시연동영상(유튜브) ([바로가기](https://youtu.be/UQH7eHv1bzI))
+    - 개발문서([바로가기](https://github.com/Jitae9605/moogabox/blob/master/%EA%B8%B0%EC%88%A0%EB%AC%B8%EC%84%9C(PDF).pdf))
 
 ## 영화관 예매 및 관리프로그램
 - MSSQL기반 서버연동
